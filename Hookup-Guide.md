@@ -13,9 +13,7 @@ Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPr
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front%20copy.jpg" width="400">
 
-## Connect Motors
-
-Note: The color codes shown below may not apply to your particular Motors
+# Connect Motors
 
 Warning: Never connect/disconnect motors to a powered-up controller. Always turn off power before connecting/disconnecting accessories to/from your xPro
 
@@ -30,11 +28,11 @@ Warning: Never connect/disconnect motors to a powered-up controller. Always turn
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/End%20copy.jpg" width="400">
 
-NOTE: switching the polarity of either (one) coil will reverse the stepper's direction
+NOTE: switching the polarity of either (one) coil will reverse the stepper's direction - also the color codes shown below may not apply to your particular Motors
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/nema23-reversed-y2.jpg" width="600">
 
-## Connecting Limit Switches
+# Connecting Limit Switches
 
 Warning: Incorrect wiring can short V+ to GND causing damage to your controller: Double check wiring before powering on
  
@@ -42,19 +40,19 @@ Use a 2-wire cable to wire up regular microswitches
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/regular-microswitches.jpg" width="600">
 
-## Connect Probe
+# Connect Probe
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/z-touchplate.jpg" width="600">
 
-## Connect Tools
+# Connect Tools
 
-* Dewalt Spindle
+## Dewalt Spindle
 
 You can install an IOT Relay to control your spindle using Gcode commands
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/iotrelay.jpg" width="600">
 
-* 0-10v Analog Signal / VFD
+## 0-10v Analog Signal / VFD
 
 Spark Concepts xPro-V5 includes a 0-10v Analog Signal Voltage output that can be used to control spindles/other toolheads that need a 0-10v signal to run.
 
@@ -72,7 +70,7 @@ This will ensure that command Spindle RPM is as close to the actual as possible
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/0-10v.jpg" width="800">
 
-## Connect Coolant Output
+# Connect Coolant Output
 
 The Coolant output is primarily used to control chip-evacuation, dust-extraction or cutting fluid systems, but can also be creatively repurposed for other switching requirements.
 
@@ -86,7 +84,7 @@ Max Current: 3A
 Voltage: 24v (Same as Input voltage)
 Suitable for inductive loads
 
-* Connect LED Ring
+## Connect LED Ring
 
 You can use the Coolant output to switch any other 24v device as well, as an example, you can connect a Spindle LED Ring as shown to put it under M-Code control (for example if you want a Job to turn the LED ring on at the start and off at the end, you can add an M8 to the header and an M9 to the footer of your g-code)
 
