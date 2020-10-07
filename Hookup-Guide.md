@@ -9,7 +9,7 @@ Before connecting your power supply to mains power, it is critical that you chec
 
 <img src="https://i.stack.imgur.com/zWdO5.jpg" width="400">
 
-* [Website](https://cnc.js.org/) 
+* [Website](https://electronics.stackexchange.com/questions/479800/why-do-some-smps-power-supplies-require-an-input-voltage-select-switch) 
 
 ## Universal Gcode Sender
 
