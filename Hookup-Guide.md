@@ -7,7 +7,7 @@ Please note: The xPro-V5 utilizes Trinamic 5160 stepper drivers running at up to
 
 Before connecting your power supply to mains power, it is critical that you check and set the 115v/230v Switch on your PSU.
 
-<img src="https://i.stack.imgur.com/zWdO5.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front%20copy.jpg" width="400">
 
 * [Website](https://electronics.stackexchange.com/questions/479800/why-do-some-smps-power-supplies-require-an-input-voltage-select-switch) 
 
