@@ -19,6 +19,10 @@ Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPr
 
 ## Connect Motors
 
+Note: The color codes shown below may not apply to your particular Motors
+
+Warning: Never connect/disconnect motors to a powered-up controller. Always turn off power before connecting/disconnecting accessories to/from your xPro
+
 * How to: [verify coil wires](https://www.youtube.com/watch?v=S0pGKgos498) 
 * Simple verification of 4 wire stepper motors:
  1. Using a multi-meter, resistance Set the Ohmmeter to the lowest resistance scale.
