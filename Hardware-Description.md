@@ -9,7 +9,7 @@ The xPRO V5 uses [Trinamic stepper drivers](https://www.trinamic.com/products/in
 # Specs:
 
 * 24v - 10 Amp Input Power Fuse
-
+* Built-in Heatsink & Temperature Controlled Cooling Fan
 
 ## Motors
 
