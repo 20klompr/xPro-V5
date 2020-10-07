@@ -76,9 +76,7 @@ The Coolant output is primarily used to control chip-evacuation, dust-extraction
 
 It can be controller with M-Codes:
 
-M8 = On
-
-M9 = Off
+M8 = On; M9 = Off
 
 Electrical Specifications:
 - Voltage: jumper select - 24v(default) or 5v
