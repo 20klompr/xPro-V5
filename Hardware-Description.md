@@ -18,6 +18,7 @@ The xPRO V5 uses [Trinamic stepper drivers](https://www.trinamic.com/products/in
 * Dual motors axes can optionally auto square using a home switch and independent control for each motor.
 * Motor drivers can be dynamically assigned to axes, so a 4 motor XYZA controller could be converted to a XYYZ (dual motor Y axis) without any hardware changes.
 * Step rates up to 120,000 per/second.
+* Up to 1/256 Micro stepping (Defaulted to 1/8 for higher Torque).
 * Trinamic (SPI controlled) stepper motors are supported including StealthChop, CoolStep and StallGuard modes. 
 * Sensorless homing can be used.
 
