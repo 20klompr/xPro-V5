@@ -146,13 +146,13 @@ Enum settings have a specified set of allowable values, that can be expressed ei
 |Homing/Debounce|26|Float|msec|250|0|10000|[Homing switch debounce time](#homingdebounce-or-26---homing-debounce-milliseconds)|
 |Homing/Pulloff|27|Float|mm|1|0|1000|[Homing pulloff distance](#homingpulloff-or-27---homing-pull-off-mm)|
 |Homing/Squared||AxisMask||0|||[Axes that are squared during homing](#homingsquaring---axes-that-are-squared-during-homing)|
-|Homing/MPos||Float | || | | [Desired Machine Position after homing](https://github.com/bdring/Grbl_Esp32/wiki/Machine-Space-and-Homing)|
-|Homing/Cycle0||AxisMask|||||[Axis homing order](https://github.com/bdring/Grbl_Esp32/wiki/Setting-Up-Limit-Homing-Switch)|
-|Homing/Cycle1||AxisMask|||||[Axis homing order](https://github.com/bdring/Grbl_Esp32/wiki/Setting-Up-Limit-Homing-Switch)|
-|Homing/Cycle2||AxisMask|||||[Axis homing order](https://github.com/bdring/Grbl_Esp32/wiki/Setting-Up-Limit-Homing-Switch)|
-|Homing/Cycle3||AxisMask|||||[Axis homing order](https://github.com/bdring/Grbl_Esp32/wiki/Setting-Up-Limit-Homing-Switch)|
-|Homing/Cycle4||AxisMask|||||[Axis homing order](https://github.com/bdring/Grbl_Esp32/wiki/Setting-Up-Limit-Homing-Switch)|
-|Homing/Cycle5||AxisMask|||||[Axis homing order](https://github.com/bdring/Grbl_Esp32/wiki/Setting-Up-Limit-Homing-Switch)|
+|Homing/MPos||Float | || | | [Desired Machine Position after homing]()|
+|Homing/Cycle0||AxisMask|||||[Axis homing order]()|
+|Homing/Cycle1||AxisMask|||||[Axis homing order]()|
+|Homing/Cycle2||AxisMask|||||[Axis homing order]()|
+|Homing/Cycle3||AxisMask|||||[Axis homing order]()|
+|Homing/Cycle4||AxisMask|||||[Axis homing order]()|
+|Homing/Cycle5||AxisMask|||||[Axis homing order]()|
 |GCode/MaxS|30|Float|depends|1000|0|100000|[Max value for GCode S word](#gcodemaxs-or-30---max-spindle-speed-rpm)|
 |GCode/MinS|31|Float|depends|0|0|100000|[Minimum value for GCode S word](#gcodemins-or-31---min-spindle-speed-rpm)|
 |GCode/LaserMode|32|Flag||OFF|||[Disable (off) or enable (on) Laser Mode](#gcodelasermode-or-32---laser-mode-boolean)|
