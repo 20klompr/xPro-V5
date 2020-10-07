@@ -92,15 +92,15 @@ You can use the Coolant output to switch any other 24v device as well, as an exa
 
 ## Connect Dust Extraction via IoT Relay
 
-You can use our IoT Relay Power Strip to control a Vacuum for dust extraction.
+You can use our IoT Relay Power Strip to control a Vacuum for dust extraction
 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/coolant-iot-vacuum.jpg" width="600">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/coolant-iot-vacuum.jpg" width="800">
 
 ## Connect 24vDC Air Solonoid
 
 You can switch 24v Solenoids using the Coolant output. Typically you'd use this configuration in-line between an Air-compressor and a Nozzle pointed at the endmill. Compressed air blowing on the endmill will help evacuate chips from the cut, and keep the endmill cool
 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/coolant-solonoid.jpg" width="600">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/coolant-solenoid.jpg" width="800">
 
 
 
