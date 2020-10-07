@@ -7,8 +7,6 @@ Please note: The xPro-V5 utilizes Trinamic 5160 stepper drivers running at up to
 
 Before connecting your power supply to mains power, it is critical that you check and set the [115v/230v Switch](https://i.stack.imgur.com/zWdO5.jpg) on your PSU.
 
-* [Website](https://electronics.stackexchange.com/questions/479800/why-do-some-smps-power-supplies-require-an-input-voltage-select-switch) 
-
 ## Connecting 24v Power Supply to the xPro-V5
 
 Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPro-V5 using the supplied [(5mm) Connector](https://media.digikey.com/Photos/On%20Shore%20Technology%20Photos/OSTTJ027150.jpg) - be sure to carefully observe correct polarity.
@@ -36,11 +34,11 @@ NOTE: switching the polarity of either (one) coil will reverse the stepper's dir
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/nema23-reversed-y2.jpg" width="400">
 
+## Connecting Limit Switches
 
-## LaserWeb4
-
-* [Github](https://github.com/LaserWeb/LaserWeb4)
-* [Website](https://cncpro.yurl.ch/)
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/nema23-reversed-y2.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/nema23-reversed-y2.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/nema23-reversed-y2.jpg" width="400">
 
 ## Candle
 
