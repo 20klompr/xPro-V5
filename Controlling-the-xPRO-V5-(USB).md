@@ -1,6 +1,6 @@
 # GCode Senders
 
-Please note: We recommend using CNCjs Desktop to control the CNC xPro V5, however, the Gcode Senders listed below will work as well.    
+**Please note**: We recommend using CNCjs Desktop to control the CNC xPro V5, however, the other Gcode Senders listed below will work as well.    
 ## CNCJS
 
 Please use CNCjs version 1.9.22 or higher.  To make the xPro V5 reboot on connection (recommended for USB use), select the "Enable hardware flow control" option.
