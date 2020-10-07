@@ -24,7 +24,7 @@
  * [M3, M4, M5](http://www.linuxcnc.org/docs/html/gcode/m-code.html#mcode:m3-m4-m5): Spindle Control
  * [M7 , M8, M9](http://www.linuxcnc.org/docs/html/gcode/m-code.html#mcode:m7-m8-m9): Coolant Control
  * M56 : Parking Motion Override Control
- * [M62, M63](http://www.linuxcnc.org/docs/html/gcode/m-code.html#mcode:m62-m65) Digital Output Control ([Grbl_ESP32 wiki](https://github.com/bdring/Grbl_Esp32/wiki/M62,-M63,-M64,-M65-&-M67-User-I-O-Commands))
+ * [M62, M63](http://www.linuxcnc.org/docs/html/gcode/m-code.html#mcode:m62-m65) Digital Output Control 
 
 ### Comments
 
