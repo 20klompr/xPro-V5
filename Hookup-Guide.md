@@ -7,7 +7,7 @@ Please note: The xPro-V5 utilizes Trinamic 5160 stepper drivers running at up to
 
 Before connecting your power supply to mains power, it is critical that you check and set the 115v/230v Switch on your PSU.
 
-<img src="https://cloud.githubusercontent.com/assets/447801/24392019/aa2d725e-13c4-11e7-9538-fd5f746a2130.png" width="400">
+<img src="https://i.stack.imgur.com/zWdO5.jpg" width="400">
 
 * [Website](https://cnc.js.org/) 
 
