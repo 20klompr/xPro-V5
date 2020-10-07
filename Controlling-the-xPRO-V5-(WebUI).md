@@ -27,7 +27,7 @@ The WEBUI project represents quite a contribution to the open source CNC world a
 
 ##### Startup
 
-At startup the ESP32 will try to connect to the WiFi network it was connected to last. If it cannot connect to that network, it will enter AP (Access Point) mode, thus creating a WiFi network named CNC_XPRO_V5, with password 12345678. Connect to that network with a PC, tablet or phone and use a web browser to load the WebUI to access the URL http://192.168.0.1 (you can bookmark this under the name CNC_XPRO_V5 for easy access).
+At startup the xPro V5 will try to connect to the WiFi network it was connected to last. If it cannot connect to that network, it will enter AP (Access Point) mode, thus creating a WiFi network named CNC_XPRO_V5, with password 12345678. Connect to that network with a PC, tablet or phone and use a web browser to load the WebUI to access the URL http://192.168.0.1 (you can bookmark this under the name CNC_XPRO_V5 for easy access).
 
 **Note:** If the WebUI fails to load, open the following URL in your web browser. http://192.168.0.1/?forcefallback=yes.  From here you can re-upload the [index.html.gz](https://github.com/Spark-Concepts/xPro-V5/blob/main/src/index.html.gz)
 
