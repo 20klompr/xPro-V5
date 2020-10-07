@@ -32,7 +32,7 @@ Warning: Never connect/disconnect motors to a powered-up controller. Always turn
 
 NOTE: switching the polarity of either (one) coil will reverse the stepper's direction
 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/nema23-reversed-y2.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/nema23-reversed-y2.jpg" width="600">
 
 ## Connecting Limit Switches
 
@@ -40,14 +40,34 @@ Warning: Incorrect wiring can short V+ to GND causing damage to your controller:
  
 Use a 2-wire cable to wire up regular microswitches
 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/regular-microswitches.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/regular-microswitches.jpg" width="600">
 
 ## Connect Probe
 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/z-touchplate.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/z-touchplate.jpg" width="600">
 
-## Grbl-Plotter
+## Connect Tools
 
-<img src="https://github.com/svenhb/GRBL-Plotter/raw/master/doc/GRBLPlotter_GUI.png" width="400">
+* Dewalt Spindle
 
-* [Website](https://github.com/svenhb/GRBL-Plotter)
+You can install an IOT Relay to control your spindle using Gcode commands
+
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/iotrelay.jpg" width="600">
+
+* 0-10v Analog Signal / VFD
+
+Spark Concepts xPro-V5 includes a 0-10v Analog Signal Voltage output that can be used to control spindles/other toolheads that need a 0-10v signal to run.
+
+NB Note this is a low level logic Signal voltage, it should not be used to drive anything directly. This signal should be connected to an external drive system, for example a VFD or a DC Spindle Controller. 
+
+To use the signal, connect between the GND and 0-10v pins on the toolhead plug as shown.
+
+Calibrate output voltage
+TIP: You may need to fine tune the output to be exactly 10v:
+
+Send an M3 S1000 to the controller (1000 = default Grbl configuration, or send S=what you have set for $30 - Max spindle speed, RPM)
+Measure the voltage between GND and the 0-10v Terminal
+Use a small flat head screwdriver to adjust the 0-10v Fine Tuning Adjustment until the output is exactly 10.0v
+This will ensure that command Spindle RPM is as close to the actual as possible
+
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/0-10V.jpg" width="600">
