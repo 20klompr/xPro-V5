@@ -1,7 +1,8 @@
 # Connect Power Supply
 
-Please note: The xPro-V5 is capable of outputting over 6A per output channelWe recommend using a Meanwell LRS350 24v Power Supply.  
+Please note: The xPro-V5 utilizes Trinamic 5160 stepper drivers running at up to 4A RMS, 6A peak and therefore we recommend using a UL listed power supply rated at or above 300W (at 24vDC) such as the Meanwell LRS350 24v Power Supply.  
   
+
 ## CNCJS
 
 Please use CNCjs version 1.9.22 or higher.  To make the xPro V5 reboot on connection (recommended for USB use), select the "Enable hardware flow control" option.
