@@ -6,7 +6,7 @@ This wiki is the CNC xPro-V5 user manual and hook-up guide. We (Spark Concepts) 
 
 ### Getting Started and Basic Setup
 * [Hardware Description](https://github.com/Spark-Concepts/xPro-V5/wiki/Hardware-Description)
-* [Hookup Guide](https://github.com/Spark-Concepts/xPro-V4/blob/master/Drawings/xPROV4_dimensions.jpg?raw=true)
+* [Hookup Guide](https://github.com/Spark-Concepts/xPro-V5/wiki/Hookup-Guide)
 
 ### Programming and Updating Firmware
 * [Updating Firmware](https://github.com/Spark-Concepts/xPRO/wiki/3.-Updating-GRBL-Firmware)
