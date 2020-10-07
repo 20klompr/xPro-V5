@@ -34,18 +34,7 @@ _NOTE: switching the polarity of either (one) coil will reverse the stepper's di
 ![coils](https://cdn8.bigcommerce.com/s-itwgldve/images/stencil/1280x1280/products/180/3534/Nema_23_motor_4__11459.1537467879.png?c=2?imbypass=on)
 * Connect stepper motor wires to 3.5mm motor terminals
 
-## Connector Pinouts
-Each of the motors has a 4 terminal screw-down block wired as:
-
-	Pin | Motor Phase (Output) | Description
-	----|--------------------- |-------------
-	1 | A1 | Coil A Positive
-	2 | A2 | Coil A Negative
-	3 | B2 | Coil B Negative
-	4 | B1 | Coil B Positive
-
-
-* [Website](http://lasergrbl.com/en/)
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/End%20copy.jpg" width="400">
 
 ## LaserWeb4
 
