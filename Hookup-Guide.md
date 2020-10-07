@@ -1,6 +1,7 @@
-# GCode Senders
+# Connect Power Supply
 
-Please note: We recommend using CNCjs Desktop to control the CNC xPro V5, however, the Gcode Senders listed below will work as well.    
+Please note: The xPro-V5 is capable of outputting over 6A per output channelWe recommend using a Meanwell LRS350 24v Power Supply.  
+  
 ## CNCJS
 
 Please use CNCjs version 1.9.22 or higher.  To make the xPro V5 reboot on connection (recommended for USB use), select the "Enable hardware flow control" option.
