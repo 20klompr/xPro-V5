@@ -30,11 +30,11 @@ Warning: Never connect/disconnect motors to a powered-up controller. Always turn
  3. Mark the wire that gave a reading and mark the first wire you started with (coil A)
  4. The remaining two wires will be coil B
 
-_NOTE: switching the polarity of either (one) coil will reverse the stepper's direction_
-![coils](https://cdn8.bigcommerce.com/s-itwgldve/images/stencil/1280x1280/products/180/3534/Nema_23_motor_4__11459.1537467879.png?c=2?imbypass=on)
 * Connect stepper motor wires to 3.5mm motor terminals
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/End%20copy.jpg" width="400">
+
+_NOTE: switching the polarity of either (one) coil will reverse the stepper's direction
 
 ## LaserWeb4
 
