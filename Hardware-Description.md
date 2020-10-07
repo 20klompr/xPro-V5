@@ -1,8 +1,10 @@
 #![](https://github.com/Spark-Concepts/xPro-V5/blob/main/images/xproV5_iso.jpg)
 
-<img src="http://winder.github.io/ugs_website/img/platform/screenshot.png" width="400">
+<img src="https://www.trinamic.com/fileadmin/_processed_/7/0/csm_TMC5160A-TA_baa5ea6044.jpg" width="400">
 
 The CNC xPRO V4 Controller is an all-in-one multi axis CNC controller. It is a specifically designed for CNC applications and pre-loaded with the latest stable version of GRBL. The CNC xPRO is equipped with 4 DRV8825 motor drivers; allowing for dual motor configurations on the X,Y, or Z axis. The V4 board also features isolated digital and analog power buses to greatly reduced noise and false triggers.    
+
+[Trinamic 5160](https://www.trinamic.com/products/integrated-circuits/details/tmc5160)
 
 Introduced with the V4 is our new DriverMinder logic - the V4 constantly monitors the status of each motor driver. Should a fault occur, your selected action will be taken, options are:
 
