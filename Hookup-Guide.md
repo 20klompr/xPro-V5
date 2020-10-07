@@ -13,7 +13,7 @@ Before connecting your power supply to mains power, it is critical that you chec
 
 ## Connecting 24v Power Supply to the xPro-V5
 
-Connect Positive (+24v) and Negative (Ground) from Power Supply to the xPro-V5 using the supplied (5mm) connector
+Connect Positive ("+24V") and Negative ("GND") from Power Supply to the xPro-V5 using the supplied (5mm) connector
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front%20copy.jpg" width="400">
 
