@@ -11,7 +11,7 @@ Before connecting your power supply to mains power, it is critical that you chec
 
 * [Website](https://electronics.stackexchange.com/questions/479800/why-do-some-smps-power-supplies-require-an-input-voltage-select-switch) 
 
-## Universal Gcode Sender
+## Connecting 24v Power Supply to the xPro-V5
 
 <img src="http://winder.github.io/ugs_website/img/platform/screenshot.png" width="400">
 
