@@ -36,7 +36,12 @@ NOTE: switching the polarity of either (one) coil will reverse the stepper's dir
 
 ## Connecting Limit Switches
 
+Warning: Incorrect wiring can short V+ to GND causing damage to your controller: Double check wiring before powering on
+ 
+Use a 2-wire cable to wire up regular microswitches
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/regular-microswitches.jpg" width="400">
+
+
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/xtension_limits_wiring.jpg" width="400">
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Hall_limits_wiring.jpg" width="400">
 
