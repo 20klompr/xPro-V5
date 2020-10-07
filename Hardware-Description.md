@@ -2,11 +2,25 @@
 
 The CNC xPRO V5 is an easy to use high power motion controller for CNC machines.  The CNC xPRO is capable of supporting a wide variety of CNC machines with up to 4 motor working independently or ganged (multiple motors working together to move one axis like the Workbee machines, also called dual drive, cloned, etc.). The CNC xPRO-V5 runs on a 32Bit processor and has integrated Wifi and Web Interface capabilities. 
 
-The xPRO V5 uses [Trinamic stepper drivers](https://www.trinamic.com/products/integrated-circuits/details/tmc5160)and is capable of driving motors up to 6amps using high power MOSFETS.
+The xPRO V5 uses [Trinamic stepper drivers](https://www.trinamic.com/products/integrated-circuits/details/tmc5160) to drive 4 high Power MOSFETs per channel and is capable of driving motors up to 6amps.
 
 <img src="https://www.trinamic.com/fileadmin/_processed_/7/0/csm_TMC5160A-TA_baa5ea6044.jpg" width="400">
 
 # Specs:
+* 10 Amp Input Power Fuse
+* Configurable Relay for generic use cases (Plasma trigger, Coolant Pumps, Spindle control, etc )
+* Door Interlock signal connector to allow machines with enclosures to pause/resume when the door opens/closes - alternatively configured as an E-Stop to disable stepper motors when a normally closed switch is depressed
+<img src="https://www.trinamic.com/fileadmin/_processed_/7/0/csm_TMC5160A-TA_baa5ea6044.jpg" width="400">
+
+4X High Powered 4.0A (peak) Stepper Drivers
+Auxiliary Serial Input for alternative connectivity expansion
+USB Interface for Plug and Play
+Up to 24v 5A switched output for coolant devices such as 24v DC pumps, solenoids, contactors, or Solid State Relays
+Input Power Polarity protection with indicator LED
+5v PWM and 5v Direction Spindle Signals
+VFD Spindle Support (0-10v)
+
+
 * Pre-loaded with latest stable version of [GRBL](https://github.com/gnea/grbl/releases)
 * Compatible with [ESTLcam](http://estlcam.com/)
 * Capable of powering from [ATX PSU](http://en.wikipedia.org/wiki/ATX#Power_supply), dedicated [12/24V two wire power supply](https://openbuildspartstore.com/24v-meanwell-power-supply-bundle/), or a [laptop power supply](http://a.co/d/3vbO8BL)
