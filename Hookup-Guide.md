@@ -58,7 +58,7 @@ You can install an IOT Relay to control your spindle using Gcode commands
 
 Spark Concepts xPro-V5 includes a 0-10v Analog Signal Voltage output that can be used to control spindles/other toolheads that need a 0-10v signal to run.
 
-NB Note this is a low level logic Signal voltage, it should not be used to drive anything directly. This signal should be connected to an external drive system, for example a VFD or a DC Spindle Controller. 
+Note: This is a low level logic Signal voltage, it should not be used to drive anything directly. This signal should be connected to an external drive system, for example a VFD or a DC Spindle Controller. 
 
 To use the signal, connect between the GND and 0-10v pins on the toolhead plug as shown.
 
@@ -70,4 +70,27 @@ Measure the voltage between GND and the 0-10v Terminal
 Use a small flat head screwdriver to adjust the 0-10v Fine Tuning Adjustment until the output is exactly 10.0v
 This will ensure that command Spindle RPM is as close to the actual as possible
 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/0-10V.jpg" width="600">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/0-10v.jpg" width="800">
+
+## Connect Coolant Output
+
+The Coolant output is primarily used to control chip-evacuation, dust-extraction or cutting fluid systems, but can also be creatively repurposed for other switching requirements.
+
+It can be controller with M-Codes:
+
+M8 = On
+M9 = Off
+
+* Electrical Specifications
+Max Current: 3A
+Voltage: 24v (Same as Input voltage)
+Suitable for inductive loads
+
+* Connect LED Ring
+
+You can use the Coolant output to switch any other 24v device as well, as an example, you can connect a Spindle LED Ring as shown to put it under M-Code control (for example if you want a Job to turn the LED ring on at the start and off at the end, you can add an M8 to the header and an M9 to the footer of your g-code)
+
+
+
+
+
