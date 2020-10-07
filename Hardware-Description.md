@@ -1,33 +1,10 @@
 #![](https://github.com/Spark-Concepts/xPro-V5/blob/main/images/xproV5_iso.jpg)
 
+The CNC xPRO V5 is an easy to use high power motion controller for CNC machines.  The CNC xPRO is capable of supporting a wide variety of CNC machines with up to 4 motor working independently or ganged (multiple motors working together to move one axis like the Workbee machines, also called dual drive, cloned, etc.). The CNC xPRO-V5 runs on a 32Bit processor and has integrated Wifi and Web Interface capabilities. 
+
+The xPRO V5 uses [Trinamic stepper drivers](https://www.trinamic.com/products/integrated-circuits/details/tmc5160)and is capable of driving motors up to 6amps using high power MOSFETS.
+
 <img src="https://www.trinamic.com/fileadmin/_processed_/7/0/csm_TMC5160A-TA_baa5ea6044.jpg" width="400">
-
-The CNC xPRO V4 Controller is an all-in-one multi axis CNC controller. It is a specifically designed for CNC applications and pre-loaded with the latest stable version of GRBL. The CNC xPRO is equipped with 4 DRV8825 motor drivers; allowing for dual motor configurations on the X,Y, or Z axis. The V4 board also features isolated digital and analog power buses to greatly reduced noise and false triggers.    
-
-[Trinamic 5160](https://www.trinamic.com/products/integrated-circuits/details/tmc5160)
-
-Introduced with the V4 is our new DriverMinder logic - the V4 constantly monitors the status of each motor driver. Should a fault occur, your selected action will be taken, options are:
-
-* Pause - will initiate a system pause allowing you to safely troubleshoot and potentially save your work-piece
-* Stop - emergency abort, system stop immediately and reboots 
-* Play - continue on as if nothing happened (i.e. ignore fault).  
-
-# What's New for the V4
-* Less than 5-minute install with the use of plug and play motors headers, limit switches and power supplies  
-* 4-layer design featuring completely isolated motor and logic power buses
-* All smd parts moved to back of board to protect again debris and short
-* Integrated #4-40 standoff for easy mounting and short protection
-* Three ways to power - Laptop PSU (2.5x5.5mm plug), a 2 wire power supply, or ATX computer power supply
-* Selectable spindle output voltage range: 0-5V or 0-10V for full compatibility with spindles, VFDs, Lasers and more 
-* Coolant output is now an open drain (directly sink up to 3A or use to control external relays)
-* Screw terminal hookup for external Step/Dir drivers makes beefing up easy
-* Extremely robust power management for overvoltage/reverse voltage protection including replaceable mini blade fuses 
-* Motor driver step and fault LEDs for easier troubleshooting
-* Enhanced silkscreen with more pictures and less labels
-* Compatible with Openbuilds XTension wiring system for even easier setup! 
-* DIP SWITCHES = NO MORE SOLDER JUMPERS - want to change decay mode → slide the switch, want to clone Z motion instead of Y → slide the switch 
-
-![](https://github.com/Spark-Concepts/xPro-V4/blob/master/wiki/xProV4_Bottom_Views.jpg)
 
 # Specs:
 * Pre-loaded with latest stable version of [GRBL](https://github.com/gnea/grbl/releases)
