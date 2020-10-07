@@ -2,7 +2,7 @@
 
 The CNC xPRO V5 is an easy to use high power motion controller for CNC machines.  The CNC xPRO is capable of supporting a wide variety of CNC machines with up to 4 motor working independently or ganged (multiple motors working together to move one axis like the Workbee machines, also called dual drive, cloned, etc.). The CNC xPRO-V5 runs on a 32Bit processor and has integrated Wifi and Web Interface capabilities. 
 
-The xPRO V5 uses [Trinamic stepper drivers](https://www.trinamic.com/products/integrated-circuits/details/tmc5160) to drive 4 high Power MOSFETs per channel and is capable of driving motors up to 6amps.
+The xPRO V5 uses [Trinamic stepper drivers](https://www.trinamic.com/products/integrated-circuits/details/tmc5160) to drive 4 high Power MOSFETs per axis and is capable of driving motors up to 6 amps.
 
 <img src="https://www.trinamic.com/fileadmin/_processed_/7/0/csm_TMC5160A-TA_baa5ea6044.jpg" width="400">
 
