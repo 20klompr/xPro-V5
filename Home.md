@@ -5,7 +5,7 @@
 This wiki is the CNC xPro-V5 user manual and hook-up guide. We (Spark Concepts) maintain it, but it's an open wiki. If you want to post wiki-type stuff, feel free to do it here. Please let us know via a [github Issue](https://github.com/Spark-Concepts/xPro-V5/issues/New) if it's anything major. Github Issues are good for requested changes and discussions.
 
 ### Getting Started and Basic Setup
-* [Hardware Description](https://github.com/Spark-Concepts/xPro-V4/wiki/1.-Hardware-Description)
+* [Hardware Description](https://github.com/Spark-Concepts/xPro-V5/wiki/Hardware-Description)
 * [Hookup Guide](https://github.com/Spark-Concepts/xPro-V4/blob/master/Drawings/xPROV4_dimensions.jpg?raw=true)
 
 ### Programming and Updating Firmware
