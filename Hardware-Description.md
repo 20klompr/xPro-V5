@@ -1,4 +1,4 @@
-#![](https://github.com/Spark-Concepts/xPro-V5/blob/main/images/xproV5_iso.jpg)
+![](https://github.com/Spark-Concepts/xPro-V5/blob/main/images/xproV5_iso.jpg)
 
 The CNC xPRO V5 is an easy to use high power motion controller for CNC machines.  The CNC xPRO is capable of supporting a wide variety of CNC machines with up to 4 motor working independently or ganged (multiple motors working together to move one axis like the Workbee machines, also called dual drive, cloned, etc.). The CNC xPRO-V5 runs on a 32Bit processor and has integrated Wifi and Web Interface capabilities. 
 
