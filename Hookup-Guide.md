@@ -13,11 +13,13 @@ Before connecting your power supply to mains power, it is critical that you chec
 
 ## Connecting 24v Power Supply to the xPro-V5
 
-Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPro-V5 using the supplied [(5mm) Connector](https://media.digikey.com/Photos/On%20Shore%20Technology%20Photos/OSTTJ027150.jpg) - Be Sure to Carefully Observe Polarity
+Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPro-V5 using the supplied [(5mm) Connector](https://media.digikey.com/Photos/On%20Shore%20Technology%20Photos/OSTTJ027150.jpg) - be sure to carefully observe correct polarity.
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front%20copy.jpg" width="400">
 
-## LaserGRBL
+## Connect Motors
+
+Note: Identify Motor coils to identify the coil pairs. The color codes shown below only apply to OpenBuilds Motors
 
 * [Website](http://lasergrbl.com/en/)
 
