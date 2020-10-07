@@ -7,61 +7,66 @@ The xPRO V5 uses [Trinamic stepper drivers](https://www.trinamic.com/products/in
 <img src="https://www.trinamic.com/fileadmin/_processed_/7/0/csm_TMC5160A-TA_baa5ea6044.jpg" width="400">
 
 # Specs:
-* 10 Amp Input Power Fuse
-* Configurable Relay for generic use cases (Plasma trigger, Coolant Pumps, Spindle control, etc )
-* Door Interlock signal connector to allow machines with enclosures to pause/resume when the door opens/closes - alternatively configured as an E-Stop to disable stepper motors when a normally closed switch is depressed
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/door-sensor-wiring.jpg" width="600">
-* 4X High Powered >6.0A Stepper Drivers
-* Integrated Wifi and Web Interface capabilities or USB Interface for Plug and Play
+
+* 24v - 10 Amp Input Power Fuse
+
+
+## Motors
+
+* Control up to 4 coordinated axes (XYZA)
+* Each axis can have 1 or 2 motors each for a total of 8 motors
+* Dual motors axes can optionally auto square using a home switch and independent control for each motor.
+* Motor drivers can be dynamically assigned to axes, so a 4 motor XYZA controller could be converted to a XYYZ (dual motor Y axis) without any hardware changes.
+* Step rates up to 120,000 per/second.
+* Trinamic (SPI controlled) stepper motors are supported including StealthChop, CoolStep and StallGuard modes. 
+* Sensorless homing can be used.
+
+## Peripherals
+
+* Limit/Homing Switches with debouncing
 * Up to 24v 5A switched output for coolant devices such as 24v DC pumps, solenoids, contactors, or Solid State Relays
-* Input Power Polarity protection
-* 5v PWM and 5v Enable Spindle Signals
-* VFD Spindle Support (0-10v)
-* RS485 (Modbus) VFD Spindle Support 
-* 4 x Endstop inputs (optional Y axis squaring) with optional power output (Selectable 5v/24v) for use with mechanical or powered
-switches such as Inductive sensor 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Hall_limits_wiring.jpg" width="600">
+* Configurable Relay for generic use cases (Plasma trigger, Coolant Pumps, Spindle control, etc)
+* Configurable Macro input
+* Z Probe (XYZ)
+* Safety Door (open door safely retracts and stops spindle, can be resumed) - alternatively configured as an E-Stop to disable stepper motors when a normally closed switch is depressed
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/door-sensor-wiring.jpg" width="600">
 
+## Spindles
 
+* PWM
+* RS485 Modus
+* DAC (analog voltage) 0-10V
+* Relay Based
+* RC type Brushless DC motors using low cost BESCs
+* Laser PWM with power/speed compensation
+* Easy to create custom spindles
 
-* Pre-loaded with latest stable version of [GRBL](https://github.com/gnea/grbl/releases)
-* Compatible with [ESTLcam](http://estlcam.com/)
-* Capable of powering from [ATX PSU](http://en.wikipedia.org/wiki/ATX#Power_supply), dedicated [12/24V two wire power supply](https://openbuildspartstore.com/24v-meanwell-power-supply-bundle/), or a [laptop power supply](http://a.co/d/3vbO8BL)
-* Drive 4 motors with [TI DRV8825](http://www.ti.com/product/drv8825) Stepper Drivers - 2.5A (peak) with 1.75A (RMS) with up to 1/32 microstepping
-* 1 Driver capable of cloning X,Y, or Z
-* Hardware support for both USB and Wireless Operation (XBee, WiFly, or Bluelink)*
-* Emergency Stop to cut all motor power (with optional override)
-* 12V and 5V** outputs for powering peripherals (fans, pumps, vacuums)
-* Quickly connect to Stepper Motors and limit switches with [3.5mm screw terminals](https://media.digikey.com/Photos/Wurth%20Electronics%20Photos/691361100004.JPG)
-* Expansion port for coming upgrades (Illuminated button pendant, jog control, and headless sender)
+## Connectivity
 
-# Use the CNC xPro to drive:
-* 3 Axis CNC Mill With Dual Drive Motors
-* Laser Cutter With XY, and Z motion
-* Plasma Cutter 
-* Pick and Place for SMD components 
-* Or wireless robotics (would love to see this used on a wireless quadruped) 
+* USB/Serial
+* Bluetooth/Serial Creates a virtual serial port on your phone or PC. Standard serial port applications can use Bluetooth.
+WIFI
+* Creates its own access point or connects to yours.
+* Built in web server. The server has full featured CNC control app that will run on your phone or PC in a browser. No app required.
+Telnet sending of gcode
+* Push notifications (like...job done, get a text/email)
+* OTA (over the air) firmware upgrades.
+* SD card (Gcode can be saved, loaded, and run via WIFI)
 
-# Software:
+## Compatibility
 
-The CNC xPRO is designed to run the opensource gcode interpreter [GRBL](https://github.com/gnea/grbl/), [ESTLcam](http://estlcam.com/) control software, or can be programmed with [Arduino](http://www.arduino.cc/) or [Atmel studio](https://www.microchip.com/mplab/avr-support/atmel-studio-7).  The xPRO comes pre-flashed with GRBL so all you need to do is wire up your motors! 
+The xPro-V5 is fully backward compatible with GRBL and can use all gcode senders.
 
-From the computer side we have found that [CNCjs Desktop](https://cnc.js.org/docs/desktop-app/)  is amazing and packed with great features! (open source / free download). 
+## Customizable
 
-For designing parts here at Spark Concepts we use the following stacks:
-
-1. For mechanical parts (think gantry plates, mounts, boxes, etc):
-* [Fusion 360](https://www.autodesk.com/products/fusion-360/overview) (both CAD design and CAM, includes GRBL postprocesser by default) (free for hobbyists)
-* [CNCjs](https://cnc.js.org/docs/desktop-app/) (send and monitor the cut file to the xPRO) (free/opensource)
-
-2. For artwork (think signs, drawings, plaques, awards, etc):
-* Vetric [Vcarve](http://www.spark-concepts.com/vetric-vcarve-desktop-cam-software/) or [Aspire](http://www.spark-concepts.com/vetric-aspire-cam-software/)  depending on design (drawing and CAM, includes GRBL postprocessor) (paid)
-* [CNCjs](https://cnc.js.org/docs/desktop-app/) (send and monitor the cut files to the xPRO) (free/opensource) 
-<img src="https://cloud.githubusercontent.com/assets/447801/24392019/aa2d725e-13c4-11e7-9538-fd5f746a2130.png" width="400">
-
-* [Website](https://cnc.js.org/) 
-
-## Universal Gcode Sender
-
-<img src="http://winder.github.io/ugs_website/img/platform/screenshot.png" width="400">
+- Easy to map pins to any functions.
+- Custom machines can be designed without touching the main code.
+- Custom initialization
+- Kinematics
+- Custom homing
+- Tool changer sequences
+- Button macros (run gcode sequence, etc.)
+- Custom end of Job sequence
+- RTOS Real time operating system allows background monitoring and control without affecting motion control performance
+- Fast boot
 
