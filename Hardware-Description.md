@@ -17,7 +17,11 @@ The xPRO V5 uses [Trinamic stepper drivers](https://www.trinamic.com/products/in
 * Input Power Polarity protection
 * 5v PWM and 5v Enable Spindle Signals
 * VFD Spindle Support (0-10v)
-* 
+* RS485 (Modbus) VFD Spindle Support 
+* 4 x Endstop inputs (optional Y axis squaring) with optional power output (Selectable 5v/24v) for use with mechanical or powered
+switches such as Inductive sensor 
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Hall_limits_wiring.jpg" width="600">
+
 
 
 * Pre-loaded with latest stable version of [GRBL](https://github.com/gnea/grbl/releases)
