@@ -10,15 +10,14 @@ The xPRO V5 uses [Trinamic stepper drivers](https://www.trinamic.com/products/in
 * 10 Amp Input Power Fuse
 * Configurable Relay for generic use cases (Plasma trigger, Coolant Pumps, Spindle control, etc )
 * Door Interlock signal connector to allow machines with enclosures to pause/resume when the door opens/closes - alternatively configured as an E-Stop to disable stepper motors when a normally closed switch is depressed
-<img src="https://www.trinamic.com/fileadmin/_processed_/7/0/csm_TMC5160A-TA_baa5ea6044.jpg" width="400">
-
-4X High Powered 4.0A (peak) Stepper Drivers
-Auxiliary Serial Input for alternative connectivity expansion
-USB Interface for Plug and Play
-Up to 24v 5A switched output for coolant devices such as 24v DC pumps, solenoids, contactors, or Solid State Relays
-Input Power Polarity protection with indicator LED
-5v PWM and 5v Direction Spindle Signals
-VFD Spindle Support (0-10v)
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/door-sensor-wiring.jpg" width="600">
+* 4X High Powered >6.0A Stepper Drivers
+* Integrated Wifi and Web Interface capabilities or USB Interface for Plug and Play
+* Up to 24v 5A switched output for coolant devices such as 24v DC pumps, solenoids, contactors, or Solid State Relays
+* Input Power Polarity protection
+* 5v PWM and 5v Enable Spindle Signals
+* VFD Spindle Support (0-10v)
+* 
 
 
 * Pre-loaded with latest stable version of [GRBL](https://github.com/gnea/grbl/releases)
