@@ -9,7 +9,7 @@ Before connecting your power supply to mains power, it is critical that you chec
 
 ## Connecting 24v Power Supply to the xPro-V5
 
-Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPro-V5 using the supplied [(5mm) Connector](https://media.digikey.com/Photos/On%20Shore%20Technology%20Photos/OSTTJ027150.jpg) - be sure to carefully observe correct polarity.
+Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPro-V5 using the supplied [(5mm) Connector](https://media.digikey.com/Photos/On%20Shore%20Technology%20Photos/OSTTJ027150.jpg) - be sure to observe correct polarity.
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front%20copy.jpg" width="400">
 
@@ -24,7 +24,7 @@ Warning: Never connect/disconnect motors to a powered-up controller. Always turn
  3. Mark the wire that gave a reading and mark the first wire you started with (coil A)
  4. The remaining two wires will be coil B
 
-* Connect stepper motor wires to 3.5mm motor terminals
+* Connect stepper motor wires to the supplied [3.81mm connectors](https://media.digikey.com/photos/FCI%20Photos/20020004-D031B01LF.jpg) and Plug in to the applicable Receptacles
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/End%20copy.jpg" width="400">
 
