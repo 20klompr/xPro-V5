@@ -63,10 +63,10 @@ To use the signal, connect between the GND and 0-10v pins on the toolhead plug a
 Calibrate output voltage
 TIP: You may need to fine tune the output to be exactly 10v:
 
-Send an M3 S1000 to the controller (1000 = default Grbl configuration, or send S=what you have set for $30 - Max spindle speed, RPM)
+Send an M3 S12000 to the controller (12000 = default Grbl configuration, or send S=what you have set for $30 - Max spindle speed, RPM)
 Measure the voltage between GND and the 0-10v Terminal
 Use a small flat head screwdriver to adjust the 0-10v Fine Tuning Adjustment until the output is exactly 10.0v
-This will ensure that command Spindle RPM is as close to the actual as possible
+This will ensure that command Spindle RPM is as close to the actual as possible - M5 command turns the spindle output off
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/0-10v.jpg" width="800">
 
