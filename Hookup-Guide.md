@@ -24,7 +24,7 @@ Warning: Never connect/disconnect motors to a powered-up controller. Always turn
  3. Mark the wire that gave a reading and mark the first wire you started with (coil A)
  4. The remaining two wires will be coil B
 
-* Connect stepper motor wires to the supplied [3.81mm connectors](https://media.digikey.com/photos/FCI%20Photos/20020004-D031B01LF.jpg) and Plug in to the applicable Receptacles
+* Connect stepper motor wires to the supplied [3.81mm connectors](https://media.digikey.com/photos/FCI%20Photos/20020004-D031B01LF.jpg) and plug in to the corresponding receptacles on the xPro-V5
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/End%20copy.jpg" width="400">
 
