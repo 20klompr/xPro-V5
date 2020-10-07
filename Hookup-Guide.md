@@ -19,7 +19,27 @@ Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPr
 
 ## Connect Motors
 
-Note: Identify Motor coils to identify the coil pairs. The color codes shown below only apply to OpenBuilds Motors
+* How to: [verify coil wires](https://www.youtube.com/watch?v=S0pGKgos498) 
+* Simple verification of 4 wire stepper motors:
+ 1. Using a multi-meter, resistance Set the Ohmmeter to the lowest resistance scale.
+ 2. Attach one of the wires to the meter and, in turn, check each of the remaining three
+ 3. Mark the wire that gave a reading and mark the first wire you started with (coil A)
+ 4. The remaining two wires will be coil B
+
+_NOTE: switching the polarity of either (one) coil will reverse the stepper's direction_
+![coils](https://cdn8.bigcommerce.com/s-itwgldve/images/stencil/1280x1280/products/180/3534/Nema_23_motor_4__11459.1537467879.png?c=2?imbypass=on)
+* Connect stepper motor wires to 3.5mm motor terminals
+
+## Connector Pinouts
+Each of the motors has a 4 terminal screw-down block wired as:
+
+	Pin | Motor Phase (Output) | Description
+	----|--------------------- |-------------
+	1 | A1 | Coil A Positive
+	2 | A2 | Coil A Negative
+	3 | B2 | Coil B Negative
+	4 | B1 | Coil B Positive
+
 
 * [Website](http://lasergrbl.com/en/)
 
