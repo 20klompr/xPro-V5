@@ -36,9 +36,9 @@ NOTE: switching the polarity of either (one) coil will reverse the stepper's dir
 
 ## Connecting Limit Switches
 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/nema23-reversed-y2.jpg" width="400">
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/nema23-reversed-y2.jpg" width="400">
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/nema23-reversed-y2.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/regular-microswitches.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/xtension_limits_wiring.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Hall_limits_wiring.jpg" width="400">
 
 ## Candle
 
