@@ -26,3 +26,6 @@ The fastest and easiest way to update firmware is by using Over The Air (OTA) up
 
 ![](https://github.com/Spark-Concepts/xPro-V5/blob/main/images/OTA3.png) 
  
+***
+
+### Note: If you load new firmware and things are behaving strangely, it is recommended to issue a $RST=* command to load the latest default settings.
