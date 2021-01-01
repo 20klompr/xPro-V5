@@ -29,8 +29,8 @@ The xPRO V5 uses [Trinamic stepper drivers](https://www.trinamic.com/products/in
 * Configurable Relay for generic use cases (Plasma trigger, Coolant Pumps, Spindle control, etc)
 * Configurable Macro input
 * Z Probe (XYZ)
-* Safety Door (open door safely retracts and stops spindle, can be resumed) - alternatively configured as an E-Stop to disable stepper motors when a normally closed switch is depressed
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/door-sensor-wiring.jpg" width="600">
+* Safety Door Switch
+
 
 ## Spindles
 
