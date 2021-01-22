@@ -38,5 +38,22 @@
  - [ ] [Program button](Program_button)
  - [ ] [USB](USB)
 
-Program button
+[Side Panel](Side_Panel)
+ - [ ] [Power Switch](Power_Switch) 
+ - [ ] [Reset](Reset)
+ - [ ] [SD Card](SD_Card)
+ - [ ] [Motor fault indicators](Motor_fault_indicators)
+ - [ ] [Status indicators](Status_indicators)
+ - [ ] [Probe input](Probe_input)
+ - [ ] [Macro1 & Macro2](Macro1_&_Macro2)
+ - [ ] [TMC diag_0 output](TMC_diag_0_output)
 
+[Rear Panel](Rear_Panel)
+ - [ ] [Motor connectors](Motor_connectors) 
+ - [ ] [Limit connectors](Limit_connectors)
+
+[Inside jumpers](Inside_jumpers)
+ - [ ] [Mist output voltage](Mist_output_voltage)
+ - [ ] [Relay signal](Relay_signal) 
+ - [ ] [GPIO Logic](GPIO_Logic)
+ - [ ] [Limit Switch Logic](Limit_Switch_Logic)
