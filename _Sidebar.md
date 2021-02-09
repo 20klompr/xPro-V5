@@ -5,18 +5,18 @@
 # Quick start
 
 ### [Basic hookup](Basic-hookup)
- - [ ] [Motors](Motors)
- - [ ] [Limit switches](Limit_switches)
+// - [ ] [Motors](Motors)
+// - [ ] [Limit switches](Limit_switches)
 
 ### [Wifi connection](Wifi-connection)
  
 ### [Changing settings](Changing-settings)
 
-### [Suggested settings](Suggested-settings)
- - [ ] [Workbee screw](Workbee_screw)
- - [ ] [Openbuilds screw](Openbuilds_screw)
- - [ ] [Bulkman screw](Bulkman_screw)
- - [ ] [Belt driven machines](Belt_driven_machines)
+//### [Suggested settings](Suggested-settings)
+// - [ ] [Workbee screw](Workbee_screw)
+// - [ ] [Openbuilds screw](Openbuilds_screw)
+// - [ ] [Bulkman screw](Bulkman_screw)
+// - [ ] [Belt driven machines](Belt_driven_machines)
 
 ### [Checking firmware and upgrading](Checking_firmware_and_upgrading)	
 
