@@ -22,7 +22,7 @@
 
 # Getting to know your CNC xPRO V5
 	
-### [Connecting to your CNC xPRO V5](Connecting_to_your_CNC_xPRO_V5)
+### Connecting to your CNC xPRO V5
  - [ ] [Wifi guide](Wifi_guide)
  - [ ] [USB guide](USB_guide)
 
