@@ -6,7 +6,7 @@
 
 ### [Basic hookup](Basic-hookup)
 <!-- - [ ] [Motors](Motors) 
-<!-- - [ ] [Limit switches](Limit_switches) -->
+<!-- - [ ] [Limit switches](Limit_switches)
 
 ### [Wifi connection](Wifi-connection)
  
