@@ -57,3 +57,5 @@
  - [ ] [Relay signal](Relay_signal) 
  - [ ] [GPIO Logic](GPIO_Logic)
  - [ ] [Limit Switch Logic](Limit_Switch_Logic) -->
+
+### [Troubleshooting](Troubleshooting)	
