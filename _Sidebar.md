@@ -5,8 +5,8 @@
 # Quick start
 
 ### [Basic hookup](Basic-hookup)
-// - [ ] [Motors](Motors)
-// - [ ] [Limit switches](Limit_switches)
+<! -- - [ ] [Motors](Motors) -->
+<! -- - [ ] [Limit switches](Limit_switches) -->
 
 ### [Wifi connection](Wifi-connection)
  
