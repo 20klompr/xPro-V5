@@ -8,7 +8,7 @@
 <!-- - [ ] [Motors](Motors) 
 <!-- - [ ] [Limit switches](Limit_switches) -->
 
-### [Wifi connection](Wifi-connection)
+<!-- ### [Wifi connection](Wifi-connection) -->
  
 ### [Changing settings](Changing-settings)
 
