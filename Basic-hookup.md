@@ -13,6 +13,7 @@ Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPr
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front%20copy.jpg" width="400">
 
+## Be sure to [set motor current](https://github.com/Spark-Concepts/xPro-V5/wiki/Changing-settings#xcurrentrun-or-ccurrentrun-140-thru-145--xyzabc--stepper-run-current-extended-settings) 
 # Connect Motors
 
 Warning: Never connect/disconnect motors to a powered-up controller. Always turn off power before connecting/disconnecting accessories to/from your xPro
