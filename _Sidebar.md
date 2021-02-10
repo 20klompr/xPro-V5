@@ -59,3 +59,5 @@
  - [ ] [Limit Switch Logic](Limit_Switch_Logic) -->
 
 ### [Troubleshooting](Troubleshooting)	
+
+### [Supported G-Code](Supported_G-Code)
