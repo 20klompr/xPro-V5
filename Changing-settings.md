@@ -496,19 +496,19 @@ This sets the maximum travel distance from end to end for each axis in mm. This 
 
 #### $X/Current/Run or $C/Current/Run $140 thru $145 – [X,Y,Z,A,B,C]  Stepper Run Current (extended settings)
 
-This is the run current in amperes for Trinamic SPI stepper drivers.  If you have such drivers, Grbl will use this value to configure them at startup.
+This is the run current in amperes for Trinamic SPI stepper drivers.  This is RMS current, not MAX current - to calculate this setting, looking up the maximum current for your motor and multiply by 0.707.  Example: Most Nema23 motors are rated for 2.8Amax therefore this setting = 2.8 * 0.707 = 1.97.  * *Note: it is not great to run motor at max current for extended periods, would recommend setting this to roughly 90% of the calculated RMS current - for our example we would set our standard Nema28, with a 2.8A max, to a value of 1.8 for this setting
 
 #### $X/Current/Hold thru $C/Current/Hold or $150 thru $155 – [X,Y,Z,A,B,C]  Stepper Idle Current (extended settings)
 
-This is the hold current in amperes for Trinamic SPI stepper drivers.  If you have such drivers, Grbl will use this value to configure them at startup.
+This is the hold current in amperes for Trinamic SPI stepper drivers.  This is RMS current, not MAX current - generally, we recommend setting this to 50% to 75% of the Run current value - in our example, we would set this to 1.1
 
 #### $X/Microsteps thru $C/Microsteps or $160 thru $165 – [X,Y,Z,A,B,C]  Microstepping (extended settings)
 
-This is the microstepping ratio for Trinamic SPI stepper drivers.  If you have such drivers, Grbl will use this value to configure them at startup.
+This is the microstepping ratio for Trinamic SPI stepper drivers.  
 
 #### $X/StallGuard thru $C/StallGuard or $170 thru $175 – [X,Y,Z,A,B,C]  Stall Guard Value (extended settings)
 
-This the Stallguard register setting for Trinamic SPI stepper drivers.  If you have such drivers, Grbl will use this value to configure them at startup.
+This the Stallguard register setting for Trinamic SPI stepper drivers.  This feature is currently in test to determine suitability for CNC machines, no changes needed from the default values.  
 
 ## Motivation for the New Settings Mechanism
 
