@@ -15,8 +15,7 @@ _Note: the port labeled "GND" is actually a switched ground, the signal labeled 
 
 Cool can be controlled with M-Codes:
 
-M8 = On
-M9 = Off
+M8 = On; M9 = Off
 
 Electrical Specifications:
 - Voltage: jumper select - 24v(default) or 5v
