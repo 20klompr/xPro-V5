@@ -13,7 +13,7 @@ _Note: the port labeled "GND" is actually a switched ground, the signal labeled 
 
 *the SIG can also be configured to output 5V by removing the xProV5 lid and moving the "MIST" jumper from 24V to 5V.
 
-It can be controller with M-Codes:
+Cool can be controlled with M-Codes:
 
 M8 = On
 M9 = Off
