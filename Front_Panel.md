@@ -8,7 +8,7 @@ Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPr
 
 ## Cool
 
-The Coolant output can be used to control dust-extraction or cutting fluid systems, or repurposed for other switching requirements. Note: the port labeled "GND" is actually a switched ground, the signal labeld "SIG" is a constant 24V*
+The Coolant output can be used to control dust-extraction or cutting fluid systems, or repurposed for other switching requirements. Note: the port labeled "GND" is actually a switched ground, the signal labeled "SIG" is a constant 24V*
 
 *the SIG can also be configured to output 5V by removing the xProV5 lid and moving the "MIST" jumper from 24V to 5V.
 
@@ -17,24 +17,29 @@ It can be controller with M-Codes:
 M8 = On
 M9 = Off
 
-3.7.1 Electrical Spefications
-Max Current: 3A
-Voltage: 24v (Same as Input voltage)
-Suitable for inductive loads
-3.7.2 Connect OpenBuilds LED Ring
-You can use the Coolant output to switch any other 24v device as well, as an example, you can connect your OpenBuilds Spindle LED Ring as shown to put it under M-Code control (for example if you want a Job to turn the LED ring on at the start and off at the end, you can add an M8 to the header and an M9 to the footer of your g-code)
+Electrical Specifications:
+- Voltage: jumper select - 24v(default) or 5v
+- Max Current: 3A (24v only)
+- Suitable for inductive loads (24v only)
 
+## Connect LED Ring
 
+You can use the Coolant output to switch any other 24v device as well, as an example, you can connect a Spindle LED Ring as shown to put it under M-Code control (for example if you want a Job to turn the LED ring on at the start and off at the end, you can add an M8 to the header and an M9 to the footer of your g-code)
 
-3.7.3 Connect Dust Extraction via IoT Relay
-You can use our IoT Relay Power Strip to control a Vacuum for dust extraction. Also checkout our Dust Shoe
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/coolant-led-ring.jpg" width="600">
 
-Note: Even if you already have an IoT for your spindle, we recommend a second one for the Vacuum, as they are high current draw appliances and can overload the IoT relay if used with a spindle, and having a separate control signal for the Vacuum is a big bonus too.
+## Connect Dust Extraction via IoT Relay
 
+You can use our IoT Relay Power Strip to control a Vacuum for dust extraction
 
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/coolant-iot-vacuum.jpg" width="800">
 
-3.7.4 Connect 24VDC Air Solenoid
+## Connect 24vDC Air Solonoid
+
 You can switch 24v Solenoids using the Coolant output. Typically you'd use this configuration in-line between an Air-compressor and a Nozzle pointed at the endmill. Compressed air blowing on the endmill will help evacuate chips from the cut, and keep the endmill cool
+
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/coolant-solenoid.jpg" width="600">
+
 
 
 The Mist signal is enabled using the M7 (mist) gcode statement and turned off with the M9 gcode statement. 
