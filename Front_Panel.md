@@ -13,9 +13,7 @@ _Note: the port labeled "GND" is actually a switched ground, the signal labeled 
 
 *the SIG can also be configured to output 5V by removing the xProV5 lid and moving the "MIST" jumper from 24V to 5V.
 
-Cool can be controlled with M-Codes:
-
-M8 = On; M9 = Off
+The Cool(mist) signal is enabled using the M7 (mist) gcode statement and turned off with the M9 gcode statement
 
 Electrical Specifications:
 - Voltage: jumper select - 24v(default) or 5v
