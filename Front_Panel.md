@@ -1,4 +1,10 @@
-•	Front Panel
+# Front Panel
+
+## Connecting 24v Power Supply to the xPro-V5
+
+Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPro-V5 using the supplied [(5mm) Connector](https://media.digikey.com/Photos/On%20Shore%20Technology%20Photos/OSTTJ027150.jpg) - be sure to observe correct polarity.
+
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front%20copy.jpg" width="400">
 o	Power 
 Copy from existing Github
 o	Cool
