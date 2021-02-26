@@ -11,14 +11,13 @@ Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPr
 The Coolant output can be used to control dust-extraction or cutting fluid systems, and/or repurposed for other switching requirements. 
 _Note: the port labeled "GND" is actually a switched ground, the signal labeled "SIG" is a constant 24V*_
 
-<sub>*the SIG can also be configured to output 5V by removing the xProV5 lid and moving the "MIST" jumper from 24V to 5V</sub>
-
 The Cool(mist) signal is enabled using the M7 (mist) gcode statement and turned off with the M9 gcode statement
 
 Electrical Specifications:
 - Voltage: jumper select - 24v(default) or 5v
 - Max Current: 3A (24v only)
 - Suitable for inductive loads (24v only)
+<sub>*the SIG can also be configured to output 5V by removing the xProV5 lid and moving the "MIST" jumper from 24V to 5V</sub>
 
 ## Connect LED Ring
 
