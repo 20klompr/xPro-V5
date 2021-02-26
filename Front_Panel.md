@@ -17,6 +17,7 @@ Electrical Specifications:
 - Voltage: jumper select - 24v(default) or 5v
 - Max Current: 3A (24v only)
 - Suitable for inductive loads (24v only)
+
 <sub>*the SIG can also be configured to output 5V by removing the xProV5 lid and moving the "MIST" jumper from 24V to 5V</sub>
 
 ## Connect LED Ring
