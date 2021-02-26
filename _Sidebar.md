@@ -26,7 +26,7 @@
  - [ ] [Wifi guide](Wifi_guide)
  - [ ] [USB guide](USB_guide)
 
-<!-- ### [Hooking up your CNC xPRO V5](Hooking_up_your_CNC_xPRO_V5)	
+### [Hooking up your CNC xPRO V5](Hooking_up_your_CNC_xPRO_V5)	
 [Front Panel](Front_Panel)
  - [ ] [Power](Power) 
  - [ ] [Cool](Cool)
@@ -37,7 +37,7 @@
  - [ ] [RS485A/B switch](RS485A/B_switch)
  - [ ] [Program button](Program_button)
  - [ ] [USB](USB)
-
+<!--
 [Side Panel](Side_Panel)
  - [ ] [Power Switch](Power_Switch) 
  - [ ] [Reset](Reset)
