@@ -25,7 +25,7 @@
 ### Connecting to your CNC xPRO V5
  - [ ] [Wifi guide](Wifi_guide)
  - [ ] [USB guide](USB_guide)
-
+<!--
 ### Hooking up your CNC xPRO V5	
 [Front Panel](Front_Panel)
  - [ ] [Power](Power) 
@@ -56,7 +56,7 @@
  - [ ] [Mist output voltage](Mist_output_voltage)
  - [ ] [Relay signal](Relay_signal) 
  - [ ] [GPIO Logic](GPIO_Logic)
- - [ ] [Limit Switch Logic](Limit_Switch_Logic) 
+ - [ ] [Limit Switch Logic](Limit_Switch_Logic) -->
 
 ### [Troubleshooting](Troubleshooting)	
 
