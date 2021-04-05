@@ -123,16 +123,15 @@ The onboard relay provides a high-power switch to activate device the normally c
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Relay.jpg" width="800">
 
-o	Door
-Door/Estop Terminal
-
+### Door/Estop
 
 A switch can be connected to the Door/Estop terminal to allow a physical button to stop the machine.  The Door/Estop button is a safety switch and will completely abort the current motion (or gcode cut) and require a reset the controller.  You can use a Normally Open (NO) or Normally Closed (NC) switch for the Door/Estop switch.  
-To use a NO switch, simply wire the switch to the 2 pin, 3.81mm header.  
-(picture would be useful)
-To use a NC switch, you must first update the firmware to one of the “CNC_xPRO_V5_----_---_NC” variants.  NC denotes a Normally Closed Door/Estop switch.  Then wire the NC switch to the 2 pin, 3.81mm header. 
-(picture would be useful)
 
+- To use a NO switch, simply wire the switch to the 2 pin, 3.81mm header.  
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/NO_Estop.jpg" width="800">
+
+- To use a NC switch, you must first update the firmware to one of the “CNC_xPRO_V5_----_---_NC” variants. Then wire the NC switch to the 2 pin, 3.81mm header. 
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/NC_Estop.jpg" width="800">
   
 
 o	RS485A/B switch
