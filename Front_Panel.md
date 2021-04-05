@@ -59,11 +59,11 @@ In the xProV5 there are **$Spindle** settings for each spindle type. This allows
 
 You can change between spindles types dynamically. For example: You could have a spindle and a laser on the machine and switch between without recompiling or even rebooting.
 
-**
+***
 ### RS485A/B switch
 
 **EN/PWM - RS485A/B** Switch controls the tool control output type, switching between the toolhead signals (pwm, en, 0-10V) and the VFD-RS485 signals of A and B.  Note: Changing between the different control options requires the appropriate firmware to be installed, flipping the switch simply changes the data lines not the control type.  
-**
+***
 
 ### Spindle Types
 
