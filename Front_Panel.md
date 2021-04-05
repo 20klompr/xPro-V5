@@ -85,7 +85,7 @@ This is the default setting on the xProV5. Many speed control circuits for spind
 3. **3.3V Spindle Enable**
    - The spindle enable signal is used by some laser modules and spindles to act like an “on” switch.  When an M3 or M4 command is issued, the Spindle Enable signal goes high to 3.3V and stays constant regardless of the speed command
 4. **0-10V Analog Signal**
-   - The 0-10V signal is used primarily to drive VFDs and a select few laser modules.  The 0-10V output act identical to the pwm output, except it is processed to create an analog 0-10V ouput that scales with the speed command
+   - The 0-10V signal is used primarily to drive VFDs and a select few laser modules.  The 0-10V output act identical to the pwm output, except it is processed to create an analog 0-10V ouput that scales with the speed command. _note: the maximum output of 10V can be adjusted by commanding ```M3 S6000``` and adjusting the potentiometer as indicated below_
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Analog_VFD.jpg" width="800">
 
