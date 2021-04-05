@@ -43,6 +43,10 @@ Use a 2-wire cable to wire up regular microswitches
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/regular-microswitches.jpg" width="600">
 
+The use of a 3-wire inductive proximity switch SN-04-N(NO) or SN-04-N2(NC) switch may also be used. Standard inductive proximity switch wiring is brown V+, blue V- & black signal (verify using the manufacturer's data sheet). Most inductive NPN NO sensors require 10 to 30 volts to operate; though most sensor's may still work using 5V, it is still recommended that you adjust the limit-switch logic voltage select jumper to 24V. Thus 24v is connected to the brown V+ and ground connected the blue. With no signal is detected, the NO (normally open) black signal wire will output 24v while the NC (normally closed) black signal wire will source a ground. When the sensor detects metal the signal wire will either drop the voltage to zero or rise to 24V. 
+
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Hall_limits_wiring.jpg" width="600">
+
 # Connect Probe
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/z-touchplate.jpg" width="600">
