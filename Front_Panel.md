@@ -1,6 +1,6 @@
 # Front Panel
 
- - [Power](Power) 
+<!--- - [Power](Power) 
  - [Cool](Cool)
  - [VFD-RS485](VFD-RS485)
  - [Toolhead](Toolhead)
@@ -8,11 +8,7 @@
  - [Door](Door)
  - [RS485A/B switch](RS485A/B_switch)
  - [Program button](Program_button)
- - [USB](USB)
-
-
-
-
+ - [USB](USB) --->
 
 ## Power
 
@@ -145,7 +141,7 @@ A switch can be connected to the Door/Estop terminal to allow a physical button 
 ***
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front%20copy.jpg" width="400">
 
-## Program button
+## Program Button
 This button is used to initialize the bootloader when uploading firmware via USB.  Otherwise, don’t push it 😊.  
 
 ## USB Connection
