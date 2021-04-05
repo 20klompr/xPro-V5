@@ -72,10 +72,10 @@ $Spindle/Type=BESC
 $Spindle/Type=_10V
 $Spindle/Type=H2A // RS485
 ```
-- ### $Spindle/Type=NONE 
+### $Spindle/Type=NONE 
 If your machine does not require a spindle, like a pen plotter, choose this type. It will not use any I/O. It will default to this type if no I/O is defined.
 
-- ### $Spindle/Type=PWM
+### $Spindle/Type=PWM
 This is the default setting on the xProV5. Many speed control circuits for spindles use a PWM signal to set the speed. 
 - With the _EN/PWM-RS485 A/B_ switch set to **_EN/PWM_** the _TOOLHEAD_ port provides the means to drive many different toolheads (spindles, VFDs, laser, and plasmas, etc.)  This 4-pin connector provides the following:
 1. ground reference
