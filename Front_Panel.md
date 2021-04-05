@@ -55,11 +55,11 @@ You can switch 24v Solenoids using the Coolant output. Typically you'd use this 
 
 ## Spindle Types
 
-In the xProV5 there are **$** settings for each spindle type. This allows a simple method of creating new spindles and a standard interface for Grbl to work with. 
+In the xProV5 there are **$Spindle** settings for each spindle type. This allows a simple method of creating new spindles and a standard interface for Grbl to work with. 
 
 You can change between spindles types dynamically. For example: You could have a spindle and a laser on the machine and switch between without recompiling or even rebooting.
 
-Spindles are defined in your machine definition file (the default setting on the xProV5 is PWM). The spindle type is dynamically selected by entering **$Spindle/Type=XXXXX**' in the command line. Here are the spindle types currently available. _note: the I/O pins you need to define depends on the spindle type you choose_
+Spindles are defined in your machine definition file (the default setting on the xProV5 is **PWM**). The spindle type is dynamically selected by entering ```$Spindle/Type=XXXXX```' in the command line. Here are the spindle types currently available. _note: the I/O pins you need to define depends on the spindle type you choose_
 
 ```
 $Spindle/Type=NONE 
@@ -72,6 +72,23 @@ $Spindle/Type=BESC
 $Spindle/Type=_10V
 $Spindle/Type=H2A // RS485
 ```
+### $Spindle/Type=NONE 
+If your machine does not require a spindle, like a pen plotter, choose this type. It will not use any I/O. It will default to this type if no I/O is defined.
+
+### $Spindle/Type=PWM
+This is the default setting on the xProV5. Many speed control circuits for spindles use a PWM signal to set the speed. 
+If you want a spindle enable signal.
+
+```$GCode/MaxS=XXXX``` sets Maximum spindle speed _(XXXX=0-1000)_. This value is used to match a PWM duty to the RPM you want. If you set this to 1000 and send S500, it will set the duty to 50%. If you send S1500, it will change clip your value to 1000.
+
+```$GCode/MinS=XXX``` sets the the minimum RPM. If your spindle does not work well below 200 RPM, set $31=200. If you send an S value below 200, it will set the speed to 200.
+
+<!---```$Spindle/PWM/Frequency``` Spindle PWM Freq. This sets the frequency of the PWM signal. --->
+```$Spindle/PWM/Off=XXX``` sets spindle PWM Off Value. Typically set to 0. The PWM values are set in percentage of duty cycle.
+```$Spindle/PWM/Min=XXX``` sets spindle PWM Min Value Typically set to 0.
+```$Spindle/PWM/Max=XXX``` sets spindle PWM Max Value. Typically set to 100.
+
+
 
 ### VFD – RS485 port
 
