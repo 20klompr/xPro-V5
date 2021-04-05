@@ -77,10 +77,10 @@ If your machine does not require a spindle, like a pen plotter, choose this type
 
 ### $Spindle/Type=PWM
 This is the default setting on the xProV5. Many speed control circuits for spindles use a PWM signal to set the speed. 
-- With the _EN/PWM-RS485 A/B_ switch set to **_EN/PWM_** the _TOOLHEAD_ port provides the means to drive many different toolheads (spindles, VFDs, laser, and plasmas, etc.)  This 4-pin connector provides the following:
+- With the _EN/PWM-RS485 A/B_ switch set to **_EN/PWM_** the _TOOLHEAD_ port provides the means to drive many different toolheads (spindles, VFDs, laser ```$Spindle/Type=LASER```, and plasmas, etc.)  This 4-pin connector provides the following:
 
 1. **Ground Reference**
-2. **0-5V PWM signal**
+2. **0-5V PWM Signal**
    - The pwm signal is used primarily to drive lasers and small spindles.  The ppwm signal is activated by an M3 or M4 gcode statement.  The value of the pwm signal is determined by the speed portion of the M3/M4 command – ex. M3 S6000 will create a half max pwm signal output (assumes the default max spindle speed of 12,000rpm)
 3. **3.3V Spindle Enable**
    - The spindle enable signal is used by some laser modules and spindles to act like an “on” switch.  When an M3 or M4 command is issued, the Spindle Enable signal goes high to 3.3V and stays constant regardless of the speed command
@@ -96,9 +96,9 @@ This is the default setting on the xProV5. Many speed control circuits for spind
 - ```$Spindle/PWM/Min=XXX``` sets spindle PWM Min Value Typically set to 0.
 - ```$Spindle/PWM/Max=XXX``` sets spindle PWM Max Value. Typically set to 100.
 
-### VFD – RS485 port
+### $Spindle/Type=XX // RS485
 
-This spindle mode talks to a **Huanyang VFD** _(a very popular Chinese VFD)_ using an RS485 serial connection. It can control the speed and which direction the spindle should turn. To change this setting enter the command ```$Spindle/Type=HUANYANG // RS485``` or ```$Spindle/Type=H2A // RS485```; Note: type **HUANYANG** is their original protocol and **HY2** is Huanyang's latest protocol. Next flip the EN/PWM switch over to RS485 A/B. Lastly, wire terminal A on the xPRO V5 to RS+ of the VFD and terminal B to the RS- of the VFD. 
+This spindle mode talks to a **Huanyang VFD** _(a very popular Chinese VFD)_ using an RS485 serial connection. It can control the speed and which direction the spindle should turn. To change this setting flip the EN/PWM switch over to **RS485 A/B** and enter the command ```$Spindle/Type=HUANYANG // RS485``` or ```$Spindle/Type=H2A // RS485```; Note: type **HUANYANG** is their original protocol and **HY2** is Huanyang's latest protocol. Wire terminal A on the xPRO V5 to RS+ of the VFD and terminal B to the RS- of the VFD. 
 
 - With the _EN/PWM-RS485 A/B_ switch set to **_RS485 A/B_** the _TOOLHEAD_ port GPIO's are de-activated and the bi-directional differential pair RS-485 circuit enabled:
 1. RS485 (RS+)
@@ -106,10 +106,21 @@ This spindle mode talks to a **Huanyang VFD** _(a very popular Chinese VFD)_ usi
 
 _RS485 circuit automatically asserts a send signal as it transmits - e.g. a direction pin is not required_
   
- 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/485VFD.jpg" width="800">
 
 _note: alternatively, you may also change the default setting by updating the firmware to the **HY** “CNC_xPRO_V5_----_485_--” variant_
+
+### $Spindle/Type=LASER
+
+A laser is basically a PWM spindle with a few extra features. You want it to turn off when the machine is doing a rapid move or is paused. It can also do a speed compensation feature. If you are engraving you want the laser to proportionally reduce the power when it is accelerating or decelerating. Use the M4 command, normally used for counter clockwise rotation, to enable this feature.
+
+<!--- Optional #define SPINDLE_TYPE SpindleType::LASER
+Required #define LASER_OUTPUT_PIN GPIO_NUM_nn where nn is the pin number.
+Optional #define LASER_ENABLE_PIN GPIO_NUM_nn If you want an enable signal. --->
+- Most PWM Settings also apply
+- **$GCode/LaserMode** Set ```$GCode/LaserMode=1``` for laser mode
+- **$Laser/FullPower=nnnn**; sets the full power number used for the PWM. ```$Laser/FullPower=100``` means your power range is 0-100.
+
 
 o	Toolhead
 
