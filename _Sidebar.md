@@ -12,11 +12,11 @@
  
 ### [Changing settings](Changing-settings)
 
-### [Suggested settings](Suggested-settings)
+<!--- ### [Suggested settings](Suggested-settings)
  - [Workbee screw](Workbee_screw)
  - [Openbuilds screw](Openbuilds_screw)
  - [Bulkman screw](Bulkman_screw)
- - [Belt driven machines](Belt_driven_machines)
+ - [Belt driven machines](Belt_driven_machines) --->
 
 # Getting to know your CNC xPRO V5
 	
