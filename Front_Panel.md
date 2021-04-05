@@ -85,7 +85,7 @@ This is the default setting on the xProV5. Many speed control circuits for spind
 3. **3.3V Spindle Enable**
    - The spindle enable signal is used by some laser modules and spindles to act like an “on” switch.  When an M3 or M4 command is issued, the Spindle Enable signal goes high to 3.3V and stays constant regardless of the speed command
 4. **0-10V Analog Signal**
-   - The 0-10V signal is used primarily to drive VFDs and a select few laser modules.  The 0-10V output act identical to the pwm output, except it is processed to create an analog 0-10V ouput that scales with the speed command. _note: the maximum output of 10V can be calibrated by commanding ```M3 S6000``` and adjusting the potentiometer as indicated below_
+   - The 0-10V signal is used primarily to drive VFDs and a select few laser modules.  The 0-10V output act identical to the pwm output, except it is processed to create an analog 0-10V ouput that scales with the speed command. _note: the maximum output of 10V can be calibrated by commanding ```M3 S12000``` and adjusting the potentiometer as indicated below_
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Analog_VFD.jpg" width="800">
 
@@ -99,16 +99,17 @@ This is the default setting on the xProV5. Many speed control circuits for spind
 ### VFD – RS485 port
 
 This spindle mode talks to a **Huanyang VFD** _(a very popular Chinese VFD)_ using an RS485 serial connection. It can control the speed and which direction the spindle should turn. To change this setting enter the command ```$Spindle/Type=HUANYANG // RS485``` or ```$Spindle/Type=H2A // RS485```; Note: type **HUANYANG** is their original protocol and **HY2** is Huanyang's latest protocol. Next flip the EN/PWM switch over to RS485 A/B. Lastly, wire terminal A on the xPRO V5 to RS+ of the VFD and terminal B to the RS- of the VFD. 
-_note: not required; however, you may also change the default setting by updating firmware to the **HY** “CNC_xPRO_V5_----_485_--” variant_
 
 - With the _EN/PWM-RS485 A/B_ switch set to **_RS485 A/B_** the _TOOLHEAD_ port GPIO's are de-activated and the bi-directional differential pair RS-485 circuit enabled:
 1. RS485 (RS+)
 2. RS485 (RS-) 
+
 _RS485 circuit automatically asserts a send signal as it transmits - e.g. a direction pin is not required_
   
  
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/485VFD.jpg" width="800">
 
+_note: alternatively, you may also change the default setting by updating the firmware to the **HY** “CNC_xPRO_V5_----_485_--” variant_
 
 o	Toolhead
 
