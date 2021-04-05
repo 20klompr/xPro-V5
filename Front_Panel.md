@@ -1,5 +1,19 @@
 # Front Panel
 
+ - [Power](Power) 
+ - [Cool](Cool)
+ - [VFD-RS485](VFD-RS485)
+ - [Toolhead](Toolhead)
+ - [Relay](Relay)
+ - [Door](Door)
+ - [RS485A/B switch](RS485A/B_switch)
+ - [Program button](Program_button)
+ - [USB](USB)
+
+
+
+
+
 ## Power
 
 Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPro-V5 using the supplied [(5mm) Connector](https://media.digikey.com/Photos/On%20Shore%20Technology%20Photos/OSTTJ027150.jpg) - be sure to observe correct polarity.
@@ -9,16 +23,17 @@ Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPr
 ## Cool
 
 The Coolant output can be used to control dust-extraction or cutting fluid systems, and/or repurposed for other switching requirements. 
-_Note: the port labeled "GND" is actually a switched ground, the signal labeled "SIG" is a constant 24V*_
+_Note: the port labeled "GND" acts as a switched ground source, the signal labeled "SIG" is a constant 5V(default) or 24V*_
 
 The Cool(mist) signal is enabled using the M7 (mist) gcode statement and turned off with the M9 gcode statement
 
 Electrical Specifications:
 - Voltage: jumper select - 24v(default) or 5v
-- Max Current: 3A (24v only)
-- Suitable for inductive loads (24v only)
+- Max Current: 250mA(5V) and 2A(24V)
+- Suitable for inductive loads (24V only)
 
-<sub>*the SIG port can also be configured to output 5V by removing the xProV5 lid and moving the "MIST" jumper from 24V to 5V</sub>
+<sub>*the SIG port can also be configured to output 24V by removing the xProV5 lid and moving the "MIST" jumper from 5V to 24V</sub>
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Cool_SS.jpg" width="400">
 
 ## Connect LED Ring
 
@@ -38,9 +53,8 @@ You can switch 24v Solenoids using the Coolant output. Typically you'd use this 
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/coolant-solenoid.jpg" width="600">
 
-
-
 The Mist signal is enabled using the M7 (mist) gcode statement and turned off with the M9 gcode statement. 
+
 o	VFD-RS485
 VFD – RS485 port
 The VFD-RS485 terminal provides the ability to drive HY Series inverters via RS485 serial protocol.  To do this, you must first update the firmware to one of the “CNC_xPRO_V5_----_485_--” variants.  485 denotes serially controlled HY VFD.  Next flip the EN/PWM switch over to RS485 A/B. Lastly, wire terminal A on the xPRO V5 to RS+ of the VFD and terminal B to the RS- of the VFD.  
