@@ -27,7 +27,7 @@
 ### Hooking up your CNC xPRO V5	
 [Front Panel](Front_Panel)
  - [Power](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#power) 
- - [Cool](Cool)
+ - [Cool](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#cool)
  - [VFD-RS485](VFD-RS485)
  - [Toolhead](Toolhead)
  - [Relay](Relay)
