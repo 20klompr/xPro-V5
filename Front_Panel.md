@@ -108,7 +108,7 @@ _RS485 circuit automatically asserts a send signal as it transmits - e.g. a dire
   
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/485VFD.jpg" width="800">
 
-_note: alternatively, you may also change the default setting by updating the firmware to the **HY** “CNC_xPRO_V5_----_485_--” variant_
+_note: If you're having issues, try updating the firmware to the **HY** “CNC_xPRO_V5_----_485_--” variant_
 
 ### $Spindle/Type=LASER
 
