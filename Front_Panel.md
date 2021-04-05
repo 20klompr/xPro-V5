@@ -64,12 +64,8 @@ Spindles are defined in your machine definition file (the default setting on the
 ```
 $Spindle/Type=NONE 
 $Spindle/Type=PWM
-$Spindle/Type=RELAY
 $Spindle/Type=LASER 
-$Spindle/Type=DAC   
 $Spindle/Type=HUANYANG // RS485
-$Spindle/Type=BESC
-$Spindle/Type=_10V
 $Spindle/Type=H2A // RS485
 ```
 ### $Spindle/Type=NONE 
@@ -96,6 +92,17 @@ This is the default setting on the xProV5. Many speed control circuits for spind
 - ```$Spindle/PWM/Min=XXX``` sets spindle PWM Min Value Typically set to 0.
 - ```$Spindle/PWM/Max=XXX``` sets spindle PWM Max Value. Typically set to 100.
 
+### $Spindle/Type=LASER
+
+A laser is basically a PWM spindle with a few extra features. You want it to turn off when the machine is doing a rapid move or is paused. It can also do a speed compensation feature. If you are engraving you want the laser to proportionally reduce the power when it is accelerating or decelerating. Use the M4 command, normally used for counter clockwise rotation, to enable this feature.
+
+<!--- Optional #define SPINDLE_TYPE SpindleType::LASER
+Required #define LASER_OUTPUT_PIN GPIO_NUM_nn where nn is the pin number.
+Optional #define LASER_ENABLE_PIN GPIO_NUM_nn If you want an enable signal. --->
+- Most PWM Settings also apply
+- **$GCode/LaserMode** Set ```$GCode/LaserMode=1``` for laser mode
+- **$Laser/FullPower=nnnn**; sets the full power number used for the PWM. ```$Laser/FullPower=100``` means your power range is 0-100.
+
 ### $Spindle/Type=XX // RS485
 
 This spindle mode talks to a **Huanyang VFD** _(a very popular Chinese VFD)_ using an RS485 serial connection. It can control the speed and which direction the spindle should turn. To change this setting flip the EN/PWM switch over to **RS485 A/B** and enter the command ```$Spindle/Type=HUANYANG // RS485``` or ```$Spindle/Type=H2A // RS485```; Note: type **HUANYANG** is their original protocol and **HY2** is Huanyang's latest protocol. Wire terminal A on the xPRO V5 to RS+ of the VFD and terminal B to the RS- of the VFD. 
@@ -110,29 +117,11 @@ _RS485 circuit automatically asserts a send signal as it transmits - e.g. a dire
 
 _note: If you're having issues, try updating the firmware to the **HY** “CNC_xPRO_V5_----_485_--” variant_
 
-### $Spindle/Type=LASER
 
-A laser is basically a PWM spindle with a few extra features. You want it to turn off when the machine is doing a rapid move or is paused. It can also do a speed compensation feature. If you are engraving you want the laser to proportionally reduce the power when it is accelerating or decelerating. Use the M4 command, normally used for counter clockwise rotation, to enable this feature.
+## Relay Terminal
+The onboard relay provides a high-power switch to activate device the normally could not be controlled by a digital logic pin – example Plasma Trigger, 24V coolant pump, 24V water cooled spindle pump, 24V VFD logic signal etc. The relay acts as a simple switch connecting two wires and creating a path for current to flow. The relay is controlled via the **Spindle Enable signal** or the **Mist signal**. The selection is made using the internal jumper next to the Relay (as seen below). _note: the default relay control is set to Spindle Enable_
 
-<!--- Optional #define SPINDLE_TYPE SpindleType::LASER
-Required #define LASER_OUTPUT_PIN GPIO_NUM_nn where nn is the pin number.
-Optional #define LASER_ENABLE_PIN GPIO_NUM_nn If you want an enable signal. --->
-- Most PWM Settings also apply
-- **$GCode/LaserMode** Set ```$GCode/LaserMode=1``` for laser mode
-- **$Laser/FullPower=nnnn**; sets the full power number used for the PWM. ```$Laser/FullPower=100``` means your power range is 0-100.
-
-
-o	Toolhead
-
-o	Relay
-   	Relay Terminal
- The onboard relay provides a high-power switch to activate device the normally could not be controlled by a digital logic pin – example Plasma Trigger, 24V coolant pump, 24V water cooled spindle pump, 24V VFD logic signal etc.  
-The relay acts as a simple switch connecting two wires and creating a path for current to flow.  
-The relay is typically used as a low side switch, simply wire the GND terminal of the 2-pin 3.81 EDG connector the appropriate ground, and wire the NO terminal of the 2-pin 3.81 EDG connector the your “device” ground. 
-The relay is controlled via the Spindle Enable signal, or the Mist signal – action is selected using the internal jumper next to the Relay (default is Spindle Enable) 
-(Sample circuit here)
-  
-*Note the Relay pin GND is isolated from the Controller GND.  
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Relay.jpg" width="800">
 
 o	Door
 Door/Estop Terminal
