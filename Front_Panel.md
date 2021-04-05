@@ -28,7 +28,7 @@ _Note: the port labeled "GND" acts as a switched ground source, the signal label
 **The Cool(mist) signal is enabled using the _M7_ (mist) gcode statement and turned off with the _M9_ gcode statement**
 
 Electrical Specifications:
-- Voltage: jumper select - 24v(default) or 5v
+- Voltage: jumper select<sub>(1)</sub> - 24v or 5v(default)
 - Max Current: 250mA(5V) and 2A(24V)
 - Suitable for inductive loads (24V only)
 
