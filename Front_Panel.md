@@ -62,15 +62,15 @@ You can change between spindles types dynamically. For example: You could have a
 Spindles are defined in your machine definition file (the default setting on the xProV5 is PWM). The spindle type is dynamically selected by entering **$Spindle/Type=XXXXX**' in the command line. Here are the spindle types currently available. _note: the I/O pins you need to define depends on the spindle type you choose_
 
 ```
-#define SPINDLE_TYPE     SpindleType::NONE 
-#define SPINDLE_TYPE     SpindleType::PWM
-#define SPINDLE_TYPE     SpindleType::RELAY
-#define SPINDLE_TYPE     SpindleType::LASER 
-#define SPINDLE_TYPE     SpindleType::DAC   
-#define SPINDLE_TYPE     SpindleType::HUANYANG // RS485
-#define SPINDLE_TYPE     SpindleType::BESC
-#define SPINDLE_TYPE     SpindleType::_10V
-#define SPINDLE_TYPE     SpindleType::H2A // RS485
+$Spindle/Type=NONE 
+$Spindle/Type=PWM
+$Spindle/Type=RELAY
+$Spindle/Type=LASER 
+$Spindle/Type=DAC   
+$Spindle/Type=HUANYANG // RS485
+$Spindle/Type=BESC
+$Spindle/Type=_10V
+$Spindle/Type=H2A // RS485
 ```
 
 ### VFD – RS485 port
