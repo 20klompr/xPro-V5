@@ -51,26 +51,19 @@ The laser is enabled with the ```M3``` spindle CW and ```M4``` spindle CCW comma
     - ```M3``` only and no motion programmed: A ```G1``` ```G2``` ```G3``` laser powered state change to ```G0 G80``` laser disabled state.
     - NOTE: ```M4``` does not stop for anything but a spindle state _change_.
 
-   - The laser will only turn on when Grbl is in a ```G1```, ```G2```, or ```G3``` motion mode.
-     - In other words, a ```G0``` rapid motion mode or ```G38.x``` probe cycle will never turn on and always disable the laser, but will still update the running modal state. When changed to a ```G1 G2 G3``` modal state, Grbl will immediately enable the laser based on the current running state.
-     - Please remember that ```G0``` is the default motion mode upon power up and reset. You will need to alter it to ```G1```, ```G2```, or ```G3``` if you want to manually turn on your laser. This is strictly a safety measure.
-     - Example: ```G0 M3 S1000``` will not turn on the laser, but will set the laser modal state to ```M3``` enabled and power of ```S1000```. A following ```G1``` command will then immediately be set to ```M3``` and ```S1000```.
-     - To have the laser powered during a jog motion, first enable a valid motion mode and spindle state. The following jog motions will inherit and maintain the previous laser state. Please use with caution though. This ability is primarily to allow turning on the laser on a very low power to use the laser dot to jog and visibly locate the start position of a job.
+- The laser will only turn on when Grbl is in a ```G1```, ```G2```, or ```G3``` motion mode.
+  - In other words, a ```G0``` rapid motion mode or ```G38.x``` probe cycle will never turn on and always disable the laser, but will still update the running modal state. When changed to a ```G1 G2 G3``` modal state, Grbl will immediately enable the laser based on the current running state.
+  - Please remember that ```G0``` is the default motion mode upon power up and reset. You will need to alter it to ```G1```, ```G2```, or ```G3``` if you want to manually turn on your laser. This is strictly a safety measure.
+  - Example: ```G0 M3 S1000``` will not turn on the laser, but will set the laser modal state to ```M3``` enabled and power of ```S1000```. A following ```G1``` command will then immediately be set to ```M3``` and ```S1000```.
+  - To have the laser powered during a jog motion, first enable a valid motion mode and spindle state. The following jog motions will inherit and maintain the previous laser state. Please use with caution though. This ability is primarily to allow turning on the laser on a very low power to use the laser dot to jog and visibly locate the start position of a job.
 
-  - An ```S0``` spindle speed of zero will turn off the laser. When programmed with a valid laser motion, Grbl will disable the laser instantaneously without stopping for the duration of that motion and future motions until set greater than zero.
-    - ```M3``` constant laser mode, this is a great way to turn off the laser power while continuously moving between a ```G1``` laser motion and a ```G0``` rapid motion without having to stop. Program a short ```G1 S0``` motion right before the ```G0``` motion and a ```G1 Sxxx``` motion is commanded right after to go back to cutting.
+- An ```S0``` spindle speed of zero will turn off the laser. When programmed with a valid laser motion, Grbl will disable the laser instantaneously without stopping for the duration of that motion and future motions until set greater than zero.
+  - ```M3``` constant laser mode, this is a great way to turn off the laser power while continuously moving between a ```G1``` laser motion and a ```G0``` rapid motion without having to stop. Program a short ```G1 S0``` motion right before the ```G0``` motion and a ```G1 Sxxx``` motion is commanded right after to go back to cutting.
 
 ## CAM Developer Implementation Notes
 
-TODO: Add some suggestions on how to write laser g-code for Grbl.
+[follow this link](https://github.com/bdring/Grbl_Esp32/wiki/Laser-Mode#cam-developer-implementation-notes)
 
-When using M3 constant laser power mode, try to avoid force-sync conditions during a job whenever possible. Basically every spindle speed change must be accompanied by a valid motion. Any motion is fine, since Grbl will automatically enable and disable the laser based on the modal state. Avoid a G0 and G1 command with no axis words in this mode and in the middle of a job.
-
-Ensure smooth motions throughout by turning the laser on and off without an M3 M4 M5 spindle state command. There are two ways to do this:
-
-Program a zero spindle speed S0: S0 is valid G-code and turns off the spindle/laser without changing the spindle state. In laser mode, Grbl will smoothly move through consecutive motions and turn off the spindle. Conversely, you can turn on the laser with a spindle speed S greater than zero. Remember that M3 constant power mode requires any spindle speed S change to be programmed with a motion to allow continuous motion, while M4 dynamic power mode does not.
-
-Program an unpowered motion between powered motions: If you are traversing between parts of a raster job that don't need to have the laser powered, program a G0 rapid between them. G0 enforces the laser to be disabled automatically. The last spindle speed programmed doesn't change, so if a valid powered motion, like a G1 is executed after, it'll immediately re-power the laser with the last programmed spindle speed when executing that motion.
 ***
 
 ***
