@@ -58,6 +58,8 @@
 
 ## [Checking firmware and upgrading](Checking_firmware_and_upgrading)
 
+### [Laser Mode](Laser_Mode)
+
 ### [Troubleshooting](Troubleshooting)	
 
 ### [Supported G-Code](Supported_G-Code)
