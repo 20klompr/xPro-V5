@@ -25,7 +25,7 @@ Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPr
 The Coolant output can be used to control dust-extraction or cutting fluid systems, and/or repurposed for other switching requirements. 
 _Note: the port labeled "GND" acts as a switched ground source, the signal labeled "SIG" is a constant 5V(default) or 24V*_
 
-The Cool(mist) signal is enabled using the M7 (mist) gcode statement and turned off with the M9 gcode statement
+**The Cool(mist) signal is enabled using the _M7_ (mist) gcode statement and turned off with the _M9_ gcode statement**
 
 Electrical Specifications:
 - Voltage: jumper select - 24v(default) or 5v
@@ -53,12 +53,23 @@ You can switch 24v Solenoids using the Coolant output. Typically you'd use this 
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/coolant-solenoid.jpg" width="600"> --->
 
-The Mist signal is enabled using the M7 (mist) gcode statement and turned off with the M9 gcode statement. 
+## Spindle Types
 
-o	VFD-RS485
-VFD – RS485 port
+In the xProV5 there are classes defined by #defines and $$ settings for each spindle type. This allows a simple method of creating new spindles and a standard interface for Grbl to work with. 
+
+You can change between spindles types dynamically. For example: You could have a spindle and a laser on the machine and switch between without recompiling or even rebooting.
+
+Spindles are defined in your machine definition file (the default setting on the xProV5 is PWM). The spindle type is dynamically selected by entering **$Spindle/Type=XXXXX**' in the command line. Here are the spindle types currently available. _note: the I/O pins you need to define depends on the spindle type you choose_
+
+
+
+### VFD – RS485 port
+
 The VFD-RS485 terminal provides the ability to drive HY Series inverters via RS485 serial protocol.  To do this, you must first update the firmware to one of the “CNC_xPRO_V5_----_485_--” variants.  485 denotes serially controlled HY VFD.  Next flip the EN/PWM switch over to RS485 A/B. Lastly, wire terminal A on the xPRO V5 to RS+ of the VFD and terminal B to the RS- of the VFD.  
  
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/485VFD.jpg" width="800">
+
+
 o	Toolhead
 Toolhead Port
 The toolhead port provides the means to drive many different toolheads (spindles, VFDs, laser, and plasmas, etc.)  This 4-pin connector provides a ground reference, a 0-5V pwm signal, a 3.3V Spindle Enable and a 0-10V analog signal.  
