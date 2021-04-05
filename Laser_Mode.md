@@ -60,12 +60,7 @@ The laser is enabled with the ```M3``` spindle CW and ```M4``` spindle CCW comma
 - An ```S0``` spindle speed of zero will turn off the laser. When programmed with a valid laser motion, Grbl will disable the laser instantaneously without stopping for the duration of that motion and future motions until set greater than zero.
   - ```M3``` constant laser mode, this is a great way to turn off the laser power while continuously moving between a ```G1``` laser motion and a ```G0``` rapid motion without having to stop. Program a short ```G1 S0``` motion right before the ```G0``` motion and a ```G1 Sxxx``` motion is commanded right after to go back to cutting.
 
+***
 ## CAM Developer Implementation Notes
 
-[follow this link](https://github.com/bdring/Grbl_Esp32/wiki/Laser-Mode#cam-developer-implementation-notes)
-
-***
-
-***
-
-***
+[Follow this link](https://github.com/bdring/Grbl_Esp32/wiki/Laser-Mode#cam-developer-implementation-notes)
