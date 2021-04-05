@@ -15,7 +15,7 @@ Enabling or disabling Grbl's laser mode is easy. Just alter the **$32** Grbl set
 
 **WARNING**: If you switch back from laser mode to a spindle for milling, you **MUST** disable laser mode by sending Grbl a ```$32=0``` command. Milling operations require the spindle to get up to the right rpm to cut correctly and to be **safe**, helping to prevent a tool from breaking and flinging metal shards everywhere. With laser mode disabled, Grbl will briefly pause upon any spindle speed or state change to give the spindle a chance to get up to speed before continuing.
 
-##Laser Mode Operation
+## Laser Mode Operation
 
 When laser mode is enabled, Grbl controls laser power by varying the **0-5V** voltage from the **TOOLHEAD PWM** terminal. **0V** should be treated as disabled, while 5V is full power. Intermediate output voltages are also assumed to be linear with laser power, such that **2.5V** is approximate 50% laser power. 
 
