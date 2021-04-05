@@ -33,7 +33,7 @@ Electrical Specifications:
 - Suitable for inductive loads (24V only)
 
 <sub>*the SIG port can also be configured to output 24V by removing the xProV5 lid and moving the "MIST" jumper from 5V to 24V</sub>
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Cool_SS.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Cool_SS.jpg" width="800">
 
 ## Connect LED Ring
 
