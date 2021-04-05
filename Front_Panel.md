@@ -144,6 +144,7 @@ A switch can be connected to the Door/Estop terminal to allow a physical button 
  
 ***
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front%20copy.jpg" width="400">
+
 ## Program button
 This button is used to initialize the bootloader when uploading firmware via USB.  Otherwise, don’t push it 😊.  
 
