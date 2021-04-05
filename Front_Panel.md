@@ -53,7 +53,7 @@ You can switch 24v Solenoids using the Coolant output. Typically you'd use this 
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/coolant-solenoid.jpg" width="600"> --->
 
-## Spindle Types
+## Toolhead/VFD-RS485
 
 In the xProV5 there are **$Spindle** settings for each spindle type. This allows a simple method of creating new spindles and a standard interface for Grbl to work with. 
 
@@ -72,40 +72,49 @@ $Spindle/Type=BESC
 $Spindle/Type=_10V
 $Spindle/Type=H2A // RS485
 ```
-### $Spindle/Type=NONE 
+- ### $Spindle/Type=NONE 
 If your machine does not require a spindle, like a pen plotter, choose this type. It will not use any I/O. It will default to this type if no I/O is defined.
 
 ### $Spindle/Type=PWM
 This is the default setting on the xProV5. Many speed control circuits for spindles use a PWM signal to set the speed. 
-If you want a spindle enable signal.
+- With the _EN/PWM-RS485 A/B_ switch set to **_EN/PWM_** the _TOOLHEAD_ port provides the means to drive many different toolheads (spindles, VFDs, laser, and plasmas, etc.)  This 4-pin connector provides the following:
+1. ground reference
+2. 0-5V PWM signal
+3. 3.3V Spindle Enable
+4. 0-10V Analog Signal
 
-```$GCode/MaxS=XXXX``` sets Maximum spindle speed _(XXXX=0-1000)_. This value is used to match a PWM duty to the RPM you want. If you set this to 1000 and send S500, it will set the duty to 50%. If you send S1500, it will change clip your value to 1000.
-
-```$GCode/MinS=XXX``` sets the the minimum RPM. If your spindle does not work well below 200 RPM, set $31=200. If you send an S value below 200, it will set the speed to 200.
-
-<!---```$Spindle/PWM/Frequency``` Spindle PWM Freq. This sets the frequency of the PWM signal. --->
-```$Spindle/PWM/Off=XXX``` sets spindle PWM Off Value. Typically set to 0. The PWM values are set in percentage of duty cycle.
-```$Spindle/PWM/Min=XXX``` sets spindle PWM Min Value Typically set to 0.
-```$Spindle/PWM/Max=XXX``` sets spindle PWM Max Value. Typically set to 100.
-
-
-
-### VFD – RS485 port
-
-The VFD-RS485 terminal provides the ability to drive HY Series inverters via RS485 serial protocol.  To do this, you must first update the firmware to one of the “CNC_xPRO_V5_----_485_--” variants.  485 denotes serially controlled HY VFD.  Next flip the EN/PWM switch over to RS485 A/B. Lastly, wire terminal A on the xPRO V5 to RS+ of the VFD and terminal B to the RS- of the VFD.  
- 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/485VFD.jpg" width="800">
-
-
-o	Toolhead
-Toolhead Port
-The toolhead port provides the means to drive many different toolheads (spindles, VFDs, laser, and plasmas, etc.)  This 4-pin connector provides a ground reference, a 0-5V pwm signal, a 3.3V Spindle Enable and a 0-10V analog signal.  
 	PWM 
 	The pwm signal is used primarily to drive lasers and small spindles.  The ppwm signal is activated by an M3 or M4 gcode statement.  The value of the pwm signal is determined by the speed portion of the M3/M4 command – ex. M3 S6000 will create a half max pwm signal output (assumes the default max spindle speed of 12,000rpm).  
 	Spindle Enable:
 	The spindle enable signal is used by some laser modules and spindles to act like an “on” switch.  When an M3 or M4 command is issued, the Spindle Enable signal goes high to 3.3V and stays constant regardless of the speed command.  
 	0-10V
 	The 0-10V signal is used primarily to drive VFDs and a select few laser modules.  The 0-10V output act identical to the pwm output, except it is processed to create an analog 0-10V ouput that scales with the speed command.  
+
+
+
+- ```$GCode/MaxS=XXXX``` sets Maximum spindle speed _(XXXX=0-1000)_. This value is used to match a PWM duty to the RPM you want. If you set this to 1000 and send S500, it will set the duty to 50%. If you send S1500, it will change clip your value to 1000.
+- ```$GCode/MinS=XXX``` sets the the minimum RPM. If your spindle does not work well below 200 RPM, set $31=200. If you send an S value below 200, it will set the speed to 200.
+<!--- - ```$Spindle/PWM/Frequency``` Spindle PWM Freq. This sets the frequency of the PWM signal. --->
+- ```$Spindle/PWM/Off=XXX``` sets spindle PWM Off Value. Typically set to 0. The PWM values are set in percentage of duty cycle.
+- ```$Spindle/PWM/Min=XXX``` sets spindle PWM Min Value Typically set to 0.
+- ```$Spindle/PWM/Max=XXX``` sets spindle PWM Max Value. Typically set to 100.
+
+### VFD – RS485 port
+
+This spindle mode talks to a **Huanyang VFD** _(a very popular Chinese VFD)_ using an RS485 serial connection. It can control the speed and which direction the spindle should turn. To change this setting enter the command ```$Spindle/Type=HUANYANG // RS485``` or ```$Spindle/Type=H2A // RS485```; Note: type **HUANYANG** is their original protocol and **HY2** is Huanyang's latest protocol. Next flip the EN/PWM switch over to RS485 A/B. Lastly, wire terminal A on the xPRO V5 to RS+ of the VFD and terminal B to the RS- of the VFD. 
+_note: not required; however, you may also change the default setting by updating firmware to the **HY** “CNC_xPRO_V5_----_485_--” variant_
+
+- With the _EN/PWM-RS485 A/B_ switch set to **_RS485 A/B_** the _TOOLHEAD_ port GPIO's are de-activated and the bi-directional differential pair RS-485 circuit enabled:
+1. RS485 (RS+)
+2. RS485 (RS-) 
+_RS485 circuit automatically asserts a send signal as it transmits - e.g. a direction pin is not required_
+  
+ 
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/485VFD.jpg" width="800">
+
+
+o	Toolhead
+
 o	Relay
    	Relay Terminal
  The onboard relay provides a high-power switch to activate device the normally could not be controlled by a digital logic pin – example Plasma Trigger, 24V coolant pump, 24V water cooled spindle pump, 24V VFD logic signal etc.  
