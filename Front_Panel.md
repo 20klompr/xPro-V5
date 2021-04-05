@@ -134,13 +134,13 @@ The onboard relay provides a high-power switch to activate device the normally c
 ### Door/Estop
 
 A switch can be connected to the Door/Estop terminal to allow a physical button to stop the machine.  The Door/Estop button is a safety switch and will completely abort the current motion (or gcode cut) and require a reset the controller.  You can use a Normally Open (NO) or Normally Closed (NC) switch for the Door/Estop switch.  
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/GPIO_plugs.jpg" width="800">
 
 - To use a NO switch, simply wire the switch to the 2 pin, 3.81mm header. Verify the default jumper settings<sub>(1 & 2)</sub> 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/NO_Estop.jpg" width="800">
 
 - To use a NC switch, you must first update the firmware to one of the “CNC_xPRO_V5_----_---_NC” variants. Verify the jumper settings<sub>(1 & 2)</sub> Then wire the NC switch to the 2 pin, 3.81mm header. 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/NC_Estop.jpg" width="800">
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/GPIO_plugs.jpg" width="800">
   
 ## Program button
 This button is used to initialize the bootloader when uploading firmware via USB.  Otherwise, don’t push it 😊.  
