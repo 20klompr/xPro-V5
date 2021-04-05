@@ -59,6 +59,10 @@ In the xProV5 there are **$Spindle** settings for each spindle type. This allows
 
 You can change between spindles types dynamically. For example: You could have a spindle and a laser on the machine and switch between without recompiling or even rebooting.
 
+### RS485A/B switch
+
+**EN/PWM - RS485A/B** Switch controls the tool control output type, switching between the toolhead signals (pwm, en, 0-10V) and the VFD-RS485 signals of A and B.  Note: Changing between the different control options requires the appropriate firmware to be installed, flipping the switch simply changes the data lines not the control type.  
+
 Spindles are defined in your machine definition file (the default setting on the xProV5 is **PWM**). The spindle type is dynamically selected by entering ```$Spindle/Type=XXXXX```' in the command line. Here are the spindle types currently available. _note: the I/O pins you need to define depends on the spindle type you choose_
 
 ```
@@ -134,9 +138,7 @@ A switch can be connected to the Door/Estop terminal to allow a physical button 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/NC_Estop.jpg" width="800">
   
 
-o	RS485A/B switch
-EN/PWM - RS485A/B Switch
-This switch controls the tool control output type, switching between the toolhead signals (pwm, en, 0-10V) and the VFD-RS485 signals of A and B.  Note: Changing between the different control options requires the appropriate firmware to be installed, flipping the switch simple changes the data lines not the control type.  
+
 o	Program button
 Program Button
 This button is used to initialize the bootloader when uploading firmware via USB.  Otherwise, don’t push it 😊.  
