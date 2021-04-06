@@ -63,12 +63,16 @@ You can change between spindles types dynamically. For example: You could have a
 
 ### Spindle Types
 
-Spindles are defined in your machine definition file (the default setting on the xProV5 is **PWM**). The spindle type is dynamically selected by entering ```$Spindle/Type=XXXXX```' in the command line. Here are the spindle types currently available. _note: the I/O pins you need to define depends on the spindle type you choose_
+Spindle classes are defined in the firmware (the default firmware on the xProV5 is **PWM**). The Spindle Type is dynamically selected by entering ```$Spindle/Type=XXXXX```' in the command line. There are two classes of Spindles with two separate Spindle Types.
 
+For the PWM and Laser Spindle classes you will need the “CNC_xPRO_V5_----_PWM_--” firmware variant_
 ```
 $Spindle/Type=NONE
 $Spindle/Type=PWM
 $Spindle/Type=LASER 
+```
+
+```
 $Spindle/Type=HUANYANG // RS485
 $Spindle/Type=H2A // RS485
 ```
