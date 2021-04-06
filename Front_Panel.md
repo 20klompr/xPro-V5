@@ -65,14 +65,15 @@ You can change between spindles types dynamically. For example: You could have a
 
 Spindle classes are defined in the firmware (the default firmware on the xProV5 is **PWM**). The Spindle Type is dynamically selected by entering ```$Spindle/Type=XXXXX```' in the command line. There are two classes of Spindles with two separate Spindle Types.
 
-For the PWM and Laser Spindle classes you will need the [“CNC_xPRO_V5_----_PWM_--” firmware](https://github.com/Spark-Concepts/xPro-V5/tree/main/Firmware) variant_
+**For the PWM and Laser Spindle classes you will need the [“CNC_xPRO_V5_----_PWM_--”](https://github.com/Spark-Concepts/xPro-V5/tree/main/Firmware)  firmware variant**
 ```
 $Spindle/Type=NONE
 $Spindle/Type=PWM
 $Spindle/Type=LASER 
 ```
-For the RS485 Laser Spindle classes you will need the [“CNC_xPRO_V5_----_485_--” firmware](https://github.com/Spark-Concepts/xPro-V5/tree/main/Firmware) variant_
+**For the RS485 Laser Spindle classes you will need the [“CNC_xPRO_V5_----_485_--”](https://github.com/Spark-Concepts/xPro-V5/tree/main/Firmware) firmware variant**
 ```
+$Spindle/Type=NONE
 $Spindle/Type=HUANYANG // RS485
 $Spindle/Type=H2A // RS485
 ```
