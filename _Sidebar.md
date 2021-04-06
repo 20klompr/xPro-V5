@@ -23,7 +23,7 @@
 ### Connecting to your CNC xPRO V5
  - [Wifi guide](Wifi_guide)
  - [USB guide](USB_guide)
-   - [USB Driver]
+   - [USB Driver](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide#usb-driver-install)
 
 ### Hooking up your CNC xPRO V5	
 [Front Panel](Front_Panel)
