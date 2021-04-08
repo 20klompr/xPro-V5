@@ -148,15 +148,15 @@ _note: make sure you have the [“CNC_xPRO_V5_----_485_--”](https://github.com
 | :-------: | ----- |
 | PD004 | **Base frequency as listed on spindle** _(typically 400)_
 | PD005 | **Maximum frequency Hz** _(typical value for spindles is 400)_
-| PD011 | **Min speed** _(Recommended Air-cooled=120 Water=100)_
-| PD014 | **Acceleration time** _(Test to optimize)_
-| PD015 | **Deceleration time** _(Test to optimize)_
+| PD011 | **Min speed** _(recommended air-cooled=120 water=100)_
+| PD014 | **Acceleration time** _(test to optimize)_
+| PD015 | **Deceleration time** _(test to optimize)_
 | PD023 | **Reverse run enabled** _(set to 1)_
  
-| PD141 | **Spindle max rated voltage** _(Typically 220)_
+| PD141 | **Spindle max rated voltage** _(typically 220)_
 | PD142 | **Max rated motor current** _(0.8kw=3.7, 1.5kw=7.0, 2.2kw=??)_
-| PD143 | **Motor Poles** _(typically 2 or 4)_
-| PD144 | **Rated Motor Revolution at 50Hz** _(Typically 3000 @ 50Hz and 24000 @ 400Hz)_
+| PD143 | **Motor poles** _(typically 2 or 4)_
+| PD144 | **Rated motor revolution at 50Hz** _(typically 3000 @ 50Hz and 24000 @ 400Hz)_
 
 ## Relay Terminal
 The onboard relay provides a high-power switch to activate device the normally could not be controlled by a digital logic pin – example Plasma Trigger, 24V coolant pump, 24V water cooled spindle pump, 24V VFD logic signal etc. The relay acts as a simple switch connecting two wires and creating a path for current to flow. The relay is controlled via the **Spindle Enable signal** or the **Mist signal**. The selection is made using the internal jumper<sub>(1)</sub> next to the Relay (as seen below). _note: the default relay control is set to Spindle Enable<sub>(1)</sub>_
