@@ -1,6 +1,8 @@
 ## Precompiled Firmware
 
-The precompiled firmware is named to clearly identify specific compile time options - you can find the most ***up-to-date*** firmware here: https://github.com/Spark-Concepts/xPro-V5
+**Default firmware is:**  ***CNC_xPRO_V5_XYYZ_PWM_NO.bin*** *(this denoted a 3 axis dual Y motor machine, with a pwm spindle(0-5v, or 0-10v), and a normally open door switch)*
+
+**The precompiled firmware is named to clearly identify specific compile time options** - _you can find the most ***up-to-date*** firmware here:_ https://github.com/Spark-Concepts/xPro-V5
 
 CNC_xPRO_V5_  | MotoAssignment_ | SpindleType_ | DoorSwitchType.bin
 ------------- | -------------|------------- | -------------
@@ -22,8 +24,6 @@ CNC_xPRO_V5_  | MotoAssignment_ | SpindleType_ | DoorSwitchType.bin
 **NOTE:**
 ***selecting NC requires a Normally Closed switch to be attached at all times or the system will not run***
 ***selecting NO allows a Normal Open switch to be installed or not***
-
-**Default firmware is:**  ***CNC_xPRO_V5_XYYZ_PWM_NO.bin*** *(this denoted a 3 axis dual Y motor machine, with a pwm spindle(0-5v, or 0-10v), and a normally open door switch)*
 
 ## OTA (Over The Air) Firmware Updates
 
