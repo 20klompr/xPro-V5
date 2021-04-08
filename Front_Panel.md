@@ -152,7 +152,6 @@ _note: make sure you have the [“CNC_xPRO_V5_----_485_--”](https://github.com
 | PD014 | **Acceleration time** _(test to optimize)_ |
 | PD015 | **Deceleration time** _(test to optimize)_ |
 | PD023 | **Reverse run enabled** _(set to 1)_ |
- 
 | PD141 | **Spindle max rated voltage** _(typically 220)_ |
 | PD142 | **Max rated motor current** _(0.8kw=3.7, 1.5kw=7.0, 2.2kw=??)_ |
 | PD143 | **Motor poles** _(typically 2 or 4)_ |
