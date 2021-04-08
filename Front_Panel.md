@@ -74,8 +74,8 @@ $Spindle/Type=LASER
 **For the RS485 Laser Spindle classes you will need the [“CNC_xPRO_V5_----_485_--”](https://github.com/Spark-Concepts/xPro-V5/tree/main/Firmware) firmware variant**
 ```
 $Spindle/Type=NONE
-$Spindle/Type=HUANYANG // RS485
-$Spindle/Type=H2A // RS485
+$Spindle/Type=HUANYANG 
+$Spindle/Type=H2A 
 ```
 ### $Spindle/Type=NONE 
 If your machine does not require a spindle, like a pen plotter, choose this type. It will not use any I/O. It will default to this type if no I/O is defined.
@@ -117,7 +117,7 @@ Optional #define LASER_ENABLE_PIN GPIO_NUM_nn If you want an enable signal. --->
 
 ### $Spindle/Type=XX // RS485
 
-This spindle mode talks to a **Huanyang VFD** _(a very popular Chinese VFD)_ using an RS485 serial connection. It can control the speed and which direction the spindle should turn. To change this setting flip the EN/PWM switch<sub>(1)</sub> over to **RS485 A/B** and enter the command ```$Spindle/Type=HUANYANG // RS485``` or ```$Spindle/Type=H2A // RS485```; Note: type **HUANYANG** is their original protocol and **HY2** is Huanyang's latest protocol. Wire terminal A on the xPRO V5 to RS+ of the VFD and terminal B to the RS- of the VFD. 
+This spindle mode talks to a **Huanyang VFD** _(a very popular Chinese VFD)_ using an RS485 serial connection. It can control the speed and which direction the spindle should turn. To change this setting flip the EN/PWM switch<sub>(1)</sub> over to **RS485 A/B** and enter the command ```$Spindle/Type=HUANYANG``` or ```$Spindle/Type=H2A```; Note: type **HUANYANG** is their original protocol and **HY2** is Huanyang's latest protocol. Wire terminal A on the xPRO V5 to RS+ of the VFD and terminal B to the RS- of the VFD. 
 
 - With the _EN/PWM-RS485 A/B_ switch<sub>(1)</sub> set to **_RS485 A/B_** the _TOOLHEAD_ port GPIO's are de-activated and the bi-directional differential pair RS-485 circuit enabled:
 1. RS485 (RS+)
@@ -129,6 +129,32 @@ _RS485 circuit automatically asserts a send signal as it transmits - e.g. a dire
 
 _note: make sure you have the [“CNC_xPRO_V5_----_485_--”](https://github.com/Spark-Concepts/xPro-V5/tree/main/Firmware) firmware variant installed_
 
+### Configure the Huanyang VFD
+ Using the procedure in the [Huanyang-VFD-manual](https://github.com/Spark-Concepts/xPro-V5/files/6247012/Huanyang-VFD-manual.pdf)
+ , set the following register values:
+| Register  | Value | Description |
+| :-------: | :-----: | ------------- |
+ | PD000 | 0 | **unlock parameters** |
+ | PD001 | 2 | **Command source is RS485** |
+ | PD002 | 2 | **Speed source is RS485** |
+ | PD163 | 1 | **Communications address 1** |
+ | PD164 | 1 | **9600 b/s (3 - 38400)** |
+ | PD165 | 3 | **8 Bit No Parity - RTU** |
+ | PD000 | 1 | **lock parameters** |
+ 
+ _Also verify the following settings (based on the values on the motor's nameplate)_
+ 
+ PD004 **Base frequency as listed on spindle (typically 400)**
+ PD005 **Maximum frequency Hz (typical value for spindles is 400)**
+ PD011 **Min speed (Recommended Air-cooled=120 Water=100)**
+ PD014 **Acceleration time** (Test to optimize)
+ PD015 **Deceleration time** (Test to optimize)
+ PD023 **Reverse run enabled (set to 1)**
+ 
+ PD141 Spindle max rated voltage (Typically 220)
+ PD142 **Max rated motor current (0.8kw=3.7, 1.5kw=7.0, 2.2kw=??)**
+ PD143 Motor Poles **This parameter is set for the number of the motor’s pole according to the nameplate of the motor - I believe this is only used for the conversion of Hz to RPM (typically 2 or 4)**
+ PD144 **Rated Motor Revolution at 50Hz (Typically 3000 @ 50Hz and 24000 @ 400Hz)**
 
 ## Relay Terminal
 The onboard relay provides a high-power switch to activate device the normally could not be controlled by a digital logic pin – example Plasma Trigger, 24V coolant pump, 24V water cooled spindle pump, 24V VFD logic signal etc. The relay acts as a simple switch connecting two wires and creating a path for current to flow. The relay is controlled via the **Spindle Enable signal** or the **Mist signal**. The selection is made using the internal jumper<sub>(1)</sub> next to the Relay (as seen below). _note: the default relay control is set to Spindle Enable<sub>(1)</sub>_
