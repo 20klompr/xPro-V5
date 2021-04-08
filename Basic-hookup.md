@@ -53,6 +53,7 @@ With no signal is detected, the NO (normally open) black signal wire will output
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/z-touchplate2.jpg" width="600">
 ***
+
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/xyzprobe-wiring.jpg" width="800">
 
 # Connect Tools
