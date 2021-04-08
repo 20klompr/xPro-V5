@@ -138,7 +138,7 @@ _note: make sure you have the [“CNC_xPRO_V5_----_485_--”](https://github.com
  | PD001 | 2 | **Command source is RS485** |
  | PD002 | 2 | **Speed source is RS485** |
  | PD163 | 1 | **Communications address 1** |
- | PD164 | 1 | **9600 b/s (3 - 38400)** |
+ | PD164 | 1 | **9600 b/s** |
  | PD165 | 3 | **8 Bit No Parity - RTU** |
  | PD000 | 1 | **lock parameters** |
  
