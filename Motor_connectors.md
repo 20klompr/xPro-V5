@@ -15,7 +15,7 @@ Warning: Never connect/disconnect motors to a powered-up controller. Always turn
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Stepper_drw.jpg" width="800">
 
-NOTE: switching the polarity of either (one) coil will reverse the stepper's direction - also the color codes shown below may not apply to your particular Motors
+_NOTE: switching the polarity<sub>(1)<sub> of either (one) coil will reverse the stepper's direction - also the color codes shown below may not apply to your particular Motors_
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/nema23-reversed-y2.jpg" width="600">
 
