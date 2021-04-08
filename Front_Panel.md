@@ -101,7 +101,7 @@ This is the default setting on the xProV5. Many speed control circuits for spind
 - ```$Spindle/PWM/Max=XXX``` sets spindle PWM Max Value. Typically set to 100.
 
 #### Dewalt Spindle
-You can also install a Solid State Relay (SSR) to control your spindle using Gcode commands with the _EN/PWM-RS485 A/B_ switch<sub>(1)</sub> set to **_EN/PWM_**
+You can also install a Solid State Relay (SSR) to control your spindle using Gcode commands (ensure the _EN/PWM-RS485 A/B_ switch<sub>(1)</sub> is set to **_EN/PWM_**)
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/xPRO_SSR.jpg" width="800">
 
 ### $Spindle/Type=LASER
