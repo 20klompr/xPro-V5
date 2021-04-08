@@ -14,7 +14,7 @@
 
 Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPro-V5 using the supplied [(5mm) Connector](https://media.digikey.com/Photos/On%20Shore%20Technology%20Photos/OSTTJ027150.jpg) - be sure to observe correct polarity.
 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front-plgs.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front-plugs.jpg" width="400">
 
 ## Cool
 
