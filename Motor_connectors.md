@@ -13,7 +13,7 @@ Warning: Never connect/disconnect motors to a powered-up controller. Always turn
 
 * Connect stepper motor wires to the supplied [3.81mm connectors](https://media.digikey.com/photos/FCI%20Photos/20020004-D031B01LF.jpg) and plug in to the corresponding receptacles on the xPro-V5
 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/End%20copy.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Stepper_drw.jpg" width="800">
 
 NOTE: switching the polarity of either (one) coil will reverse the stepper's direction - also the color codes shown below may not apply to your particular Motors
 
