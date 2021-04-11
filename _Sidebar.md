@@ -57,7 +57,7 @@
 
 ## [Checking firmware and upgrading](Checking_firmware_and_upgrading)
 
-### [Laser Mode](Laser_Mode)
+### [Laser Mode](Laser Mode)
 
 ### [Troubleshooting](Troubleshooting)	
 
