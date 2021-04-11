@@ -115,6 +115,18 @@ Optional #define LASER_ENABLE_PIN GPIO_NUM_nn If you want an enable signal. --->
 - **$GCode/LaserMode** Set ```$GCode/LaserMode=1``` for laser mode
 - **$Laser/FullPower=nnnn**; sets the full power number used for the PWM. ```$Laser/FullPower=100``` means your power range is 0-100.
 
+<!---Laser mode activates several features. Use $32 to turn on and off laser mode.
+
+The laser will only fire during an active G1, G2 or G3 command. This means rapid moves between cuts will turn off the laser
+You can change speed on the fly without halting the move. This allows things like high speed laser engraving
+
+On/Off Control
+If you want an On/Off signal rather than variable speed (PWM) output, you just change $30 (Maximum spindle speed) to 1. This means any requested RPM above 0 will output a 100% duty signal _(default $30 setting is ```$30=1000```)_
+
+$30=1
+$31=0
+--->
+
 ### $Spindle/Type=XX // RS485
 
 This spindle mode talks to a **Huanyang VFD** _(a very popular Chinese VFD)_ using an RS485 serial connection. It can control the speed and which direction the spindle should turn. To change this setting flip the EN/PWM switch<sub>(1)</sub> over to **RS485 A/B** and enter the command ```$Spindle/Type=HUANYANG``` or ```$Spindle/Type=H2A```; Note: type **HUANYANG** is their original protocol and **HY2** is Huanyang's latest protocol. Wire terminal A on the xPRO V5 to RS+ of the VFD and terminal B to the RS- of the VFD. 
