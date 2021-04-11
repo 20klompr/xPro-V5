@@ -28,7 +28,7 @@ Enabling or disabling Grbl's laser mode is easy. Just alter the **$32** Grbl set
 
 When laser mode is enabled, Grbl controls laser power by varying the **0-5V** voltage from the TOOLHEAD PWM output. **0V** should be treated as disabled, while 5V is full power. Intermediate output voltages are also assumed to be linear with laser power, such that 2.5V is approximate 50% laser power. (A compile time option exists to shift this linear model to start at a non-zero voltage.)
 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front-plugs.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/toolhead.jpg" width="600">
 
 By default, the spindle PWM frequency is 1kHz, which is the recommended PWM frequency for most current Grbl-compatible lasers system. If a different frequency is required, this may be altered by editing the cpu_map.h file.
 
