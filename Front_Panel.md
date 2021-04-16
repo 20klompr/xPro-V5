@@ -132,12 +132,13 @@ $31=0
 --->
 It is critical that the spindle enable signal is used if your laser module has on; **if your laser module does not have an enable, you will need to route the PWM output through the relay**
 
-_Wiring lasers **with ENABLE SIGNALS**_
+#### _Wiring lasers **with ENABLE SIGNALS**_
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/LasPWM_1.jpg" width="800">
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/LasPWM_2.jpg" width="800">
 ***
-_Wiring lasers **without ENABLE SIGNALS**_
+
+#### _Wiring lasers **without ENABLE SIGNALS**_
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/LasPWM_3.jpg" width="800">
 
 ### $Spindle/Type=XX // RS485
