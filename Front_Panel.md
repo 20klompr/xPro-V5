@@ -90,7 +90,7 @@ This is the default setting on the xProV5. Many speed control circuits for spind
    - The pwm signal is used primarily to drive lasers and small spindles.  The pwm signal is activated by an M3 or M4 gcode statement.  The value of the pwm signal is determined by the speed portion of the M3/M4 command – ex. M3 S6000 will create a half max pwm signal output (assumes the default max spindle speed of 12,000rpm) 
 
 <!--- On some xPro's a resistor was inadvertently populated which will cause the 0-5V PWM output to drive to 5V when the Spindle Enable goes low - to remedy this there are two options (remove resistor R23 on the bottom board) or --->
-     - For **SAFETY** and unintentional actuation of the spindle when a PWM signal isn't being commanded, it is suggested that you wire the PWM through the relay and move the relay jumper<sub>(1)</sub> to SP_EN as seen below:
+_For_ **SAFETY** _and unintentional actuation of the spindle when a PWM signal isn't being commanded, it is suggested that you wire the PWM through the relay and move the relay jumper<sub>(1)</sub> to SP_EN as seen below:_
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/SpindlePWM_1.jpg" width="800">
 
 3. **3.3V Spindle Enable**
