@@ -88,7 +88,8 @@ This is the default setting on the xProV5. Many speed control circuits for spind
 2. **0-5V PWM Signal**
    - The pwm signal is used primarily to drive lasers and small spindles.  The ppwm signal is activated by an M3 or M4 gcode statement.  The value of the pwm signal is determined by the speed portion of the M3/M4 command – ex. M3 S6000 will create a half max pwm signal output (assumes the default max spindle speed of 12,000rpm)
 3. **3.3V Spindle Enable**
-   - The spindle enable signal is used by some laser modules and spindles to act like an “on” switch.  When an M3 or M4 command is issued, the Spindle Enable signal goes high to 3.3V and stays constant regardless of the speed command
+   - The spindle enable signal is used by some laser modules and spindles to act like an “on” switch.  When an M3 or M4 command is issued, the Spindle Enable signal goes high to 3.3V and stays constant regardless of the speed command **if your laser module does not have an enable, you will need to route the PWM output through the relay as shown [<here>]()**
+
 4. **0-10V Analog Signal**
    - The 0-10V signal is used primarily to drive VFDs and a select few laser modules.  The 0-10V output act identical to the pwm output, except it is processed to create an analog 0-10V ouput that scales with the speed command. _note: the maximum output of 10V can be calibrated by commanding ```M3 S12000``` and adjusting the potentiometer<sub>(2)</sub> as indicated below_
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Analog_VFD.jpg" width="800">
@@ -127,7 +128,12 @@ $30=1
 $31=0
 --->
 
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/LasPWM_1.jpg" width="800">
 
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/LasPWM_2.jpg" width="800">
+***
+
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/LasPWM_3.jpg" width="800">
 
 ### $Spindle/Type=XX // RS485
 
