@@ -126,6 +126,15 @@ If you want an On/Off signal rather than variable speed (PWM) output, you just c
 $30=1
 $31=0
 --->
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/LasPWM_1.jpg" width="800">
+
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/LasPWM_2.jpg" width="800">
+***
+
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Rly_Tool.jpg" width="400">
+
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/LasPWM_3.jpg" width="800">
+
 
 ### $Spindle/Type=XX // RS485
 
