@@ -136,6 +136,7 @@ It is critical that the spindle enable signal is used if your laser module has o
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/LasPWM_1.jpg" width="800">
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/LasPWM_2.jpg" width="800">
+
 ***
 
 #### _Wiring lasers **without ENABLE SIGNALS**_
