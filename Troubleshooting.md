@@ -66,3 +66,99 @@ The xPRO V5 will report issues using Alarms and Errors.  Alarms report issues re
 |63|SD diectory | SD Card directory not found |
 |64|SD file| SD Card file empty|
 |70|Bluetooth failed| Bluetooth failed to start|
+
+## Console Startup Message
+
+### xPro Status and configuration (upon reset and viewed via USB/serial console):
+- COM port & baud rate
+- Firmware version
+- Axis count
+- Driver type, status, and axis GPIO assignment
+- Miscellaneous GPIO assignment
+
+```
+CNCjs 1.9.15 [Grbl]
+Connected to COM10 with a baud rate of 115200
+ets Jun  8 2016 00:22:57
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0018,len:4
+load:0x3fff001c,len:1216
+ho 0 tail 12 room 4
+load:0x40078000,len:9720
+ho 0 tail 12 room 4
+load:0x40080400,len:6352
+entry 0x400806b8
+[MSG:Grbl_ESP32 Ver 1.3a Date 20201022]
+[MSG:Compiled with ESP32 SDK:v3.2.3-14-gd3e562907]
+[MSG:Using machine:CNC_xPRO_V5_XYYZ]
+[MSG:Axis count 3]
+[MSG:RMT Steps]
+[MSG:Init Motors]
+[MSG:TMCStepper Library Ver. 0x000701]
+[MSG:X  Axis Trinamic TMC5160 Step:GPIO(12) Dir:GPIO(14) CS:GPIO(17) Disable:None Index:1 Limits(0.000,300.000)]
+[MSG:X  Axis Trinamic driver test passed]
+[MSG:Y  Axis Trinamic TMC5160 Step:GPIO(27) Dir:GPIO(26) CS:GPIO(17) Disable:None Index:2 Limits(0.000,300.000)]
+[MSG:Y  Axis Trinamic driver test passed]
+[MSG:Y2 Axis Trinamic TMC5160 Step:GPIO(33) Dir:GPIO(32) CS:GPIO(17) Disable:None Index:3 Limits(0.000,300.000)]
+[MSG:Y2 Axis Trinamic driver test passed]
+[MSG:Z  Axis Trinamic TMC5160 Step:GPIO(15) Dir:GPIO(2) CS:GPIO(17) Disable:None Index:4 Limits(-300.000,0.000)]
+[MSG:Z  Axis Trinamic driver test passed]
+[MSG:PWM spindle Output:GPIO(25), Enbl:GPIO(4), Dir:None, Freq:5000Hz, Res:13bits]
+[MSG:Local access point CNC_xPRO_V5 started, 192.168.0.1]
+[MSG:Captive Portal Started]
+[MSG:HTTP Started]
+[MSG:TELNET Started 23]
+[MSG:Flood coolant on pin GPIO(21)]
+[MSG:Mist coolant on pin GPIO(21)]
+[MSG:X  Axis limit switch on pin GPIO(35)]
+[MSG:Y  Axis limit switch on pin GPIO(34)]
+[MSG:Z  Axis limit switch on pin GPIO(39)]
+[MSG:Probe on pin GPIO(22)]
+```
+
+### xPro Status and configuration displayed with 24V powered off (viewed via USB/serial console):
+```
+__CNCjs 1.9.15 [Grbl]__
+Connected to COM10 with a baud rate of 115200
+ets Jun  8 2016 00:22:57
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:1
+load:0x3fff0018,len:4
+load:0x3fff001c,len:1216
+ho 0 tail 12 room 4
+load:0x40078000,len:9720
+ho 0 tail 12 room 4
+load:0x40080400,len:6352
+entry 0x400806b8
+[MSG:Grbl_ESP32 Ver 1.3a Date 20201022]
+[MSG:Compiled with ESP32 SDK:v3.2.3-14-gd3e562907]
+[MSG:Using machine:CNC_xPRO_V5_XYYZ]
+[MSG:Axis count 3]
+[MSG:RMT Steps]
+[MSG:Init Motors]
+[MSG:TMCStepper Library Ver. 0x000701]
+[MSG:X  Axis Trinamic TMC5160 Step:GPIO(12) Dir:GPIO(14) CS:GPIO(17) Disable:None Index:1 Limits(0.000,300.000)]
+[MSG:X  Axis Trinamic driver test failed. Check motor power]
+[MSG:Y  Axis Trinamic TMC5160 Step:GPIO(27) Dir:GPIO(26) CS:GPIO(17) Disable:None Index:2 Limits(0.000,300.000)]
+[MSG:Y  Axis Trinamic driver test failed. Check motor power]
+[MSG:Y2 Axis Trinamic TMC5160 Step:GPIO(33) Dir:GPIO(32) CS:GPIO(17) Disable:None Index:3 Limits(0.000,300.000)]
+[MSG:Y2 Axis Trinamic driver test failed. Check motor power]
+[MSG:Z  Axis Trinamic TMC5160 Step:GPIO(15) Dir:GPIO(2) CS:GPIO(17) Disable:None Index:4 Limits(-300.000,0.000)]
+[MSG:Z  Axis Trinamic driver test failed. Check motor power]
+[MSG:PWM spindle Output:GPIO(25), Enbl:GPIO(4), Dir:None, Freq:5000Hz, Res:13bits]
+[MSG:Local access point CNC_xPRO_V5 started, 192.168.0.1]
+[MSG:Captive Portal Started]
+[MSG:HTTP Started]
+[MSG:TELNET Started 23]
+[MSG:Flood coolant on pin GPIO(21)]
+[MSG:Mist coolant on pin GPIO(21)]
+[MSG:X  Axis limit switch on pin GPIO(35)]
+[MSG:Y  Axis limit switch on pin GPIO(34)]
+[MSG:Z  Axis limit switch on pin GPIO(39)]
+[MSG:Probe on pin GPIO(22)]
+```
