@@ -59,6 +59,7 @@
 
 ### [Laser Mode](Laser_Mode)
 
-### [Troubleshooting](Troubleshooting)	
+### [Troubleshooting](Troubleshooting)
+ - [Console Startup Message](https://github.com/Spark-Concepts/xPro-V5/wiki/Troubleshooting#console-startup-message)	
 
 ### [Supported G-Code](Supported_G-Code)
