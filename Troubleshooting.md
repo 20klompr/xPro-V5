@@ -69,7 +69,7 @@ The xPRO V5 will report issues using Alarms and Errors.  Alarms report issues re
 
 ## Console Startup Message
 
-### xPro Status and configuration (upon reset and viewed via USB/serial console):
+### xPro Status and configuration (viewed using USB/serial console upon xPro reset):
 - COM port & baud rate
 - Firmware version
 - Axis count
@@ -119,7 +119,7 @@ entry 0x400806b8
 [MSG:Probe on pin GPIO(22)]
 ```
 
-### xPro Status and configuration displayed with 24V powered off (viewed via USB/serial console):
+### xPro Status and configuration displayed with 24V powered off (viewed using USB/serial console):
 ```
 __CNCjs 1.9.15 [Grbl]__
 Connected to COM10 with a baud rate of 115200
