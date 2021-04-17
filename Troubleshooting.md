@@ -121,7 +121,7 @@ entry 0x400806b8
 
 ### xPro Status and configuration displayed with 24V powered off (viewed using USB/serial console):
 ```
-__CNCjs 1.9.15 [Grbl]__
+CNCjs 1.9.15 [Grbl]
 Connected to COM10 with a baud rate of 115200
 ets Jun  8 2016 00:22:57
 rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
