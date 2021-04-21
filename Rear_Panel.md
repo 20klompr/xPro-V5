@@ -54,6 +54,7 @@ Setting | Description
 ```$Homing/Pulloff``` | (The distance the the machine moves away from a switch after touching it)
 
 ### First Tests
+    
     1. Switch Activation:
     - The first thing to do it to check that the switches are reporting correctly
     - Manually move the machine axes so no switches are being activated by an axis 
@@ -69,8 +70,9 @@ Setting | Description
 
     If you see all switches reporting in the ```Pn:``` status when no switches are being activated something is inverted. The ```$5``` setting inverts the switch reporting status. ```$5``` can be either ```$5=0``` or ```$5=1```. Swap the ```$5``` value if you are not seeing the correct status. Recheck the status of no switch activated and all switches individually activate. **DO NOT move onto the the next step until you are getting the correct status**
 
-2. Axis Movement Directions
-   The next thing to do is check that the axes move in the right direction. If you send it a move in the positive direction, does the axis move in the positive direction. Here is a sequence I like to use:
+    2. Axis Movement Directions
+   
+    The next thing to do is check that the axes move in the right direction. If you send it a move in the positive direction, does the axis move in the positive direction. Here is a sequence I like to use:
    - First send ```$X``` to clear any alarms
    - Send ```G91``` to put the machine in incremental mode (the machine should respond with OK, and not move)
    - Each time you send something like ```G0X2``` it will move 2 units in the positive direction (if you send ```G0X-2``` it should move 2 units in the negative direction)
@@ -84,9 +86,11 @@ Setting | Description
    The other way to to change the stepper motor wiring. You would swap the wires on only one coil of the motor going the wrong way. _Note: on machines with 2 motors on an axis, fixing the wiring is the only way to fix the direction_
 
 3. Homing Direction
+   
    The axes can home in any direction you prefer. For example: it is common on a lot of routers to home X and Y in the negative direction and Z in the positive (up) direction. This is controlled with the ```$Homing/DirInvert``` setting.
 
 4. Homing Cycles
+   
    The axes are homed in cycles:
    - Typically a Z would home up first to clear the work before you home in X and Y
    - You can have more than one axis home per cycle
@@ -99,6 +103,7 @@ Setting | Description
    - Set ```$Homing/Cycle2=``` to put nothing on the third cycle (Make sure all cycles have what you want)
 
 5. Homing Test Setup
+   
    Make sure the following settings are configured accurately:
    
    - ```$Limits/Soft=Off``` (Turn off soft limits)
@@ -110,6 +115,7 @@ Setting | Description
    - ```$Homing/Cycle0=Z```, ```$Homing/Cycle0=X```,  or ```$Homing/Cycle0=Y```; only one axis per cycle
 
 6. Homing Test
+   
    Homing is done using the ```$H``` command. By default you can also use single axis homing with ```$HX```, etc. Single axis homing is good for testing, so I will assume it is enabled.
 
    Be ready to kill the power or hit the xPro-V5 Reset button. Send ```$HZ```; the axis should move towards the limit switch, touch it, back off and repeat at a slower speed.
@@ -119,6 +125,7 @@ Setting | Description
    _Note: If you have switches at both ends of the axis (set in firmware), Grbl will not know which way to back off and immediately issue the ALARM 8_
 
 7. Tuning
+   
    Once you have basic homing working, you can tune some values to get better performance. Make sure the ```$27``` pull off is fully clearing the switch. Play with the ```$24``` and ```$25``` speeds. It is nice to have a relatively quick search phase followed by a slow second locate phase.
 
 ### Soft Limits
