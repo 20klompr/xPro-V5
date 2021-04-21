@@ -30,7 +30,7 @@ A variety of switch types can be used; generally they will be either normally op
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Limit_Switch_Mech.jpg" width="800">
 
 2. #### Proximity Switches
-   With proximity switches, you generally need to provide these with power ground. Be sure they are compatible with 5V or 24V. The default setting is 5V, however most proximity switches require 10-24VDC; therefore you may need to move a jumper inside the x-ProV5 to provide 24V logic. 
+With proximity switches, you generally need to provide these with power ground. Be sure they are compatible with 5V or 24V. The default setting is 5V, however most proximity switches require 10-24VDC; therefore you may need to move a jumper inside the x-ProV5 to provide 24V logic. 
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Limit_Switch_SS.jpg" width="800">
 
@@ -67,6 +67,7 @@ Setting | Description
    If you see all switches reporting in the ```Pn:``` status when no switches are being activated something is inverted. The ```$5``` setting inverts the switch reporting status. ```$5``` can be either ```$5=0``` or ```$5=1```. Swap the ```$5``` value if you are not seeing the correct status. Recheck the status of no switch activated and all switches individually activate. **DO NOT move onto the the next step until you are getting the correct status**
 
 2. Axis Movement Directions
+
 The next thing to do is check that the axes move in the right direction. If you send it a move in the positive direction, does the axis move in the positive direction. Here is a sequence I like to use:
    - First send ```$X``` to clear any alarms
    - Send ```G91``` to put the machine in incremental mode (the machine should respond with OK, and not move)
@@ -81,9 +82,11 @@ The next thing to do is check that the axes move in the right direction. If you 
    The other way to to change the stepper motor wiring. You would swap the wires on only one coil of the motor going the wrong way. _Note: on machines with 2 motors on an axis, fixing the wiring is the only way to fix the direction_
 
 3. Homing Direction
+
 The axes can home in any direction you prefer. For example: it is common on a lot of routers to home X and Y in the negative direction and Z in the positive (up) direction. This is controlled with the ```$Homing/DirInvert``` setting.
 
 4. Homing Cycles
+
 The axes are homed in cycles:
    - Typically a Z would home up first to clear the work before you home in X and Y
    - You can have more than one axis home per cycle
@@ -96,6 +99,7 @@ You can have up to 6 cycles, Example:
    - Set ```$Homing/Cycle2=``` to put nothing on the third cycle (Make sure all cycles have what you want)
 
 5. Homing Test Setup
+
 Make sure the following settings are configured accurately:
    
    - ```$Limits/Soft=Off``` (Turn off soft limits)
