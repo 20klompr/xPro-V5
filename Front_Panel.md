@@ -91,7 +91,7 @@ This is the default setting on the xProV5. Many speed control circuits for spind
    - When **laser** mode is enabled, Grbl controls laser power by varying the 0-5V voltage from the spindle PWM connector. 0V should be treated as disabled, while 5V is full power. Intermediate output voltages are also assumed to be linear with laser power, such that 2.5V is approximate 50% laser power.
    - By default, the spindle PWM frequency is 5kHz, and compatible with most current Grbl-compatible lasers system. If a different frequency is required, such as the _"[Bulkman 15W Laser](https://bulkman3d.com/product/15w-blue-light-laser-module/) a modulation frequency <9 kHz"_ is recommended; this can be changed by typing ```$Spindle/PWM/Frequency 9000``` in the console window (**$Spindle/PWM/Frequency** _"Spindle PWM Freq"_) 
 
-     - For [LightBurn](https://forum.lightburnsoftware.com/t/laser-not-burning/13944/7) users please note the xPro-V5 ```$30``` setting. The **S-Value Max setting** in LightBurn should match the ```$30``` setting on the xPro [(typically ```$30=1000```)](https://github.com/Spark-Concepts/xPro-V5/wiki/Changing-settings#grbl-settings)
+     - For [LightBurn](https://forum.lightburnsoftware.com/t/laser-not-burning/13944/7) users please note the xPro-V5 ```$30``` setting. The ```S-value max``` setting in LightBurn should match the ```$30``` setting on the xPro [(typically ```$30=1000```)](https://github.com/Spark-Concepts/xPro-V5/wiki/Changing-settings#grbl-settings)
 
 **NOTE:** _go to **Edit** > **Device Settings** in [LightBurn](https://forum.lightburnsoftware.com/t/laser-not-burning/13944/7) and modify the S-Value as required_
 ![image](https://user-images.githubusercontent.com/8650709/115465025-f25d5c00-a1fb-11eb-891a-e8612288f1af.png) 
