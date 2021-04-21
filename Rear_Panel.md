@@ -64,7 +64,7 @@ Setting | Description
      - ```Pn:``` will report the ```XYZABC``` axis letters and also ```PDRHS``` (Probe,Door,Reset,Hold,Start) 
      - You want to make sure no switches are reporting when the limit are not activated.
 
-   If you see all switches reporting in the Pn: status when no switches are being activated something is inverted. The $5 setting inverts the switch reporting status. $5 can be either $5=0 or $5=1. Swap the $5 value if you are not seeing the correct status. Recheck the status of no switch activated and all switches individually activate. **DO NOT move onto the the next step until you are getting the correct status**
+   If you see all switches reporting in the ```Pn:``` status when no switches are being activated something is inverted. The ```$5``` setting inverts the switch reporting status. ```$5``` can be either ```$5=0``` or ```$5=1```. Swap the ```$5``` value if you are not seeing the correct status. Recheck the status of no switch activated and all switches individually activate. **DO NOT move onto the the next step until you are getting the correct status**
 
 2. Axis Movement Directions
 The next thing to do is check that the axes move in the right direction. If you send it a move in the positive direction, does the axis move in the positive direction. Here is a sequence I like to use:
@@ -97,22 +97,23 @@ You can have up to 6 cycles, Example:
 
 5. Homing Test Setup
 Make sure the following settings are configured accurately:
+   
    - ```$Limits/Soft=Off``` (Turn of soft limits)
-   - ```$Limits/Hard=Off (Turn off hard limits)
-   - ```$Homing/Enable (Enable homing)
-   - ```$Homing/Feed=100 (a slow homing feed rate)
-   - ```$Homing/Seek=200 (a faster search rate)
-   - ```$Homing/Pulloff=3 (set homing switch pull off to 3mm)
+   - ```$Limits/Hard=Off``` (Turn off hard limits)
+   - ```$Homing/Enable``` (Enable homing)
+   - ```$Homing/Feed=100``` (a slow homing feed rate)
+   - ```$Homing/Seek=200``` (a faster search rate)
+   - ```$Homing/Pulloff=3``` (set homing switch pull off to 3mm)
    - ```$Homing/Cycle0=Z```, ```$Homing/Cycle0=X```,  or ```$Homing/Cycle0=Y```; only one axis per cycle
 
 6. Homing Test
-Homing is done using the ```$H``` command. By default you can also use single axis homing with ```$HX```, etc. Single axis homing is good for testing, so I will assume it is enabled.
+   Homing is done using the ```$H``` command. By default you can also use single axis homing with ```$HX```, etc. Single axis homing is good for testing, so I will assume it is enabled.
 
-Be ready to kill the power or hit the xPro-V5 Reset button. Send ```$HZ```; the axis should move towards the limit switch, touch it, back off and repeat at a slower speed.
+   Be ready to kill the power or hit the xPro-V5 Reset button. Send ```$HZ```; the axis should move towards the limit switch, touch it, back off and repeat at a slower speed.
 
-If it just does a short slow move and issues an ALARM 8 - It means Grbl_ESP32 detected an activated switch before homing and tried unsuccessfully to clear the switch by backing off. 
+   If it just does a short slow move and issues an ALARM 8 - It means you detected an activated switch before homing and tried unsuccessfully to clear the switch by backing off. 
 
-_Note: If you have switches at both ends of the axis (set in firmware), Grbl will not know which way to back off and immediately issue the ALARM 8_
+   _Note: If you have switches at both ends of the axis (set in firmware), Grbl will not know which way to back off and immediately issue the ALARM 8_
 
 7. Tuning
 Once you have basic homing working, you can tune some values to get better performance. Make sure the ```$27``` pull off is fully clearing the switch. Play with the ```$24``` and ```$25``` speeds. It is nice to have a relatively quick search phase followed by a slow second locate phase.
