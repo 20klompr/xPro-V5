@@ -13,11 +13,11 @@ The reset switch reboots the xPro-V5.
 All commands can be in the $ format like $SD/List or the older [ESP...] format, like [ESP210]. The $ format is detailed on this page. You can get a list of all $ commands by sending $Cmd. The [ESP...] format is described in this document.
 
 ### SD Card Commands
-    - Get SD Card Status/Content: ```$SD/Status```
-      - _Shows all the files. This is recursive and will search all subdirectories. Each file will print like this... ```[FILE:/TEST.nc|SIZE:29547]```
+- Get SD Card Status/Content: ```$SD/Status```
+  - _Shows all the files. This is recursive and will search all subdirectories. Each file will print like this... ```[FILE:/TEST.nc|SIZE:29547]```
  ...where /TEST.nc is the filename. including the directory. In this case the directory is the root. The number following the file name is the file size. There is no filter, all files and folders are reported. Senders, WebUI, etc should handle this._
-    - Print SD file: ```$SD/Run```
-      - _```$#D/Run=/TEST.nc``` will run file /TEST.nc - **Note: If in alarm mode, this command will fail with error 9**_
+  - Print SD file: ```$SD/Run```
+    - _```$#D/Run=/TEST.nc``` will run file /TEST.nc - **Note: If in alarm mode, this command will fail with error 9**_
 
 ### Adding / uploading files to SD card
 You can remove the card and use a PC to add files or you can upload them via the WebUI.
