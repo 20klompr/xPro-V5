@@ -132,6 +132,7 @@ Setting | Description
 ### Soft Limits
 
     Soft limits, ```$Limits/Soft=On```, use Grbl's internal position values to determine if a requested move will crash into one of the ends.
+    
     - It uses the max travel ```$13x``` to determine this. 
     - The machine will enter an Alarm 2 mode. 
     - You must reset the machine, but no position has been lost and you do not need to rehome.
@@ -140,6 +141,7 @@ Setting | Description
 ### Hard Limits
 
     Hard limits, ```$Limits/Hard=On```, use the switches to stop Grbl if it hits a limit switch.
+    
     - This is a good fail safe setup; it does an immediate uncontrolled stop. 
     - You must rehome before you can use the machine again. 
     - Also, CNC machines tend to create a lot of electrical noise when running and can cause false limit switch triggers. _test your machine before using this mode_
