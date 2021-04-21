@@ -25,8 +25,8 @@ _Homing can be done one axis at a time or several axes can be done at one time. 
     A variety of switch types can be used; generally they will be either normally open (N.O.) or normally closed (N.C.) _...or combination where they have both types of contacts_
 
 1. #### Mechanical Switches
-   
-   I recommend a combination normally closed and normally open in a 3 wire configuration (illustrated below). In this fashion they are considered more fail safe and less prone to noise when in the closed state.
+
+I recommend a combination normally closed and normally open in a 3 wire configuration (illustrated below). In this fashion they are considered more fail safe and less prone to noise when in the closed state.
    - Use a switch with good mechanical mounting
    - It's also a good idea to have a mechanical stop that the axis can crash into if the switch fails to stop the motion
 
