@@ -29,7 +29,7 @@ Any gcode errors in the SD card file will terminate the job. The offending line 
 When an SD card job is running, the percent complete is appended to the status string. This is simply percent of bytes read from the file.
 ```<Idle|WPos:195.000,144.000,19.000|Bf:15,128|FS:0.000,0.000|Pn:P|WCO:-195.000,-144.000,-19.000|SD:45.5>```
 
-## Card Formatting
+### Card Formatting
 The firmware uses the [Arduino SD library](https://www.arduino.cc/en/Reference/SD). This is limited to 4G cards. In general, the smallest, oldest and slowest cards tend to work best with this library.
 
 Some people have trouble when SD cards have been formatted by Windows, but were able to solve the problem by formatting with [SD Card Formatter](https://sd-card-formatter.en.uptodown.com/windows)
