@@ -83,11 +83,18 @@ If your machine does not require a spindle, like a pen plotter, choose this type
 ### $Spindle/Type=PWM
 This is the default setting on the xProV5. Many speed control circuits for spindles use a PWM signal to set the speed. 
 - With the _EN/PWM-RS485 A/B_ switch<sub>(1)</sub> set to **_EN/PWM_** the _TOOLHEAD_ port provides the means to drive many different toolheads (spindles, VFDs, laser ```$Spindle/Type=LASER```, and plasmas, etc.)  This 4-pin connector provides the following:
-
+    
 1. **Ground Reference**
 
 2. **0-5V PWM Signal**
-   - The pwm signal is used primarily to drive lasers and small spindles.  The pwm signal is activated by an M3 or M4 gcode statement.  The value of the pwm signal is determined by the speed portion of the M3/M4 command – ex. M3 S6000 will create a half max pwm signal output (assumes the default max spindle speed of 12,000rpm) 
+   - The pwm signal is used primarily to drive lasers and small spindles.  The pwm signal is activated by an ```M3``` or ```M4``` gcode statement.  The value of the pwm signal is determined by the speed portion of the M3/M4 command – ex. ```M3 S6000``` will create a half max pwm signal output (assumes the default max spindle speed of 12,000rpm) 
+   - When **laser** mode is enabled, Grbl controls laser power by varying the 0-5V voltage from the spindle PWM connector. 0V should be treated as disabled, while 5V is full power. Intermediate output voltages are also assumed to be linear with laser power, such that 2.5V is approximate 50% laser power.
+   - By default, the spindle PWM frequency is 5kHz, and compatible with most current Grbl-compatible lasers system. If a different frequency is required, such as the _"[Bulkman 15W Laser](https://bulkman3d.com/product/15w-blue-light-laser-module/) a modulation frequency <9 kHz"_ is recommended; this can be changed by typing ```$Spindle/PWM/Frequency 9000``` in the console window (**$Spindle/PWM/Frequency** _"Spindle PWM Freq"_) 
+
+     - For [LightBurn](https://forum.lightburnsoftware.com/t/laser-not-burning/13944/7) users please note the xPro-V5 ```$30``` setting. The **S-Value Max setting** in LightBurn should match the **$30** setting on the xPro [(typically ```$30=1000```)](https://github.com/Spark-Concepts/xPro-V5/wiki/Changing-settings#grbl-settings)
+![image](https://user-images.githubusercontent.com/8650709/115465025-f25d5c00-a1fb-11eb-891a-e8612288f1af.png) 
+
+**NOTE:** _go to **Edit** > **Device Settings** in [LightBurn](https://forum.lightburnsoftware.com/t/laser-not-burning/13944/7) and modify the S-Value as required_
 
 <!--- On some xPro's a resistor was inadvertently populated which will cause the 0-5V PWM output to drive to 5V when the Spindle Enable goes low - to remedy this there are two options (remove resistor R23 on the bottom board) or --->
 _For_ **SAFETY** _and unintentional actuation of the spindle when a PWM signal isn't being commanded, it is suggested that you wire the PWM through the relay and move the relay jumper<sub>(1)</sub> to SP_EN as illustrated below:_
