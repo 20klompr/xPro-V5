@@ -20,9 +20,11 @@ A typical homing sequence works like this:
 _Homing can be done one axis at a time or several axes can be done at one time. The default is one axis at a time_
 
 ### Switch Types
-A variety of switch types can be used; generally they will be either normally open (N.O.) or normally closed (N.C.) _...or combination where they have both types of contacts_
+    
+   A variety of switch types can be used; generally they will be either normally open (N.O.) or normally closed (N.C.) _...or combination where they have both types of contacts_
 
 1. #### Mechanical Switches
+   
    I recommend a combination normally closed and normally open in a 3 wire configuration (illustrated below). In this fashion they are considered more fail safe and less prone to noise when in the closed state.
    - Use a switch with good mechanical mounting
    - It's also a good idea to have a mechanical stop that the axis can crash into if the switch fails to stop the motion
@@ -30,6 +32,7 @@ A variety of switch types can be used; generally they will be either normally op
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Limit_Switch_Mech.jpg" width="800">
 
 2. #### Proximity Switches
+   
    With proximity switches, you generally need to provide these with power ground. Be sure they are compatible with 5V or 24V. The default setting is 5V, however most proximity switches require 10-24VDC; therefore you may need to move a jumper inside the x-ProV5 to provide 24V logic. 
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Limit_Switch_SS.jpg" width="800">
