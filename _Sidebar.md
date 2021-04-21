@@ -46,7 +46,7 @@
  - [TMC diag_0 output](TMC_diag_0_output)
 
 [Rear Panel](Rear_Panel)
- - [Motor connectors](Motor_connectors) 
+ - [Motor connectors](https://github.com/Spark-Concepts/xPro-V5/wiki/Rear_Panel#motor-connectors) 
  - [Limit connectors](https://github.com/Spark-Concepts/xPro-V5/wiki/Rear_Panel#limit-connectors)
 
 [Inside jumpers](Inside_jumpers)
