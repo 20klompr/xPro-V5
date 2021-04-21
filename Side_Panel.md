@@ -1,7 +1,10 @@
 # Side Panel
-
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/QuickStart_FRONT.jpg" width="800">
 
 ## Power Switch
+The power switch controls turns off the main **+24V** which powers the Stepper Drivers as well as the 5V and 3.3V when a USB cable is not plugged in.
+
+With the Power Switch **OFF**, +24V to the stepper drivers is removed; however, with USB plugged in, 5V will power the 32 bit Arm processor and associated logic functions. _NOTE: if one of the [Motor fault indicators]() you recieve a fault indication on the side of th
 
 ## Reset Switch
 
@@ -38,4 +41,3 @@ Electrical Specifications:
 
 <sub>*the SIG port can also be configured to output 24V by removing the xProV5 lid and moving the "MIST" jumper<sub>(1)</sub> from 5V to 24V</sub>
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Cool_SS.jpg" width="800">
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/QuickStart_FRONT.jpg" width="800">
