@@ -41,7 +41,7 @@
  - [SD Card](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#sd-card)
  - [Motor fault indicators](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#motor-fault-indicators)
  - [Status indicators](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#status-indicators)
- - [Probe input](Probe_input)
+ - [Probe input](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#probe-input)
  - [Macro1 & Macro2](Macro1_&_Macro2)
  - [TMC diag_0 output](TMC_diag_0_output)
 
