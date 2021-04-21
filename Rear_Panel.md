@@ -104,14 +104,15 @@ Setting | Description
    - Set ```$Homing/Cycle2=``` to put nothing on the third cycle (Make sure all cycles have what you want)
 
 5. Homing Test Setup
-Make sure the following settings are configured accurately:
-- ```$Limits/Soft=Off``` (Turn off soft limits)
-- ```$Limits/Hard=Off``` (Turn off hard limits)
-- ```$Homing/Enable``` (Enable homing)
-- ```$Homing/Feed=100``` (a slow homing feed rate)
-- ```$Homing/Seek=200``` (a faster seek rate)
-- ```$Homing/Pulloff=3``` (set homing switch pull off to 3mm)
-- ```$Homing/Cycle0=Z```, ```$Homing/Cycle0=X```,  or ```$Homing/Cycle0=Y```; only one axis per cycle
+
+   Make sure the following settings are configured accurately:
+   - ```$Limits/Soft=Off``` (Turn off soft limits)
+   - ```$Limits/Hard=Off``` (Turn off hard limits)
+   - ```$Homing/Enable``` (Enable homing)
+   - ```$Homing/Feed=100``` (a slow homing feed rate)
+   - ```$Homing/Seek=200``` (a faster seek rate)
+   - ```$Homing/Pulloff=3``` (set homing switch pull off to 3mm)
+   - ```$Homing/Cycle0=Z```, ```$Homing/Cycle0=X```,  or ```$Homing/Cycle0=Y```; only one axis per cycle
 
 6. Homing Test
    
