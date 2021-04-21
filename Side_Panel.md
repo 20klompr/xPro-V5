@@ -4,11 +4,35 @@
 ## Power Switch
 The power switch controls turns off the main **+24V** which powers the Stepper Drivers as well as the 5V and 3.3V when a USB cable is not plugged in.
 
-With the Power Switch **OFF**, +24V to the stepper drivers is removed; however, with USB plugged in, 5V will power the 32 bit Arm processor and associated logic functions. _NOTE: if one of the [Motor fault indicators]() you recieve a fault indication on the side of th
+With the Power Switch **OFF**, +24V to the stepper drivers is removed; however, with USB plugged in, 5V will power the 32 bit Arm processor and associated logic functions. _NOTE: if one of the [Motor fault indicators](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#motor-fault-indicators) illuminates bright **RED** you will need to power cycle the xPro-V5 via the power switch.
 
 ## Reset Switch
+The reset switch reboots the xPro-V5.
 
 ## SD Card
+All commands can be in the $ format like $SD/List or the older [ESP...] format, like [ESP210]. The $ format is detailed on this page. You can get a list of all $ commands by sending $Cmd. The [ESP...] format is described in this document.
+
+### SD Card Commands
+    - Get SD Card Status/Content: ```$SD/Status```
+      - _Shows all the files. This is recursive and will search all subdirectories. Each file will print like this... ```[FILE:/TEST.nc|SIZE:29547]```
+ ...where /TEST.nc is the filename. including the directory. In this case the directory is the root. The number following the file name is the file size. There is no filter, all files and folders are reported. Senders, WebUI, etc should handle this._
+    - Print SD file: ```$SD/Run```
+      - _```$#D/Run=/TEST.nc``` will run file /TEST.nc - **Note: If in alarm mode, this command will fail with error 9**_
+
+### Adding / uploading files to SD card
+You can remove the card and use a PC to add files or you can upload them via the WebUI.
+
+### Errors
+Any gcode errors in the SD card file will terminate the job. The offending line number of the file will be reported.
+
+### Status
+When an SD card job is running, the percent complete is appended to the status string. This is simply percent of bytes read from the file.
+```<Idle|WPos:195.000,144.000,19.000|Bf:15,128|FS:0.000,0.000|Pn:P|WCO:-195.000,-144.000,-19.000|SD:45.5>```
+
+## Card Formatting
+The firmware uses the [Arduino SD library](https://www.arduino.cc/en/Reference/SD). This is limited to 4G cards. In general, the smallest, oldest and slowest cards tend to work best with this library.
+
+Some people have trouble when SD cards have been formatted by Windows, but were able to solve the problem by formatting with [SD Card Formatter](https://sd-card-formatter.en.uptodown.com/windows)
 
 ## Motor fault indicators
 
