@@ -47,7 +47,7 @@
 
 [Rear Panel](Rear_Panel)
  - [Motor connectors](Motor_connectors) 
- - [Limit connectors](Limit_connectors)
+ - [Limit connectors](https://github.com/Spark-Concepts/xPro-V5/wiki/Rear_Panel#limit-connectors)
 
 [Inside jumpers](Inside_jumpers)
  - [Mist output voltage](Mist_output_voltage)
