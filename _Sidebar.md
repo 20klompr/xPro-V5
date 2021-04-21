@@ -36,7 +36,7 @@
  - [USB](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#usb-connection)
 
 [Side Panel](Side_Panel)
- - [Power Switch](Power_Switch) 
+ - [Power Switch](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#power-switch) 
  - [Reset](Reset)
  - [SD Card](SD_Card)
  - [Motor fault indicators](Motor_fault_indicators)
