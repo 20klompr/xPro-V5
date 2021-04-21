@@ -38,7 +38,7 @@
 [Side Panel](Side_Panel)
  - [Power Switch](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#power-switch) 
  - [Reset](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#reset-switch)
- - [SD Card](SD_Card)
+ - [SD Card](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#sd-card)
  - [Motor fault indicators](Motor_fault_indicators)
  - [Status indicators](Status_indicators)
  - [Probe input](Probe_input)
