@@ -39,7 +39,7 @@
  - [Power Switch](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#power-switch) 
  - [Reset](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#reset-switch)
  - [SD Card](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#sd-card)
- - [Motor fault indicators](Motor_fault_indicators)
+ - [Motor fault indicators](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#motor-fault-indicators)
  - [Status indicators](Status_indicators)
  - [Probe input](Probe_input)
  - [Macro1 & Macro2](Macro1_&_Macro2)
