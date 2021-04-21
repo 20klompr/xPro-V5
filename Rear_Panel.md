@@ -64,7 +64,7 @@ Setting | Description
      - ```Pn:``` will report the ```XYZABC``` axis letters and also ```PDRHS``` (Probe,Door,Reset,Hold,Start) 
      - You want to make sure no switches are reporting when the limit are not activated.
 
-If you see all switches reporting in the Pn: status when no switches are being activated something is inverted. The $5 setting inverts the switch reporting status. $5 can be either $5=0 or $5=1. Swap the $5 value if you are not seeing the correct status. Recheck the status of no switch activated and all switches individually activate. Do not move on the the next step until you are getting correct status.
+   If you see all switches reporting in the Pn: status when no switches are being activated something is inverted. The $5 setting inverts the switch reporting status. $5 can be either $5=0 or $5=1. Swap the $5 value if you are not seeing the correct status. Recheck the status of no switch activated and all switches individually activate. **DO NOT move onto the the next step until you are getting the correct status**
 
 2. Axis Movement Directions
 The next thing to do is check that the axes move in the right direction. If you send it a move in the positive direction, does the axis move in the positive direction. Here is a sequence I like to use:
@@ -73,12 +73,12 @@ The next thing to do is check that the axes move in the right direction. If you 
    - Each time you send something like ```G0X2``` it will move 2 units in the positive direction (if you send ```G0X-2``` it should move 2 units in the negative direction)
    - Use a short move for each axis to make sure they all move in the correct direction.
 
-If any axes move in the wrong direction, there are 2 ways to fix this:
+   If any axes move in the wrong direction, there are 2 ways to fix this:
    - The first is with the ```$Stepper/DirInvert``` setting
-     - The setting is a list of the axis direction you want to invert (For Example: ```$Stepper/DirInvert=XZ``` means **X** and **Z** are currently inverted
+   - The setting is a list of the axis direction you want to invert (For Example: ```$Stepper/DirInvert=XZ``` means **X** and **Z** are currently inverted.
    - Check the current setting by sending ```$Stepper/DirInvert``` (add or remove letters to change the direction of the axes)
 
-The other way to to change the stepper motor wiring. You would swap the wires on only one coil of the motor going the wrong way. _Note: on machines with 2 motors on an axis, fixing the wiring is the only way to fix the direction_
+   The other way to to change the stepper motor wiring. You would swap the wires on only one coil of the motor going the wrong way. _Note: on machines with 2 motors on an axis, fixing the wiring is the only way to fix the direction_
 
 3. Homing Direction
 The axes can home in any direction you prefer. For example: it is common on a lot of routers to home X and Y in the negative direction and Z in the positive (up) direction. This is controlled with the ```$Homing/DirInvert``` setting.
@@ -97,13 +97,13 @@ You can have up to 6 cycles, Example:
 
 5. Homing Test Setup
 Make sure the following settings are configured accurately:
-- ```$Limits/Soft=Off``` (Turn of soft limits)
-- ```$Limits/Hard=Off (Turn off hard limits)
-- ```$Homing/Enable (Enable homing)
-- ```$Homing/Feed=100 (a slow homing feed rate)
-- ```$Homing/Seek=200 (a faster search rate)
-- ```$Homing/Pulloff=3 (set homing switch pull off to 3mm)
-- ```$Homing/Cycle0=Z```, ```$Homing/Cycle0=X```,  or ```$Homing/Cycle0=Y```; only one axis per cycle
+   - ```$Limits/Soft=Off``` (Turn of soft limits)
+   - ```$Limits/Hard=Off (Turn off hard limits)
+   - ```$Homing/Enable (Enable homing)
+   - ```$Homing/Feed=100 (a slow homing feed rate)
+   - ```$Homing/Seek=200 (a faster search rate)
+   - ```$Homing/Pulloff=3 (set homing switch pull off to 3mm)
+   - ```$Homing/Cycle0=Z```, ```$Homing/Cycle0=X```,  or ```$Homing/Cycle0=Y```; only one axis per cycle
 
 6. Homing Test
 Homing is done using the ```$H``` command. By default you can also use single axis homing with ```$HX```, etc. Single axis homing is good for testing, so I will assume it is enabled.
