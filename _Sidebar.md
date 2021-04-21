@@ -43,7 +43,7 @@
  - [Status indicators](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#status-indicators)
  - [Probe input](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#probe-input)
  - [Macro1 & Macro2](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#macro1--macro2)
- - [TMC diag_0 output](TMC_diag_0_output)
+ - [TMC diag_0 output](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#tmc-diag_0)
 
 [Rear Panel](Rear_Panel)
  - [Motor connectors](https://github.com/Spark-Concepts/xPro-V5/wiki/Rear_Panel#motor-connectors) 
