@@ -1,5 +1,23 @@
 # Side Panel
 
+
+## Power Switch
+
+## Reset Switch
+
+## SD Card
+
+## Motor fault indicators
+
+## Status indicators
+
+## Probe input
+
+## Macro1 & Macro2
+
+## TMC diag_0
+
+
 ## Power
 
 Connect Positive ("+24V") and Negative ("GND") from your Power Supply to the xPro-V5 using the supplied [(5mm) Connector](https://media.digikey.com/Photos/On%20Shore%20Technology%20Photos/OSTTJ027150.jpg) - be sure to observe correct polarity.
