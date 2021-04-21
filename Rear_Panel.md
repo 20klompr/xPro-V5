@@ -30,7 +30,7 @@ A variety of switch types can be used; generally they will be either normally op
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Limit_Switch_Mech.jpg" width="800">
 
 2. #### Proximity Switches
-With proximity switches, you generally need to provide these with power ground. Be sure they are compatible with 5V or 24V. The default setting is 5V, however most proximity switches require 10-24VDC; therefore you may need to move a jumper inside the x-ProV5 to provide 24V logic. 
+   With proximity switches, you generally need to provide these with power ground. Be sure they are compatible with 5V or 24V. The default setting is 5V, however most proximity switches require 10-24VDC; therefore you may need to move a jumper inside the x-ProV5 to provide 24V logic. 
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Limit_Switch_SS.jpg" width="800">
 
