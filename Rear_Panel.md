@@ -13,6 +13,7 @@ All CNC machine should have homing switches. They make sure your machine knows w
 ### Overview
 
 A typical homing sequence works like this:
+
 1. The machine will move towards a switch at a relatively rapid rate
 2. Once it detects the switch it will back off the switch and rehome at a slower rate to get a more accurate home position
 3. It then backs off the switch
@@ -21,7 +22,7 @@ _Homing can be done one axis at a time or several axes can be done at one time. 
 
 ### Switch Types
     
-   A variety of switch types can be used; generally they will be either normally open (N.O.) or normally closed (N.C.) _...or combination where they have both types of contacts_
+    A variety of switch types can be used; generally they will be either normally open (N.O.) or normally closed (N.C.) _...or combination where they have both types of contacts_
 
 1. #### Mechanical Switches
    
@@ -129,6 +130,7 @@ Setting | Description
    Once you have basic homing working, you can tune some values to get better performance. Make sure the ```$27``` pull off is fully clearing the switch. Play with the ```$24``` and ```$25``` speeds. It is nice to have a relatively quick search phase followed by a slow second locate phase.
 
 ### Soft Limits
+
     Soft limits, ```$Limits/Soft=On```, use Grbl's internal position values to determine if a requested move will crash into one of the ends.
     - It uses the max travel ```$13x``` to determine this. 
     - The machine will enter an Alarm 2 mode. 
@@ -136,6 +138,7 @@ Setting | Description
     - If you want soft limits to ignore an axis, set that ```MaxTravel``` on that axis to 0.
 
 ### Hard Limits
+
     Hard limits, ```$Limits/Hard=On```, use the switches to stop Grbl if it hits a limit switch.
     - This is a good fail safe setup; it does an immediate uncontrolled stop. 
     - You must rehome before you can use the machine again. 
