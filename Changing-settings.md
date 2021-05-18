@@ -494,7 +494,7 @@ This sets the maximum travel distance from end to end for each axis in mm. This 
 
 **Important Notes:** Changing this number will likely affect your work offsets (G54-G59). Consider resetting your work offsets with $rst=# any time you change the travel. If you clear a homing alarm with $X rather than home, the soft limits will not have accurate position information and not function properly.
 
-#### $X/Current/Run or $C/Current/Run $140 thru $145 – [X,Y,Z,A,B,C]  Stepper Run Current (extended settings)
+#### $X/Current/Run thru $C/Current/Run $140 thru $145 – [X,Y,Z,A,B,C]  Stepper Run Current (extended settings)
 
 This is the run current in amperes for Trinamic SPI stepper drivers.  This is RMS current, not MAX current - to calculate this setting, looking up the maximum current for your motor and multiply by 0.707.  Example: Most Nema23 motors are rated for 2.8Amax therefore this setting = 2.8 * 0.707 = 1.97.  * *Note: it is not great to run motor at max current for extended periods, would recommend setting this to roughly 90% of the calculated RMS current - for our example we would set our standard Nema28, with a 2.8A max, to a value of 1.8 for this setting
 
