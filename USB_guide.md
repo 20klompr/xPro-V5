@@ -2,7 +2,7 @@
 
 **We recommend using CNCjs Desktop to control the CNC xPro V5, however, the other Gcode Senders listed below will work as well**    
 ***
-## [USB Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) Install
+## USB [Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers#software) Install
 If you are unable to connect to the xPRO via USB to a gcode sender, please download the drivers here:
 - [https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip)
 - [https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
