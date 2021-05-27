@@ -8,7 +8,7 @@ If you are unable to connect to the xPRO via USB to a gcode sender, please downl
 [https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 
 
-For Windows, please extract the file and run:
+For Windows users, please extract the file and run:
 - **P210xVCPInstaller_x64 if you have a 64 bit computer**
 - **CP210xVCPInstaller_x86 if you have a 32 bit computer**
 
