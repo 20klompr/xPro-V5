@@ -22,11 +22,11 @@ CNC_xPRO_V5_  | MotoAssignment_ | SpindleType_ | DoorSwitchType.bin
  **DoorSwitchType** *controls whether or not the door/Estop switch is Normally Open (NO), or Normally Closed (NC)*
 
 **NOTE:**
-- ***If you select firmware "...NC.bin" - a [Normally Closed switch](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#doorestop) will need to be attached at all times or the system will not run; you will also be prompted to enter a Username and Password and regardless as to what your enter, you will be unable to access the WebUI until the E-Stop/Door normally closed condition is met***
+- ***If you select firmware "...NC.bin" - a [Normally Closed switch](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#doorestop) will need to be attached at all times or the system will not run; you will also be prompted to enter a Username and Password and regardless as to what your enter, you will be unable to access the WebUI until the E-Stop/Door normally closed condition is met.***
 
 ![](https://github.com/Spark-Concepts/xPro-V5/blob/main/images/login_err.png)
 
-- ***With the "...NO.bin" - a Normally Open switch may or may-not be installed for normal operation (assuming the E-Stop/Door normally open condition is met)***
+- ***With the "...NO.bin" - a Normally Open switch may or may-not be installed for normal operation (assuming the E-Stop/Door normally open condition is met upon system initialization)***
 
 ## OTA (Over The Air) Firmware Updates
 
