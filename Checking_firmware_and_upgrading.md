@@ -26,7 +26,7 @@ CNC_xPRO_V5_  | MotoAssignment_ | SpindleType_ | DoorSwitchType.bin
 
 ![](https://github.com/Spark-Concepts/xPro-V5/blob/main/images/login_err.png)
 
-- ***selecting NO allows a Normal Open switch to be installed or not***
+- ***With the "...NO.bin" - a Normally Open switch may or may-not be installed for normal operation (assuming the E-Stop/Door normally open condition is met)***
 
 ## OTA (Over The Air) Firmware Updates
 
