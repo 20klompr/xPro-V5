@@ -31,7 +31,7 @@
  - [Cool](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#cool)
  - [Toolhead/VFD-RS485](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#toolheadvfd-rs485)
  - [Relay](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#relay-terminal)
- - [Door](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#doorestop)
+ - [Door/E-Stop](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#doorestop)
  - [Program button](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#program-button)
  - [USB](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#usb-connection)
 
