@@ -208,7 +208,7 @@ A switch can be connected to the Door/Estop terminal to allow a physical button 
 1. To use a NO switch (see figure below), simply wire the switch to the 2 pin, 3.81mm header. Verify the default jumper settings<sub>(1 & 2)</sub> 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/NO_Estop.jpg" width="800">
 
-2. To use a NC switch, you must first update the firmware to one of the “CNC_xPRO_V5_----_---_NC” variants. Verify the jumper settings<sub>(1 & 2)</sub> Then wire the NC switch to the 2 pin, 3.81mm header (see figure below). 
+2. To use a NC switch, you must first update the firmware to one of the “CNC_xPRO_V5_----_---_NC” variants. Verify the jumper settings<sub>(1 & 2)</sub> Then wire the NC switch to the 2 pin, 3.81mm header (see figure below⤵). 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/NC_Estop.jpg" width="800">
  
 ***
