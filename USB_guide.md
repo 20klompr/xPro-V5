@@ -3,6 +3,7 @@
 **We recommend using CNCjs Desktop to control the CNC xPro V5, however, the other Gcode Senders listed below will work as well**    
 ***
 ## USB Driver Install
+## Windows Driver Installation
 If you are unable to connect to the xPRO via USB to a gcode sender, please download the [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers#software) here:
 - [https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip)
 - [https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
@@ -11,6 +12,16 @@ If you are unable to connect to the xPRO via USB to a gcode sender, please downl
 For Windows users, please extract the file and run:
 - **P210xVCPInstaller_x64 if you have a 64 bit computer**
 - **CP210xVCPInstaller_x86 if you have a 32 bit computer**
+
+## Mac OSX Driver Installation
+Release notes and Legacy Drivers for _MacOS 10.5, 10.6, 10.7, 10.8, 10.9, 10.10 and 10.11:_
+- [Release Notes](https://www.silabs.com/documents/public/release-notes/Mac_OSX_VCP_Driver_Release_Notes.txt)
+- []()
+
+Release notes and Drivers for MacOS 10.11 or greater:
+- [Release Notes](https://www.silabs.com/documents/public/release-notes/Mac_OSX_VCP_Driver_Release_Notes.txt)
+- [https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
+
 
 ## CNCJS
 
