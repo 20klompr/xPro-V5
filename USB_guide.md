@@ -4,7 +4,7 @@
 ***
 ## USB Driver Install
 ### Windows Driver Installation
-If you are unable to connect to the xPRO via USB to a gcode sender, please download the [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers#software) here:
+If you are unable to connect to the xPRO via USB to a gcode sender, please download the CP210x USB to UART Bridge VCP Drivers here:
 - [https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip)
 
 For Windows users, please extract the file and run:
