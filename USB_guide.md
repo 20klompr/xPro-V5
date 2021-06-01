@@ -21,8 +21,12 @@ Release notes and Drivers for **MacOS 10.11 or greater:**
 - [Release Notes](https://www.silabs.com/documents/public/release-notes/Mac_OSX_VCP_Driver_Release_Notes.txt)
 - [https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 
-Note: for legacy OS Software and Driver Packages see: [SiLabs Legacy OS Drivers](https://www.silabs.com/community/interface/knowledge-base.entry.html/2017/01/10/legacy_os_softwarea-bgvU)
-for the most current drivers see: [SiLabs VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers#software)
+### Driver source links: 
+
+_for legacy OS Software and Driver Packages see:_
+   - _[SiLabs Legacy OS Drivers](https://www.silabs.com/community/interface/knowledge-base.entry.html/2017/01/10/legacy_os_softwarea-bgvU)_
+_for the most current drivers see:_ 
+   - _[SiLabs VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers#software)_
 
 ## CNCJS
 
