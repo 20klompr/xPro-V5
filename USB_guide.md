@@ -26,7 +26,7 @@ Release notes and Drivers for **MacOS 10.11 or greater:**
 _for all legacy OS software and driver packages see:_
    - _[SiLabs Legacy OS Drivers](https://www.silabs.com/community/interface/knowledge-base.entry.html/2017/01/10/legacy_os_softwarea-bgvU)_
 
-_for all the most current drivers see:_ 
+_for the most current drivers see:_ 
    - _[SiLabs VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers#software)_
 
 ## CNCJS
