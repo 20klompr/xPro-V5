@@ -14,11 +14,12 @@ For Windows users, please extract the file and run:
 - **CP210xVCPInstaller_x86 if you have a 32 bit computer**
 
 ## Mac OSX Driver Installation
-Release notes and Legacy Drivers for _MacOS 10.5, 10.6, 10.7, 10.8, 10.9, 10.10 and 10.11:_
-- [Release Notes](https://www.silabs.com/documents/public/release-notes/Mac_OSX_VCP_Driver_Release_Notes.txt)
-- []()
 
-Release notes and Drivers for MacOS 10.11 or greater:
+Release notes and Legacy Drivers for **MacOS 10.5, 10.6, 10.7, 10.8, 10.9, 10.10 and 10.11:**
+- [Release Notes](http://www.silabs.com/Support%20Documents/Software/Mac_OSX_VCP_Driver_10_6_Release_Notes.txt)
+- [http://www.silabs.com/Support%20Documents/Software/Mac_OSX_VCP_Driver_10_6.zip](http://www.silabs.com/Support%20Documents/Software/Mac_OSX_VCP_Driver_10_6.zip)
+
+Release notes and Drivers for **MacOS 10.11 or greater:**
 - [Release Notes](https://www.silabs.com/documents/public/release-notes/Mac_OSX_VCP_Driver_Release_Notes.txt)
 - [https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 
