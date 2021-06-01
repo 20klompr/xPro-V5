@@ -23,7 +23,7 @@ Release notes and Drivers for **MacOS 10.11 or greater:**
 
 ### Driver source links: 
 
-_for legacy OS Software and Driver Packages see:_
+_for legacy OS software and driver packages see:_
    - _[SiLabs Legacy OS Drivers](https://www.silabs.com/community/interface/knowledge-base.entry.html/2017/01/10/legacy_os_softwarea-bgvU)_
 
 _for the most current drivers see:_ 
