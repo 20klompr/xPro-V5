@@ -21,6 +21,9 @@ Release notes and Drivers for **MacOS 10.11 or greater:**
 - [Release Notes](https://www.silabs.com/documents/public/release-notes/Mac_OSX_VCP_Driver_Release_Notes.txt)
 - [https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip](https://www.silabs.com/documents/public/software/Mac_OSX_VCP_Driver.zip)
 
+### Linux Drivers
+- [Linux 3.x.x/4.x.x/5.x.x VCP Driver](https://www.silabs.com/documents/login/software/Linux_3.x.x_4.x.x_VCP_Driver_Source.zip) *(Silicon Labs )*
+
 ### Driver source links: 
 
 _for all legacy OS software and driver packages see:_
