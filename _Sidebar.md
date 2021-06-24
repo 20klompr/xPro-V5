@@ -25,6 +25,7 @@
  - [USB guide](USB_guide)
    - [Windows Drivers](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide#usb-driver-install)
    - [Mac Drivers](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide#mac-osx-driver-installation)
+   - [Linux Drivers](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide#linux-drivers)
 
 ### Hooking up your CNC xPRO V5	
 [Front Panel](Front_Panel)
