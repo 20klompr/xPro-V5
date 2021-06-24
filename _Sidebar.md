@@ -52,7 +52,7 @@
 
 [Inside jumpers](Inside_jumpers)
  - [Mist output voltage](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#cool)
- - [Relay signal](Relay_signal) 
+ - [Relay signal](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#relay-terminal) 
  - [GPIO Logic](GPIO_Logic)
  - [Limit Switch Logic](Limit_Switch_Logic)
 
