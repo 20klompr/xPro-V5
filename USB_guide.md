@@ -23,7 +23,7 @@ Release notes and Drivers for **MacOS 10.11 or greater:**
 
 ### Linux Drivers
 
-- [Linus 2.6.x VCP Revision History](https://www.silabs.com/documents/public/release-notes/Linux_CP210x_VCP_2.6.x_Release_Notes.txt)
+- [Linux 2.6.x VCP Revision History](https://www.silabs.com/documents/public/release-notes/Linux_CP210x_VCP_2.6.x_Release_Notes.txt)
 - [Linux 3.x.x/4.x.x/5.x.x VCP Driver](https://github.com/Spark-Concepts/xPro-V5/tree/main/Drivers)
 
 ### Driver source links: 
