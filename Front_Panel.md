@@ -220,4 +220,4 @@ A switch can be connected to the Door/Estop terminal to allow a physical button 
 This button is used to initialize the bootloader when uploading firmware via USB.  Otherwise, don’t push it 😊.  
 
 ## USB Connection
-The USB connection for the xProV5 is a USB-C type connector.  This connector allows the use of USB based GRBL Senders (CNCjs, Universal Gcode Sender, etc). These sender provide more features than available through the WebUI – mostly in terms of graphics and job tracking.  
+The USB connection for the xProV5 is a USB-C type connector.  This connector allows the use of USB based [GRBL Senders](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide) (CNCjs, Universal Gcode Sender, etc). These sender provide more features than available through the WebUI – mostly in terms of graphics and job tracking.  
