@@ -1,8 +1,14 @@
+## Uncompiled Firmware
+
+Source code can be found here: https://github.com/Spark-Concepts/xPro-V5-Firmware
+
 ## Precompiled Firmware
 
 **Default xProV5 firmware is:**  ***CNC_xPRO_V5_XYYZ_PWM_NO.bin*** *(this denoted a 3 axis dual Y motor machine, with a pwm spindle(0-5V, or 0-10V), and a normally open door switch)*
 
 **The precompiled firmware is named to clearly identify specific compile time options** - _you can find the most ***up-to-date*** firmware here:_ https://github.com/Spark-Concepts/xPro-V5
+
+
 
 CNC_xPRO_V5_  | MotoAssignment_ | SpindleType_ | DoorSwitchType.bin
 ------------- | -------------|------------- | -------------
