@@ -56,7 +56,7 @@ When connecting a powered probe, please refer to the diagram below:
 
 ### Probe Testing and Setup
 
-Before probing make sure the probe circuit is working. Send the ? character from a serial terminal to get the current status. If your gcode sender does not show you the raw status response, you may need to use a simple serial terminal. The status response will show you any active inputs like the probe.
+Before probing make sure the probe circuit is working. Send the `?` character from a serial terminal to get the current status. If your gcode sender does not show you the raw status response, you may need to use a simple serial terminal. The status response will show you any active inputs like the probe.
 
 It will look something like this with no switches active...
 
