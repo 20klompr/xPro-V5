@@ -44,17 +44,17 @@ image HERE
 When the milling bit (with the clip on), touches the probe plate **"SIG" and "GND" make contact**
 
 The xPRO-V5 uses a 3 pin connector which is provided with the controller.
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/probe_non-powered.jpg">
 
-To connect the xPRO-V5 to an unpowered touch probe, connect one wire to **GND** and the other to **SIG** using the provided green EDG connector. 
+To connect the xPRO-V5 to an unpowered touch probe, connect one wire to **GND** and the other to **SIG** using the provided EDG connector. 
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/warning.png" width="48">
+
 Leave the middle pin unconnected -
-__Connecting 24V or 5V directly to the GND (aka shorting) can permanently damage the controller. Please be sure to double-check your wiring before plugging in all accessories!__
+Connecting 24V or 5V directly to the GND (aka shorting) can permanently damage the controller. Please be sure to double-check your wiring before plugging in all accessories!
 
-
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/probe_non-powered.jpg" width="800">
-
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/probe_powered.jpg" width="800">
+When connecting a powered connector, please refer to the diagram below: 
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/probe_powered.jpg">
 
 ### Probe Testing and Setup
 
