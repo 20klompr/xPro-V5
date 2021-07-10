@@ -40,6 +40,22 @@ Some people have trouble when SD cards have been formatted by Windows, but were 
 
 ## Probe input
 image HERE
+### Probe Wiring
+When the milling bit (with the clip on), touches the probe plate **"SIG" and "GND" make contact**
+
+The xPRO-V5 uses a 3 pin connector which is provided with the controller.
+
+To connect the xPRO-V5 to an unpowered touch probe, connect one wire to **GND** and the other to **SIG** using the provided green EDG connector. 
+
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/warning.png" width="48">
+Leave the middle pin unconnected -
+__Connecting 24V or 5V directly to the GND (aka shorting) can permanently damage the controller. Please be sure to double-check your wiring before plugging in all accessories!__
+
+
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/probe_non-powered.jpg" width="800">
+
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/probe_powered.jpg" width="800">
+
 ### Probe Testing and Setup
 
 Before probing make sure the probe circuit is working. Send the ? character from a serial terminal to get the current status. If your gcode sender does not show you the raw status response, you may need to use a simple serial terminal. The status response will show you any active inputs like the probe.
@@ -56,7 +72,7 @@ The **Pn:** section is for active input pins and the P indicates the probe is ac
 
 You do not want to see the probe active when it is not touching and see it active when it is touching.
 
-Use the `$6` or `$Probe/Invert` setting to flip the logic if your is reporting backwards.
+Use the `$6` or `$Probe/Invert` [setting](https://github.com/Spark-Concepts/xPro-V5/wiki/Changing-settings#probeinvert-or-6---probe-pin-invert-boolean) to flip the logic if your is reporting backwards.
 
 ### Probing
 Many senders have this feature built in, including the WebUI.
@@ -67,11 +83,6 @@ Here is a basic gcode sequence for a Z probe: Typically it is done in the Z dire
 2. Receive...`[PRB: 0.000, 0.000, -15.621]` This is a typical response after touching the plate. This was the machine space location when it touched. The current location is probably a tiny bit lower due to the deceleration.
 3. Send...`G53 G0 Z-15.621` This tells Grbl to move to the actual probe location in machine space. This corrects for the overshoot.
 4. Send...`G10 L20 P0 Z3.00` This tells Grbl to zero the current work coordinate system (P0) to the thickness of your touch plate (3.00mm).
-
-When the milling bit (with the clip on), touches the probe plate the "SIG" and "GND" make contact 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/probe_non-powered.jpg" width="800">
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/warning.png">
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/probe_powered.jpg" width="800">
 
 ## Macro1 & Macro2
 
