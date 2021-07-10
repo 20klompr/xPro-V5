@@ -39,7 +39,8 @@ Some people have trouble when SD cards have been formatted by Windows, but were 
 ## Status indicators
 
 ## Probe input
-image HERE
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/zprobe3.jpg">
+
 ### Probe Wiring
 When the milling bit (with the clip on), touches the probe plate **"SIG" and "GND" make contact**
 
