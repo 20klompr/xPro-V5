@@ -48,9 +48,7 @@ The xPRO-V5 uses a 3 pin connector which is provided with the controller.
 
 To connect the xPRO-V5 to an unpowered touch probe, connect one wire to **GND** and the other to **SIG** using the provided EDG connector. 
 
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/warning.png" width="48">
-
-Leave the middle pin unconnected -
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/warning.png" width="48"> Leave the middle pin unconnected -
 Connecting 24V or 5V directly to the GND (aka shorting) can permanently damage the controller. Please be sure to double-check your wiring before plugging in all accessories!
 
 When connecting a powered connector, please refer to the diagram below: 
