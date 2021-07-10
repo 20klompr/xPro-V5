@@ -64,7 +64,7 @@ It will look something like this with no switches active...
 
 and something like this with the probe switch active...
 
-<Idle|MPos:0.000,0.000,0.000|FS:0,0|Pn:P|Ov:100,100,100>
+`<Idle|MPos:0.000,0.000,0.000|FS:0,0|Pn:P|Ov:100,100,100>`
 
 The **Pn:** section is for active input pins and the P indicates the probe is active.
 
@@ -83,9 +83,10 @@ Here is a basic gcode sequence for a Z probe: Typically it is done in the Z dire
 4. Send...`G10 L20 P0 Z3.00` This tells Grbl to zero the current work coordinate system (P0) to the thickness of your touch plate (3.00mm).
 
 ## Macro1 & Macro2
+TBD
 
 ## TMC diag_0
-
+TBD
 
 ## Power
 
