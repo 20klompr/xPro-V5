@@ -42,7 +42,7 @@ Some people have trouble when SD cards have been formatted by Windows, but were 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/zprobe3.jpg">
 
 ### Probe Wiring
-When the milling bit (with the clip on), touches the probe plate **"SIG" and "GND" make contact...**
+When the milling bit (with the clip on), touch the probe plate, **"SIG" and "GND" make contact...**
 
 The xPRO-V5 uses a 3 pin connector which is provided with the controller
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/probe_non-powered.jpg">
