@@ -84,10 +84,10 @@ Here is a basic gcode sequence for a Z probe: Typically it is done in the Z dire
 4. Send...`G10 L20 P0 Z3.00` This tells Grbl to zero the current work coordinate system (P0) to the thickness of your touch plate (3.00mm).
 
 ## Macro1 & Macro2
-TBD
+Inputs for future firmware modifications to allow physical buttons to execute stored macros
 
 ## TMC diag_0
-TBD
+TMC drivers StallGuard output, if enable
 
 ## Power
 
