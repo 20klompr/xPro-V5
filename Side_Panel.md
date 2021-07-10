@@ -39,6 +39,39 @@ Some people have trouble when SD cards have been formatted by Windows, but were 
 ## Status indicators
 
 ## Probe input
+image HERE
+### Probe Testing and Setup
+
+Before probing make sure the probe circuit is working. Send the ? character from a serial terminal to get the current status. If your gcode sender does not show you the raw status response, you may need to use a simple serial terminal. The status response will show you any active inputs like the probe.
+
+It will look something like this with no switches active...
+
+`<Idle|MPos:0.000,0.000,0.000|FS:0,0|WCO:0.000,0.000,0.000>`
+
+and something like this with the probe switch active...
+
+<Idle|MPos:0.000,0.000,0.000|FS:0,0|Pn:P|Ov:100,100,100>
+
+The **Pn:** section is for active input pins and the P indicates the probe is active.
+
+You do not want to see the probe active when it is not touching and see it active when it is touching.
+
+Use the `$6` or `$Probe/Invert` setting to flip the logic if your is reporting backwards.
+
+### Probing
+Many senders have this feature built in, including the WebUI.
+
+Here is a basic gcode sequence for a Z probe: Typically it is done in the Z direction; however, other direction(s) could be specified.
+
+1. Send...`G38.2 Z-5.0 F50` This tells Grbl to probe a maximum Z distance of -5mm at a speed of 50mm/min
+2. Receive...`[PRB: 0.000, 0.000, -15.621]` This is a typical response after touching the plate. This was the machine space location when it touched. The current location is probably a tiny bit lower due to the deceleration.
+3. Send...`G53 G0 Z-15.621` This tells Grbl to move to the actual probe location in machine space. This corrects for the overshoot.
+4. Send...`G10 L20 P0 Z3.00` This tells Grbl to zero the current work coordinate system (P0) to the thickness of your touch plate (3.00mm).
+
+When the milling bit (with the clip on), touches the probe plate the "SIG" and "GND" make contact 
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/probe_non-powered.jpg" width="800">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/warning.png">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/probe_powered.jpg" width="800">
 
 ## Macro1 & Macro2
 
