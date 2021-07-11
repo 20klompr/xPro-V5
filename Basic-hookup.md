@@ -50,10 +50,14 @@ The use of a 3-wire inductive proximity switch SN-04-N(NO) or SN-04-N2(NC) may a
 With no signal is detected, the NO (normally open) black signal wire will output 24v while the NC (normally closed) black signal wire will source a ground. When the sensor detects metal the signal wire will either drop the voltage to zero or rise to 24V. 
 
 # Connect Probe
+When wiring the xPRO-V5 to an unpowered touch probe, connect one wire to GND and the other to SIG; **be sure to leave the middle pin unconnected**, otherwise permanent damage may result
+
+_Please be sure to double-check your wiring before plugging in all accessories!_ 
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/z-touchplate2.jpg" width="600">  
 
 ***
+When connecting a powered probe, please refer to the diagram below:
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/xyzprobe-wiring.jpg" width="800">
 
 # Connect Tools
