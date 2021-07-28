@@ -131,7 +131,7 @@ Enum settings have a specified set of allowable values, that can be expressed ei
 |Stepper/StepInvert|2|AxisMask||0|||[Axes whose step signals are inverted](#stepperstepinvert-or-2--step-port-invert-mask)|
 |Stepper/DirInvert|3|AxisMask||0|||[Axes whose direction signals are inverted](#stepperdirinvert-or-3--direction-port-invert-mask)|
 |Stepper/EnableInvert|4|Flag||OFF|||[Do not invert (off) or invert (on) all stepper enable signals](#stepperenableinvert-or-4---step-enable-invert-boolean)|
-|Limits/Invert|5|Flag||ON|||[Limit switch active high (off) or low (on)](#limitsinvert-or-5---limit-pins-invert-boolean)|
+|Limits/Invert|5|Flag||ON|||[Limit switches](#limitsinvert-or-5---limit-pins-invert-boolean)|
 |Probe/Invert|6|Flag||OFF|||[Probe switch active high (off) or low (on)](#probeinvert-or-6---probe-pin-invert-boolean)|
 |Report/Status|10|Int||1|0|2|[Fields to include in real-time reports](#reportstatus-or-10---status-report-mask)|
 |GCode/JunctionDeviation|11|Float||0.01|0|10|[Controls motion around sharp corners](#gcodejunctiondeviation-or-11---junction-deviation-mm)|
@@ -321,13 +321,11 @@ By default, the stepper enable pin is high to disable and low to enable. If your
 
 #### $Limits/Invert or $5 - Limit pins invert, boolean
 
-By default, the limit pins are held normally-high with the Arduino's internal pull-up resistor. When a limit pin is low, Grbl interprets this as triggered. For the opposite behavior, just invert the limit pins by sending `$Limits/Invert=on` or `$5=1`. Disable with `$Limits/Invert=off` or `$5=0`. You may need a power cycle to load the change.
-
-NOTE: For more advanced usage, the internal pull-up resistor on the limit pins may be disabled in config.h.
+By default, the limit pins are held normally-high with the xPRO's internal circuitry. With `$Limits/Invert=off` or `$5=0` the xPRO expects to see a LOW signal on the SIG pin with a transition to a HIGH signal indicating a limit switch trigger (typically this will be a Normally Closed (NC) switch).  With `$Limits/Invert=on` or `$5=1` the xPRO expects to see no signal, or a HIGH signal on the SIG pin with a transition to a LOW signal indicating a limit switch trigger (typically this will be a Normally Open (NO) switch). Power cycle to load the change.
 
 #### $Probe/Invert or $6 - Probe pin invert, boolean
 
-By default, the probe pin is held normally-high with the Arduino's internal pull-up resistor. When the probe pin is low, Grbl interprets this as triggered. For the opposite behavior, just invert the probe pin by sending `$Probe/Invert=on` or `$6=1`. Disable with `$Probe/Invert=off` or  `$6=0`. You may need a power cycle to load the change.
+By default, the probe pin is held normally-high with the xPRO's internal circuitry.  With `$Probe/Invert=off` or  `$6=0`, the xPRO expects to see a LOW signal on the probe SIG pin with a transition to HIGH indicating a trigger (typical of an NC probe).  For the opposite behavior, just invert the probe pin by sending `$Probe/Invert=on` or `$6=1` (typical of an NO probe). Power cycle to load the change.
 
 #### $Report/Status or $10 - Status report, mask
 
