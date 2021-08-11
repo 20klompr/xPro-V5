@@ -4,13 +4,34 @@ Source code can be found here: https://github.com/Spark-Concepts/xPro-V5-Firmwar
 
 ## Precompiled Firmware
 
-**Default xProV5 firmware is:**  ***CNC_xPRO_V5_XYYZ_PWM_NO.bin*** *(this denoted a 3 axis dual Y motor machine, with a pwm spindle(0-5V, or 0-10V), and a normally open door switch)*
+**Default xProV5 firmware is:**  ***CNC_xPRO_V5_XYYZ_NO.bin*** *(this denoted a 3 axis dual Y motor machine, with a real-time selectable spindle (Laser, pwm, RS485), and a normally open door switch)*
 
-**The precompiled firmware is named to clearly identify specific compile time options** - _you can find the most ***up-to-date*** firmware here:_ https://github.com/Spark-Concepts/xPro-V5
+**The precompiled firmware is named to clearly identify specific compile time options** - _you can find the most ***up-to-date*** firmware here:_ https://github.com/Spark-Concepts/xPro-V5/tree/main/Firmware
+
+##Firmware naming convention 
+
+CNC_xPRO_V5_  | MotorAssignment_ | SpindleType_ | DoorSwitchType.bin
+------------- | -------------|------------- | -------------
+" | XYYZ | ---  | NO
+" | XYYZ | ---  | NC
+" | XYYZ | BM3D | NO
+" | XYYZ | BM3D | NC
+
+**MotorAssignment:** *the new firmware is currently for XYYZ (3 axis, ganged Y) with XYAZ (4 axis) on the way*
+
+**SpindleType:** *the only specialized spindle option is now BM3D which is for use with the BM3D laser modules.  All other types can define the spindle real-time using the $Spindle/Type = "  "setting*    
+
+ **DoorSwitchType** *controls whether or not the door/Estop switch is Normally Open (NO), or Normally Closed (NC)*
+
+**NOTE:**
+- ***If you select firmware "...NC.bin" - a [Normally Closed switch](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#doorestop) will need to be attached at all times or the system will not run; if the switch is incorrect on startup you will need to correct the error and reset the controller.  The WebUI will no longer lock you out for an unsafe start, you will see a DOOR:1  error upon opening the WebUI but all functionality of the WebUI will be locked until the door condition is met.***
 
 
+- ***With the "...NO.bin" - a Normally Open switch is NOT required for normal operation, assuming the E-Stop/Door normally open condition is met upon system initialization.***
 
-CNC_xPRO_V5_  | MotoAssignment_ | SpindleType_ | DoorSwitchType.bin
+##Older Firmware naming convention for reference
+
+CNC_xPRO_V5_  | MotorAssignment_ | SpindleType_ | DoorSwitchType.bin
 ------------- | -------------|------------- | -------------
 " | XYYZ | PWM | NO
 " | XYAZ | PWM | NO
@@ -27,12 +48,6 @@ CNC_xPRO_V5_  | MotoAssignment_ | SpindleType_ | DoorSwitchType.bin
 
  **DoorSwitchType** *controls whether or not the door/Estop switch is Normally Open (NO), or Normally Closed (NC)*
 
-**NOTE:**
-- ***If you select firmware "...NC.bin" - a [Normally Closed switch](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#doorestop) will need to be attached at all times or the system will not run; you will also be prompted to enter a Username and Password upon Wi-Fi connection, and regardless of what your enter, you will be unable to access the WebUI until the E-Stop/Door normally closed condition is met.***
-
-![](https://github.com/Spark-Concepts/xPro-V5/blob/main/images/login_err.png)
-
-- ***With the "...NO.bin" - a Normally Open switch is NOT required for normal operation, assuming the E-Stop/Door normally open condition is met upon system initialization.***
 
 ## OTA (Over The Air) Firmware Updates
 
