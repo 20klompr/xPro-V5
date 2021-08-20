@@ -132,7 +132,7 @@ Enum settings have a specified set of allowable values, that can be expressed ei
 |Stepper/DirInvert|3|AxisMask||0|||[Axes whose direction signals are inverted](#stepperdirinvert-or-3--direction-port-invert-mask)|
 |Stepper/EnableInvert|4|Flag||OFF|||[Do not invert (off) or invert (on) all stepper enable signals](#stepperenableinvert-or-4---step-enable-invert-boolean)|
 |Limits/Invert|5|Flag||ON|||[Limit switches](#limitsinvert-or-5---limit-pins-invert-boolean)|
-|Probe/Invert|6|Flag||OFF|||[Probe switch active high (off) or low (on)](#probeinvert-or-6---probe-pin-invert-boolean)|
+|Probe/Invert|6|Flag||ON|||[Probe switch active high (off) or low (on)](#probeinvert-or-6---probe-pin-invert-boolean)|
 |Report/Status|10|Int||1|0|2|[Fields to include in real-time reports](#reportstatus-or-10---status-report-mask)|
 |GCode/JunctionDeviation|11|Float||0.01|0|10|[Controls motion around sharp corners](#gcodejunctiondeviation-or-11---junction-deviation-mm)|
 |GCode/ArcTolerance|12|Float||0.002|0|1|[Controls accuracy of arc tracing](#arctolerance-or-12--arc-tolerance-mm)|
