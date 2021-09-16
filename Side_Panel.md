@@ -110,7 +110,7 @@ Buttons connected to "Macro 1" or "Macro 2" must be normally open (by default). 
 
 3. **File from SD Card:** Example: Use the $SD/Run command and a filename Example: `$User/Macro0=$SD/Run=foo.nc`
 
-A file can be gcode, most Grbl_ESP32 commands and settings or a mixture of both.
+A file can be gcode, most Grbl_ESP32 [commands](https://github.com/Spark-Concepts/xPro-V5/wiki/Changing-settings#grbl-commands) and [settings](https://github.com/Spark-Concepts/xPro-V5/wiki/Changing-settings#grbl-settings) or a mixture of both.
 
 ## TMC diag_0
 TMC drivers StallGuard output, if enable
