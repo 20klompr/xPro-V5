@@ -44,8 +44,8 @@ Indication of driver errors:
 Indication of (active) function status:
 - Relay ([spindle enable or mist](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#relay-terminal))
 - [Z-Probe](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#probe-input)
-- Coolant Mist
-- Spindle
+- [Coolant Mist](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#cool)
+- [Spindle]()
 
 ## Probe input
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/zprobe3.jpg">
