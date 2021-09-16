@@ -35,8 +35,17 @@ The firmware uses the [Arduino SD library](https://www.arduino.cc/en/Reference/S
 Some people have trouble when SD cards have been formatted by Windows, but were able to solve the problem by formatting with [SD Card Formatter](https://sd-card-formatter.en.uptodown.com/windows)
 
 ## Motor fault indicators
+Indication of driver errors: 
+- Over temperature & Over temperature prewarning
+- Short to GND
+- Under voltage
 
 ## Status indicators
+Indication of (active) function status:
+- Relay (spindle enable or mist)
+- Z-Probe
+- Coolant Mist
+- Spindle
 
 ## Probe input
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/zprobe3.jpg">
@@ -113,7 +122,12 @@ Buttons connected to "Macro 1" or "Macro 2" must be normally open (by default). 
 A file can be [gcode](http://www.science.smith.edu/cdf/pdf_files/Techno_GCODE%20Commands.pdf), most Grbl_ESP32 [commands](https://github.com/Spark-Concepts/xPro-V5/wiki/Changing-settings#grbl-commands) and [settings](https://github.com/Spark-Concepts/xPro-V5/wiki/Changing-settings#grbl-settings) or a mixture of both.
 
 ## TMC diag_0
-TMC drivers StallGuard output, if enable
+Configured as open collector output (active low) - active on driver errors: 
+- Over temperature & Over temperature prewarning
+- Short to GND
+- Under voltage
+
+Also used for TMC driver StallGuard output, if enabled
 
 ## Power
 
