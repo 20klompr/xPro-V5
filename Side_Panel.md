@@ -42,7 +42,7 @@ Indication of driver errors:
 
 ## Status indicators
 Indication of (active) function status:
-- Relay (spindle enable or mist)
+- Relay ([spindle enable or mist](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#relay-terminal))
 - Z-Probe
 - Coolant Mist
 - Spindle
