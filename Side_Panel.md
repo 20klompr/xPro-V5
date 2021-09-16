@@ -84,7 +84,35 @@ Here is a basic gcode sequence for a Z probe: Typically it is done in the Z dire
 4. Send...`G10 L20 P0 Z3.00` This tells Grbl to zero the current work coordinate system (P0) to the thickness of your touch plate (3.00mm).
 
 ## Macro1 & Macro2
-Inputs for future firmware modifications to allow physical buttons to execute stored macros
+### Macro Button Feature Overview
+Macro buttons allow you to associate a switch closure with a macro. A basic macro can be simple commands or run a file from an SD card or the ESP32 flash file system. 
+
+### Electrical
+Buttons connected to "Macro 1" or "Macro 2" must be normally open (by default). Buttons can be inverted, but must be done so in [firmware](https://github.com/Spark-Concepts/xPro-V5-Firmware/blob/main/CNCxPROv5_20210708/src/Machines/CNC_xPRO_V5_Machine_Template.h).: 
+```CPP
+// The mask order is ...
+// Macro3 | Macro2 | Macro1 | Macro0 | Cycle Start | Feed Hold | Reset | Safety Door
+// For example Bnn101111 will invert the function of the "Macro 1" pin (Macro0).
+#define INVERT_CONTROL_PIN_MASK Bnnnnnnnn
+``` 
+
+### Implementing Macros:
+
+*note: Macro0="Macro 1" and Macro1="Macro 2" as labeled on the xPro-V5*
+
+`$User/Macro0=` *assigns a macro to the "Macro 1" input-(Normally Open Switch)*
+
+`$User/Macro1=` *assigns a macro to the "Macro 2" input-(Normally Open Switch)*
+
+1. **Single Command:** This can be any command or gcode. Example: `$User/Macro0=$H`
+
+2. **Multiple commands:** Place and ampersand "&" between commands (limit 250 chars). Example: `$User/Macro0=G90&G53G0Z-1&G0X0Y0`
+
+3. **File from SD Card:** Example: Use the $SD/Run command and a filename Example: `$User/Macro0=$SD/Run=foo.nc`
+
+A file can be gcode, most Grbl_ESP32 commands and settings or a mixture of both.
+
+*You must be in the idle state to execute button macros*
 
 ## TMC diag_0
 TMC drivers StallGuard output, if enable
