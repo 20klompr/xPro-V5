@@ -88,7 +88,7 @@ Here is a basic gcode sequence for a Z probe: Typically it is done in the Z dire
 Macro buttons allow you to associate a switch closure with a macro. A basic macro can be simple commands or run a file from an SD card or the ESP32 flash file system. 
 
 ### Electrical
-Buttons connected to "Macro 1" or "Macro 2" must be normally open (by default). Buttons can be inverted, but must be done so in [firmware](https://github.com/Spark-Concepts/xPro-V5-Firmware/blob/main/CNCxPROv5_20210708/src/Machines/CNC_xPRO_V5_Machine_Template.h).: 
+Buttons connected to "Macro 1" or "Macro 2" must be normally open (by default). Buttons can be inverted, but must be done so in [firmware](https://github.com/Spark-Concepts/xPro-V5-Firmware/blob/main/CNCxPROv5_20210708/src/Machines/CNC_xPRO_V5_Machine_Template.h): 
 ```CPP
 // The mask order is ...
 // Macro3 | Macro2 | Macro1 | Macro0 | Cycle Start | Feed Hold | Reset | Safety Door
@@ -98,7 +98,7 @@ Buttons connected to "Macro 1" or "Macro 2" must be normally open (by default). 
 
 ### Implementing Macros:
 
-*note: Macro0="Macro 1" and Macro1="Macro 2" as labeled on the xPro-V5*
+*note: Macro0="Macro 1" and Macro1="Macro 2" as labeled on the xPro-V5; also, you must be in the idle state to execute button macros*
 
 `$User/Macro0=` *assigns a macro to the "Macro 1" input-(Normally Open Switch)*
 
@@ -111,8 +111,6 @@ Buttons connected to "Macro 1" or "Macro 2" must be normally open (by default). 
 3. **File from SD Card:** Example: Use the $SD/Run command and a filename Example: `$User/Macro0=$SD/Run=foo.nc`
 
 A file can be gcode, most Grbl_ESP32 commands and settings or a mixture of both.
-
-*You must be in the idle state to execute button macros*
 
 ## TMC diag_0
 TMC drivers StallGuard output, if enable
