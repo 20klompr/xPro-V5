@@ -31,7 +31,7 @@ Warning: Never connect/disconnect motors to a powered-up controller. Always turn
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/End%20copy.jpg" width="400">
 
-NOTE: switching the polarity of either (one) coil will reverse the stepper's direction - also the color codes shown below may not apply to your particular Motors.  _This is used for machines with ganged axis' with motors facing opposite directions. _
+NOTE: switching the polarity of either (one) coil will reverse the stepper's direction - also the color codes shown below may not apply to your particular Motors. _This is used for machines with ganged axis' where the motors face opposite directions._
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/nema23-reversed-y2.jpg" width="600">
 
