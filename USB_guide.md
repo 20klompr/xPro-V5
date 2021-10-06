@@ -1,3 +1,7 @@
+# USB Cable
+
+**The CNC xPRO V5 requires a USB-A to USB-C cable, it is recommended to use a cable with shielding and a ferrite.  USB-C to USB-C cables will not work.**  
+
 # GCode Senders
 
 **We recommend using CNCjs Desktop to control the CNC xPro V5, however, the other Gcode Senders listed below will work as well**    
