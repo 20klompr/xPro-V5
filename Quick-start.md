@@ -55,6 +55,30 @@ Ensure that the jumper in the xPRO-V5 is in the disabled (default) position. Wir
 ## Connecting you xPRO-V5 to CNCjs
 
 # Machine configuration settings
+Setting up your machine is quite straightforward. Courtesy of [makerstore.au](https://www.makerstore.com.au/) Below is a set of configuration files for each of their machine kits. These files contain their recommended settings for each machine from the working area to the motor current.
+
+The quickest and easiest method to flash your controller with the recommended settings is by using a macro. The example below will use a WorkBee 1000 x 1000mm with High Torque motors. For now, minimize CNCjs.
+
+1. download the master configuration [here](https://www.makerstore.com.au/download/xPRO-V5-Machine-Profiles-Master-Configv1.3.rar). Follow the guide below:
+   - Unzip the Master Config file. In this config file is a number of folders corresponding to various machines. If you have a custom machine or a different brand of machine, contact us and our technicians will be able to assist you with your machine.
+   - Navigate to the folder containing the brand of the machine series you own. For example, if you own a WorkBee 1000 x 1000mm kit, navigate to the WorkBee folder.
+<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_-xpro-v5_master_config.jpg">
+   - Locate the configuration file of the machine that you have. Take note of the motors attached to your machines (High Torque or Standard Torque).
+<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_-_machine_sel.jpg">
+   - Open the file and select all of its contents and COPY them.
+<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_select_contents.png">
+   - Open CNCjs and navigate to the right-hand side of the program. Locate the macro widget. Select the + icon highlighted in green to add a macro.
+   - PASTE the contents of the configuration file into the Macro Commands field and click OK.
+<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_setup_macro-2.png">
+   - The macro will now look like this:
+<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_finish_macro.png">
+
+To flash your controller with these new settings, make sure that the xPRO-v5 is still connected via USB and click the play button on the macro widget. The following window will show.
+<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_run_macro.png">
+Clicking Run will flash the controller with the machine settings. You will only need to do this once. You may edit the macro if there are certain changes you wish to implement.
+
+A successful flash as shown below will show:
+<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_successful_flash.png">
 
 # Fine-tunin, motor direction and homing
 
@@ -77,9 +101,10 @@ TTL+ connects to the PWM connector and TTL- connects to GND on the TOOLHEAD conn
 
 Flash the xPRO with the appropriate firmware.
 - [Normally Closed Emergency Stop Switch](https://www.makerstore.com.au/download/software/CNCxPROv5_XYYZ_NC_Laser_2.bin)
-- Normally Open Emergency Stop Switch(https://www.makerstore.com.au/download/software/CNCxPROv5_XYYZ_NO_Laser_2.bin)
+- [Normally Open Emergency Stop Switch](https://www.makerstore.com.au/download/software/CNCxPROv5_XYYZ_NO_Laser.bin)
 In the CNCjs software, you can enable the laser mode by typing the following commands in the console:
-
+```
 $Spindle/Type=Laser
 $Gcode/LaserMode=ON
-$31=1.
+$31=1
+```
