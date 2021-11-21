@@ -67,27 +67,27 @@ The quickest and easiest method to flash your controller with the recommended se
 <p align="center">
    - Open the file and select all of its contents and COPY them.
 <p align="center">
-<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_select_contents.png">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_select_contents.png">
 </p> 
    - Open CNCjs and navigate to the right-hand side of the program. Locate the macro widget. Select the + icon highlighted in green to add a macro.
    - PASTE the contents of the configuration file into the Macro Commands field and click OK.
 <p align="center">
-<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_setup_macro-2.png">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_setup_macro-2.png">
 </p> 
    - The macro will now look like this:
 <p align="center">
-<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_finish_macro.png">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_finish_macro.png">
 </p> 
 
 To flash your controller with these new settings, make sure that the xPRO-v5 is still connected via USB and click the play button on the macro widget. The following window will show.
 <p align="center">
-<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_run_macro.png">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_run_macro.png">
 </p> 
 Clicking Run will flash the controller with the machine settings. You will only need to do this once. You may edit the macro if there are certain changes you wish to implement.
 
 A successful flash as shown below will show:
 <p align="center">
-<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_successful_flash.png">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_successful_flash.png">
 </p> 
 
 # Fine-tunin, motor direction and homing
