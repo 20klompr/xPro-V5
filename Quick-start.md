@@ -63,32 +63,33 @@ The quickest and easiest method to flash your controller with the recommended se
    - Unzip the Master Config file. In this config file is a number of folders corresponding to various machines. If you have a custom machine or a different brand of machine, contact us and our technicians will be able to assist you with your machine.
    - Navigate to the folder containing the brand of the machine series you own. For example, if you own a WorkBee 1000 x 1000mm kit, navigate to the WorkBee folder.
    - Locate the configuration file of the machine that you have. Take note of the motors attached to your machines (High Torque or Standard Torque).
-<p align="center">
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_-_machine_sel.jpg" width="400"
-</p>
+     <p align="center">
+     <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_-_machine_sel.jpg" width="400">
+     </p>
    - Open the file and select all of its contents and COPY them.
-<p align="center">
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_select_contents.png">
-</p> 
+     <p align="center">
+     <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_select_contents.png" width="400">
+     </p> 
    - Open CNCjs and navigate to the right-hand side of the program. Locate the macro widget. Select the + icon highlighted in green to add a macro.
    - PASTE the contents of the configuration file into the Macro Commands field and click OK.
-<p align="center">
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_setup_macro-2.png">
-</p> 
+     <p align="center">
+     <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_setup_macro-2.png" width="400">
+     </p> 
    - The macro will now look like this:
-<p align="center">
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_finish_macro.png">
-</p> 
+     <p align="center">
+     <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_finish_macro.png" width="400">
+     </p> 
 
 To flash your controller with these new settings, make sure that the xPRO-v5 is still connected via USB and click the play button on the macro widget. The following window will show.
 <p align="center">
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_run_macro.png">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_run_macro.png" width="400">
 </p> 
+
 Clicking Run will flash the controller with the machine settings. You will only need to do this once. You may edit the macro if there are certain changes you wish to implement.
 
 A successful flash as shown below will show:
 <p align="center">
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_successful_flash.png">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_successful_flash.png" width="400">
 </p> 
 
 # Fine-tunin, motor direction and homing
