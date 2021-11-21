@@ -1,13 +1,13 @@
-# Safety Statement
 
+# Safety Statement
 The author of this document is not liable or responsible for any accidents, injuries, equipment damage, property damage, loss of money or loss of time resulting from improper use of electrical or mechanical or software products.
 
 Assembling electrical and mechanical CNC machine components like power supplies, motors, drivers or other electrical and mechanical components involves dealing with high voltage AC (alternating current) or DC (direct current) and other hazardous items which can be extremely dangerous and needs high attention to detail, experience, knowledge of software, electricity, electro-mechanics and mechanics.
 
 BEFORE MAKING ANY CONNECTIONS OR DISCONNECTIONS POWER MUST BE REMOVED FROM THE DEVICE AND THE CONTROLLER. FAILURE TO DO SO WILL VOID ANY AND ALL WARRANTIES.
-
-Before starting please read through all the instructions.
-
+```diff
++ Before starting please read through all the instructions.
+```
 
 # Pre-Install Notes:
 
@@ -16,3 +16,8 @@ Before starting please read through all the instructions.
 - NEVER connect or disconnect any wire while power is applied. Failure to do the above will result in damage to the stepper drivers.
 ALWAYS disconnect power before making any connections or disconnections.
 - If using our hardware, please follow the wiring guides below:
+
+# 24V DC Input Wiring
+
+If you received the xPro V5 Controller bundle with a Meanwell 24V power supply, wire your system as shown below: Connect V- from the power supply to GND on the xPro and V+ from the power supply to +24V on the xPro. The mains voltage must be wired by a licensed electrician or similarly qualified individual.
+
