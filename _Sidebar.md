@@ -2,7 +2,7 @@
 
 ### [Hardware description](Hardware_Description)
 
-# Quick start
+# [Quick start](Quick-start)
 
 ### [Basic hookup](Basic-hookup)
 <!--- - [Motors](Motors) 
