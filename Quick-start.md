@@ -62,25 +62,33 @@ The quickest and easiest method to flash your controller with the recommended se
 1. download the master configuration [here](https://www.makerstore.com.au/download/xPRO-V5-Machine-Profiles-Master-Configv1.3.rar). Follow the guide below:
    - Unzip the Master Config file. In this config file is a number of folders corresponding to various machines. If you have a custom machine or a different brand of machine, contact us and our technicians will be able to assist you with your machine.
    - Navigate to the folder containing the brand of the machine series you own. For example, if you own a WorkBee 1000 x 1000mm kit, navigate to the WorkBee folder.
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front%20copy.jpg" width="400">
-
-<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_-xpro-v5_master_config.jpg" width="400">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/cncjs_-_machine_sel.jpg" width="400">
    - Locate the configuration file of the machine that you have. Take note of the motors attached to your machines (High Torque or Standard Torque).
-<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_-_machine_sel.jpg">
+<p align="center">
    - Open the file and select all of its contents and COPY them.
+<p align="center">
 <img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_select_contents.png">
+</p> 
    - Open CNCjs and navigate to the right-hand side of the program. Locate the macro widget. Select the + icon highlighted in green to add a macro.
    - PASTE the contents of the configuration file into the Macro Commands field and click OK.
+<p align="center">
 <img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_setup_macro-2.png">
+</p> 
    - The macro will now look like this:
+<p align="center">
 <img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_finish_macro.png">
+</p> 
 
 To flash your controller with these new settings, make sure that the xPRO-v5 is still connected via USB and click the play button on the macro widget. The following window will show.
+<p align="center">
 <img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_run_macro.png">
+</p> 
 Clicking Run will flash the controller with the machine settings. You will only need to do this once. You may edit the macro if there are certain changes you wish to implement.
 
 A successful flash as shown below will show:
+<p align="center">
 <img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_successful_flash.png">
+</p> 
 
 # Fine-tunin, motor direction and homing
 
