@@ -62,7 +62,9 @@ The quickest and easiest method to flash your controller with the recommended se
 1. download the master configuration [here](https://www.makerstore.com.au/download/xPRO-V5-Machine-Profiles-Master-Configv1.3.rar). Follow the guide below:
    - Unzip the Master Config file. In this config file is a number of folders corresponding to various machines. If you have a custom machine or a different brand of machine, contact us and our technicians will be able to assist you with your machine.
    - Navigate to the folder containing the brand of the machine series you own. For example, if you own a WorkBee 1000 x 1000mm kit, navigate to the WorkBee folder.
-<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_-xpro-v5_master_config.jpg">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front%20copy.jpg" width="400">
+
+<img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_-xpro-v5_master_config.jpg" width="400">
    - Locate the configuration file of the machine that you have. Take note of the motors attached to your machines (High Torque or Standard Torque).
 <img src="https://makerhardware.net/wiki/lib/exe/detail.php?id=electronics%3Axpro_v5_motion_control_system&media=electronics:cncjs_-_machine_sel.jpg">
    - Open the file and select all of its contents and COPY them.
