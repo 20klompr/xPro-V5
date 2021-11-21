@@ -17,7 +17,23 @@ Assembling electrical and mechanical CNC machine components like power supplies,
 ALWAYS disconnect power before making any connections or disconnections.
 - If using our hardware, please follow the wiring guides below:
 
-# 24V DC Input Wiring
+# 24V DC Input Wiring:
 
 If you received the xPro V5 Controller bundle with a Meanwell 24V power supply, wire your system as shown below: Connect V- from the power supply to GND on the xPro and V+ from the power supply to +24V on the xPro. The mains voltage must be wired by a licensed electrician or similarly qualified individual.
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Front%20copy.jpg" width="400">
+
+# Stepper Motor Wiring:
+
+# Micro Limit Switch Wiring:
+Connect the Blue lead into GND and the white lead to SIG. Leave the middle pin blank.
+
+# Z/XYZ Touch Probe Wiring:
+The xPRO-V5 uses a 3 pin connector which is provided with the controller.
+
+To connect the xPRO-V5 to the touch probe, connect the red wire to GND and the black wire to SIG using the provided green EDG connector. Leave the middle pin unconnected.
+
+Connect the probe to the probe port as shown below:
+
+To configure the XYZ probe in CNCjs have a look [here](https://makerhardware.net/wiki/doku.php?id=add_on_packs:xyz_touch_probe)
+
 
