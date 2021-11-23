@@ -42,7 +42,7 @@ Connect stepper motor wires to the supplied [3.81mm connectors](https://media.di
 NOTE: switching the polarity of either (one) coil will reverse the stepper's direction - also the color codes shown below may not apply to your particular Motors. _This is used for machines with ganged axis' where the motors face opposite directions._
 
 # Connecting Standard Limit Switches
-The xPRO-V5 limit switch input uses a 3 pin connector which is provided with the controller. Connect the probe to the probe port as shown below: (connect one lead into GND and the other to SIG. Leave the middle pin blank)
+The xPRO-V5 limit switch input uses a 3 pin connector which is provided with the controller. Connect the probe to the probe port as shown below: (connect one lead into GND and the other to SIG. Leave the middle pin unconnected)
 <p align="center">
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/limit_wire.jpg" width="600">
 </p>
@@ -52,20 +52,15 @@ Warning: Incorrect wiring can short V+ to GND causing damage to your controller:
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/regular-microswitches.jpg" width="600">
 </p>
 
-Note: The use of a 3-wire inductive proximity switch SN-04-N(NO) or SN-04-N2(NC) may also be used. Standard inductive proximity switch wiring is brown = V+, blue = gnd, and black = signal (verify using the manufacturer's data sheet). Most inductive NPN NO sensors require 10 to 30 volts to operate; though most sensor's may still work using 5V, it is still recommended that you adjust the limit-switch logic voltage select jumper to 24V. Thus 24v is connected to the brown V+ and ground connected to the blue. Click [<HERE>](https://github.com/Spark-Concepts/xPro-V5/wiki/Rear_Panel#limit-connectors) for more information
-
-
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Hall_limits_wiring.jpg" width="600">
-
-With no signal is detected, the NO (normally open) black signal wire will output 24v while the NC (normally closed) black signal wire will source a ground. When the sensor detects metal the signal wire will either drop the voltage to zero or rise to 24V. 
+Note: The use of a 3-wire inductive proximity switch SN-04-N(NO) or SN-04-N2(NC) may also be used. Standard inductive proximity switch wiring is brown = V+, blue = gnd, and black = signal (verify using the manufacturer's data sheet). Most inductive NPN NO sensors require 10 to 30 volts to operate; though most sensor's may still work using 5V, it is still recommended that you adjust the limit-switch logic voltage select jumper to 24V. Thus 24v is connected to the brown V+ and ground connected to the blue. Click [HERE](https://github.com/Spark-Concepts/xPro-V5/wiki/Rear_Panel#limit-connectors) for more information
 
 # Connect Probe
 When wiring the xPRO-V5 to an unpowered touch probe, connect one wire to GND and the other to SIG; **be sure to leave the middle pin unconnected**, otherwise permanent damage may result
-
-_Please be sure to double-check your wiring before plugging in all accessories!_ 
-
+<p align="center">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/probe_wire.jpg" width="600">
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/z-touchplate2.jpg" width="600">  
-
+</p>
+_Please be sure to double-check your wiring before plugging in all accessories!_ 
 ***
 When connecting a powered probe, please refer to the diagram below:
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/xyzprobe-wiring.jpg" width="800">
