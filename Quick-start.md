@@ -42,7 +42,10 @@ Connect stepper motor wires to the supplied [3.81mm connectors](https://media.di
 NOTE: switching the polarity of either (one) coil will reverse the stepper's direction - also the color codes shown below may not apply to your particular Motors. _This is used for machines with ganged axis' where the motors face opposite directions._
 
 # Connecting Limit Switches
-
+The xPRO-V5 limit switch input uses a 3 pin connector which is provided with the controller. Connect the probe to the probe port as shown below: (connect one lead into GND and the other to SIG. Leave the middle pin blank)
+<p align="center">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/limit_wire.jpg" width="600">
+</p>
 Warning: Incorrect wiring can short V+ to GND causing damage to your controller: Double check wiring before powering on
  
 Use a 2-wire cable to wire up regular microswitches
