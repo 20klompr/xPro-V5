@@ -19,7 +19,7 @@ ALWAYS disconnect power before making any connections or disconnections.
 
 If you received the xPro V5 Controller bundle with a Meanwell 24V power supply, wire your system as shown below: Connect V- from the power supply to GND on the xPro and V+ from the power supply to +24V on the xPro. The mains voltage must be wired by a licensed electrician or similarly qualified individual.
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/meanwell.jpg">
-Before connecting your power supply to mains power, it is critical that you check and set the [115v/230v Switch](https://i.stack.imgur.com/zWdO5.jpg) on your PSU.
+Before connecting your power supply to mains power, it is critical that you check and set the [115v/230v Switch](https://i.stack.imgur.com/zWdO5.jpg) on your Power Supply.
 
 # Stepper Motor Wiring:
 
