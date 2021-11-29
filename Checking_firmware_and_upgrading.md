@@ -29,7 +29,7 @@ CNC_xPRO_V5_  | MotorAssignment_ | SpindleType_ | DoorSwitchType.bin
 
 - ***With the "...NO.bin" - a Normally Open switch is NOT required for normal operation, assuming the E-Stop/Door normally open condition is met upon system initialization.***
 
-##Older Firmware naming convention for reference
+## Older Firmware naming convention for reference
 
 CNC_xPRO_V5_  | MotorAssignment_ | SpindleType_ | DoorSwitchType.bin
 ------------- | -------------|------------- | -------------
