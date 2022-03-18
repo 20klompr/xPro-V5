@@ -44,7 +44,7 @@ Please use CNCjs version 1.9.22 or higher.  To make the xPro V5 reboot on connec
 
 **Download it here:** 
 - 64bit computer: 
-[https://github.com/cncjs/cncjs/releases/download/v1.9.22/cncjs-app-1.9.22-win-x64.exe](https://github.com/cncjs/cncjs/releases/download/v1.9.22/cncjs-app-1.9.22-win-x64.exe)
+[https://github.com/cncjs/cncjs/releases/download/v1.9.23/cncjs-app-1.9.23-windows-x64.exe](https://github.com/cncjs/cncjs/releases/download/v1.9.23/cncjs-app-1.9.23-windows-x64.exe)
 - 32Bit computer: 
 [https://github.com/cncjs/cncjs/releases/download/v1.9.23/cncjs-app-1.9.23-windows-x86.exe](https://github.com/cncjs/cncjs/releases/download/v1.9.23/cncjs-app-1.9.23-windows-x86.exe) 
 - Mac and Linux users, or for latest revisions, please visit: [https://github.com/cncjs/cncjs/releases](https://github.com/cncjs/cncjs/releases)
