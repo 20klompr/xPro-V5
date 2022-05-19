@@ -163,7 +163,7 @@ This spindle mode talks to a **Huanyang VFD** _(a very popular Chinese VFD)_ usi
 
 _RS485 circuit automatically asserts a send signal as it transmits - e.g. a direction pin is not required_
   
-<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/48VFD.jpg" width="800">
+<img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/485VFD.jpg" width="800">
 
 _note: make sure you have the [“CNC_xPRO_V5_----_485_--”](https://github.com/Spark-Concepts/xPro-V5/tree/main/Firmware) firmware variant installed_
 
