@@ -162,7 +162,18 @@ This spindle mode talks to a **Huanyang VFD** _(a very popular Chinese VFD)_ usi
 2. RS485 (RS-) 
 
 _RS485 circuit automatically asserts a send signal as it transmits - e.g. a direction pin is not required_
+
+The VFD's AC and Spindle cables induce a lot of noise/EMI on the RS485 - special considerations with wiring must be followed:
   
+- Only use a twisted-pair (minimum of 2 or 3 twists per inch) or twisted-shielded-pair for the RS-485 communications line (20-24AWG); this will help to eliminate common mode noise that can corrupt the data on the line. _(if using a twisted-shielded-pair be sure to terminate the shield to ground at only one end of the cable)_
+
+- DIY twisted-pair:
+  1. Carefully insert the two cut ends of 20-24AWG wire into a drill chuck
+  2. Pull the wire taut so that it will twist evenly when the drill is started 
+  3. Using the drill twist the wire until you achieve a minimum of 2 or 3 twists per inch
+
+- Recommended: place 100-120 ohm network termination resistor at the ends of an RS-485 twisted-pair communications line; this will help to eliminate data pulse signal reflections that can corrupt the data on the line<sub>(2)</sub> 
+
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/485VFD.jpg" width="800">
 
 _note: make sure you have the [“CNC_xPRO_V5_----_485_--”](https://github.com/Spark-Concepts/xPro-V5/tree/main/Firmware) firmware variant installed_
