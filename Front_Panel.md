@@ -172,7 +172,7 @@ The VFD's AC and Spindle cables induce a lot of noise/EMI on the RS485 - special
   2. Pull the wire taut so that it will twist evenly when the drill is started 
   3. Using the drill twist the wire until you achieve a minimum of 2 or 3 twists per inch
 
-- Recommended: place 100-120 ohm network termination resistor at the ends of an RS-485 twisted-pair communications line; this will help to eliminate data pulse signal reflections that can corrupt the data on the line<sub>(2)</sub> 
+- Recommended: place 100-120 ohm network termination resistor at the ends of an RS-485 twisted-pair communications line; this will help to eliminate data pulse signal reflections that can corrupt the data on the line<sub>(2)</sub> _any 100-120 ohm standard 1/2-1/4 watt carbon film resistor will suffice_
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/485VFD.jpg" width="800">
 
