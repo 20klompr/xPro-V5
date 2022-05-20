@@ -176,7 +176,7 @@ The VFD's AC and Spindle cables induce a lot of noise/EMI on the RS485 - special
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/485VFD.jpg" width="800">
 
-_note: make sure you have the [“CNC_xPRO_V5_----_485_--”](https://github.com/Spark-Concepts/xPro-V5/tree/main/Firmware) firmware variant installed_
+_note: make sure the **EN/PWM-RS485 A/B** switch<sub>(1)</sub> set to **RS485 A/B**_
 
 ### Configure the Huanyang VFD
  Using the procedure in the [Huanyang-VFD-manual](https://github.com/Spark-Concepts/xPro-V5/files/6247012/Huanyang-VFD-manual.pdf)
