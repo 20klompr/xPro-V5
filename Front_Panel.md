@@ -168,7 +168,7 @@ The VFD's AC and Spindle cables induce a lot of noise/EMI on the RS485 - special
 - Only use a twisted-pair (minimum of 2 or 3 twists per inch) or twisted-shielded-pair for the RS-485 communications line (20-24AWG); this will help to eliminate common mode noise that can corrupt the data on the line. _(if using a twisted-shielded-pair, be sure to terminate the shield to ground at only one end of the cable)_
 
 - DIY twisted-pair:
-  1. Carefully insert the two cut ends of 20-24AWG wire into a drill chuck
+  1. Carefully insert two cut ends of 20-24AWG wire into a drill chuck
   2. Pull the wire taut so that it will twist evenly when the drill is started 
   3. Using the drill twist the wire until you achieve a minimum of 2 or 3 twists per inch
 
