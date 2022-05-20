@@ -50,7 +50,7 @@ You can switch 24v Solenoids using the Coolant output. Typically you'd use this 
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/coolant-solenoid.jpg" width="600"> --->
 
-## Toolhead/VFD-RS485
+## Toolhead
 
 In the xProV5 there are **$Spindle** settings for each spindle type. This allows a simple method of creating new spindles and a standard interface for Grbl to work with. 
 
