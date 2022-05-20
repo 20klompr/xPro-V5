@@ -28,8 +28,9 @@ Electrical Specifications:
 - Max Current: 250mA(5V) and 2A(24V)
 - Suitable for inductive loads (24V only)
 
-*the SIG port can also be configured to output 24V by removing the xProV5 lid and moving the "MIST" jumper<sub>(1)</sub> from 5V to 24V</sub>
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/Cool_SS.jpg" width="800">
+
+_note> the SIG port can also be configured to output 24V by removing the xProV5 lid and moving the "MIST" jumper<sub>(1)</sub> from 5V to 24V</sub>_
 
 <!--- ## Connect LED Ring
 
