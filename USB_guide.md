@@ -40,13 +40,13 @@ _for the most current drivers see:_
 
 ## CNCJS
 
-Please use CNCjs version 1.9.22 or higher.  To make the xPro V5 reboot on connection (recommended for USB use), select the "Enable hardware flow control" option.
+To make the xPro V5 reboot on connection (recommended for USB use), select the "Enable hardware flow control" option.
 
 **Download it here:** 
 - 64bit computer: 
-[https://github.com/cncjs/cncjs/releases/download/v1.9.23/cncjs-app-1.9.23-windows-x64.exe](https://github.com/cncjs/cncjs/releases/download/v1.9.23/cncjs-app-1.9.23-windows-x64.exe)
+[https://github.com/cncjs/cncjs/releases/download/v1.9.22/cncjs-app-1.9.22-win-x64.exe](https://github.com/cncjs/cncjs/releases/download/v1.9.22/cncjs-app-1.9.22-win-x64.exe)
 - 32Bit computer: 
-[https://github.com/cncjs/cncjs/releases/download/v1.9.23/cncjs-app-1.9.23-windows-x86.exe](https://github.com/cncjs/cncjs/releases/download/v1.9.23/cncjs-app-1.9.23-windows-x86.exe) 
+[https://github.com/cncjs/cncjs/releases/download/v1.9.22/cncjs-app-1.9.22-win-ia32.exe](https://github.com/cncjs/cncjs/releases/download/v1.9.22/cncjs-app-1.9.22-win-ia32.exe) 
 - Mac and Linux users, or for latest revisions, please visit: [https://github.com/cncjs/cncjs/releases](https://github.com/cncjs/cncjs/releases)
 
 <img src="https://cloud.githubusercontent.com/assets/447801/24392019/aa2d725e-13c4-11e7-9538-fd5f746a2130.png" width="400">
