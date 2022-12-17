@@ -1,104 +1,60 @@
-**<u>Note: Some of the screenshots are out of date and will be replaced soon</u>**
+## Setting up the Wifi Network
 
+### Default Settings
 
+The first time you power up the xProV5 it will not be able to connect to your WiFi network because it does not know the SSID and password for your network. It will a create its own Wifi access point with the following settings:
 
-![](http://www.buildlog.net/blog/wp-content/uploads/2018/09/esp32_webui_1.png)
+- **SSID:** GRBL_ESP
+- **Password:** 12345678
+- **IP Address**: 192.168.0.1
 
-The [WEBUI](https://github.com/luc-github/ESP3D-WEBUI) project has been modified for use by Luc of [luc-github](https://github.com/luc-github) so you can control the xPro V5 over WiFi using any browser, without needing any other programs.
+Connect your PC, Tablet, etc to this network. Most computers will automatically launch a browser to connect to the xProV5 after connecting via Wifi. If it does not, simply enter **http://192.168.0.1** for the address in your browser.
 
-Basically, the xPro V5 becomes a web server. You use a browser to access a web interface. You can then control Grbl and run jobs using only the browser. It is sort of like [OctoPrint](https://octoprint.org/), except there is no need for a Raspberry Pi. Everything runs on the xPro V5.
+This is very convenient if you are just getting started or there is no existing network to connect to. Unfortunately, this typically causes your computer to lose its Internet connection, so you probably want to setup the xProV5 to use your WiFi network.
 
-**Features**
+## Connecting the xProV5 to your network.
 
-- Works in either AP (access point) mode or as a client on an existing WiFi network
-- Full control and monitoring of Grbl
-- Supports multiple languages
-- Easy control of Grbl $$ settings
-- Firmware upload
-- Full interface to SD card
-- Easily add your own macros
-- Display a camera in UI
+There are 2 basic ways to do this. The easiest is via the Web. The second method uses the USB/Serial port to change some settings.
 
-The WEBUI project represents quite a contribution to the open source CNC world and you should consider a donation to it.
+## Method #1 Using the WebUi.
 
- [<img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG_global.gif" border="0" alt="PayPal – The safer, easier way to pay online.">](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y8FFE7NA4LJWQ)    
+Connect to the network created by xProV5 per above. Load the WebUI. Click on the ESP32 tab. Then set the 3 settings shown below.
+- Station SSID: Put the SSID of your network here
+- Station Password: Put the password of your network here
+- Radio Mode: Change this to Client Station
 
+<img src="https://user-images.githubusercontent.com/189677/91180709-a1698800-e6ad-11ea-8233-3aa47dd33811.png" width="400">
 
+## Method #2: Using a serial terminal
 
-##### Startup
+You can use [Settings](https://github.com/bdring/Grbl_Esp32/wiki/Settings) to change the network settings. This is handy if you cannot connect and open the WebUI. [The network commands are documented here](https://github.com/bdring/Grbl_Esp32/wiki/Settings#webui-settings).
 
-At startup the xPro V5 will try to connect to the WiFi network it was connected to last. If it cannot connect to that network, it will enter AP (Access Point) mode, thus creating a WiFi network named CNC_XPRO_V5, with password 12345678. Connect to that network with a PC, tablet or phone and use a web browser to load the WebUI to access the URL http://192.168.0.1 (you can bookmark this under the name CNC_XPRO_V5 for easy access).
+Note: If you have authentication enabled, you will need to supply a password. These examples assume it is off.
 
-**Note:** If the WebUI fails to load, open the following URL in your web browser. http://192.168.0.1/?forcefallback=yes.  From here you can re-upload the [index.html.gz](https://github.com/Spark-Concepts/xPro-V5/blob/main/src/index.html.gz)
+Here are the steps required to put it on your network
 
+- $Sta/SSID=YourSSID
+- $Sta/Password=YourPassword
+- $Radio/Mode=STA
 
-## Dashboard
+Note: Some senders like GrblCandle and UGS may force your SSID and Password to uppercase, which could cause authentication to fail.  The WebUI doesn't have this issue.
 
-### Control Panel
+### Determining Current Settings
 
-![ESP32 Controls Panel](http://www.buildlog.net/blog/wp-content/uploads/2018/09/esp3d_controls-1.png)
+Here are some methods to determine your current [settings](https://github.com/bdring/Grbl_Esp32/wiki/Settings) via the [USB/Serial port](https://github.com/bdring/Grbl_Esp32/wiki/Serial-Port-Setup-and-Usage). It will not tell you any passwords. If you loose the password, you will need to reset the settings with **$RST=$** or reload the firmware. 
 
-##### Jogging
+- **$I** This will list the basic connection information
+- **$System/Stats** This list Wifi stuff as well as a lot of system information 
+- **$WiFi/ListAPs** This list all of the Wifi access points found and the signal strength
 
-Jogging can be done by clicking in the jogging area. The speed of the jogging is controlled by the feed rate values at the bottom of the panel.
+**Note:** By default authentication is off in firmware. If you have it enabled a second level of authentication is required to access the machine. The default user is "admin" with password "admin". This is control via **#define ENABLE_AUTHENTICATION** in config.h
 
-##### Homing
+### Using Smartphones.
 
-Homing can be done with the little house icons. The lower left icon does a standard ($H) home of all axes. Individual axes can also be homed use their respective home buttons. 
+If you try to connect a phone to the access point created by Grbl_ESP32, the phone will probably tell you that the network does not have Internet access. The phone does not like this and may try to compensate by using the mobile network as well. This can create issues with the browser in your phone not liking the ESP32 address.
 
-**DROs**
+The best solution is to connect the ESP32 to your home WiFi and use the phone to connect through that. This allows the phone to connect to the eSP32 and the Internet.
 
-The DROs (Digital Read out) are the axis values below the jog graphic. These display the current Work Coordinates. Each has a zero button next to them to zero that axis. There is also a zero xyz to zero them all.
+You can also put your phone in airplane mode with Wifi on. This helps some people.
 
-##### Macros
-
-This feature allows you to add custom commands. Here is an example of how to add a command to move to X0, Y0
-
-1. Create a text file with the gcode. In this case the gcode would be "G0X0Y0". Save it with a ".g" extension. In this case I named it zeroxy.g.
-2. Upload that file to the ESP3D File System (Not to the SD card)
-3. Click on the macro editor button  in the controls panel. click the plus icon to add a macro. Give it a name, select a color, set the target as ESP and enter the path to the gcode file you uploaded.
-4. Click Save
-
-![](http://www.buildlog.net/blog/wp-content/uploads/2018/09/esp3d_macros.png)
-
-### Grbl Panel
-
-![](http://www.buildlog.net/blog/wp-content/uploads/2018/09/esp3d_grbl_pnl2.png)
-
-### 
-
-### Commands Panel
-
-![Commands Panel](http://www.buildlog.net/blog/wp-content/uploads/2018/09/esp3d_commands_pnl.png)
-
-### SD Card Panel
-
-![](http://www.buildlog.net/blog/wp-content/uploads/2018/09/esp3d_sd_pnl.png)
-
-This panel allows you to upload and run files that are stored on an SD card attached to your machine. Click Refresh to show all files and folders on your SD card. Only gcode files (.txt, .nc and .gcode) will have the play icon next to them. Files are also filtered by legal characters for grbl, so files with a blank will not be able to be sent.
-
-Refresh
-
-Add directory
-
-Upload
-
-Download
-
-Delete
-
-Play
-
-Filter
-
-## Grbl Configuration ($) Panel
-
-![](http://www.buildlog.net/blog/wp-content/uploads/2018/09/esp32_grbl_dollar.png)
-
-This provides an easy interface to update the most common GRBL settings.  To see a list of all setting the command '$S' must be sent from the Commands Panel.  For more information on updating settings, see the Settings page.  
-
-## ESP3D Settings
-
-Using the ESP3D settings tab, advanced users can modify the wifi operation of the xPro V5.  
-
-**Note** For security purposes we recommend using the xPro V5 as a local Access Point. 
+With some advanced fiddling around, beyond the scope of this Wiki, so should be able to get any mode to work. Try the methods above first to make sure the basic connection is good. 
