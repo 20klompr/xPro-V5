@@ -1,3 +1,20 @@
+For debugging, the best route is to use CNCjs and check the start-up/initialization messaging that comes out over USB.
+1) Power on your VFD, power on xPRO
+2) Open CNCjs, connect to the Silicon Labs port
+3) Hit the physical **Reset** button on the xPRO
+
+This will spit out a bunch of information - you are looking for the spindle information (directly below the trinamic self-tests)
+If there is an issue with the communication you will see something like this:
+![image](https://user-images.githubusercontent.com/62680473/114034261-055f4c00-984c-11eb-85b8-b5a0ad46295a.png)
+
+While a successful start will look like this:
+![image](https://user-images.githubusercontent.com/62680473/114034313-127c3b00-984c-11eb-8b63-0e7afa6d24e5.png)
+
+If still unsuccessful a few things to check:
+1) One of the RS485 specific firmwares are loaded (CNC_xPRO_V5_....**_485_**..) 
+2) The switch to select the EN/PWM or RS485 mode on the xPRO V5 uses a long actuator and will sometimes not fully seat.  Flip the switch back to the EN/PWM side then flip it to the RS485 side (use a small driver to make sure the base of the actuator has flipped fully) 
+
+
 All, 
 
 Please read below in it's entirety (also for 220V VFD user please see note at the end of this post) - also, if at any point I'm not clear or what I'm saying doesn't make sense, please repost and I will do my best to explain in more detail.   
