@@ -27,7 +27,7 @@ Connect to the network created by xProV5 per above. Load the WebUI. Click on the
 
 ## Method #2: Using a serial terminal
 
-First connect to your xProV5 using a USB serial and open a [Serial Terminal](https://github.com/Spark-Concepts/xPro-V5/wiki/Serial-setup) or [USB Sender](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide#gcode-senders)
+First connect to your xProV5 using a USB [Serial Terminal](https://github.com/Spark-Concepts/xPro-V5/wiki/Serial-setup) or [USB Sender](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide#gcode-senders)
 
 You can use [Settings](https://github.com/bdring/Grbl_Esp32/wiki/Settings) to change the network settings. This is handy if you cannot connect and open the WebUI. [The network commands are documented here](https://github.com/bdring/Grbl_Esp32/wiki/Settings#webui-settings).
 
