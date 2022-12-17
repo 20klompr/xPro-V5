@@ -1,3 +1,30 @@
+onnect the Huanyang VFD to the xProV5:
+ ![485_VFD](https://user-images.githubusercontent.com/8650709/113372069-cf930280-9335-11eb-99e4-477faf29d620.jpg)
+ Using the procedure in the Huanyang manual, set the following register values:
+ 
+ Set PD000 to 0 - **unlock parameters**
+ Set PD001 to 2 - **Command source is RS485**
+ Set PD002 to 2 - **Speed source is RS485**
+ Set PD163 to 1 - **Communications address 1**
+ Set PD164 to 1 - **9600 b/s (3 - 38400)**
+ Set PD165 to 3 - **8 Bit No Parity - RTU**
+ Set PD000 to 1 - **lock parameters**
+ [Huanyang-VFD-manual.pdf](https://github.com/Spark-Concepts/xPro-V5/files/6247012/Huanyang-VFD-manual.pdf)
+ 
+ _Also verify the following settings (based on the values on the motor's nameplate)_
+ 
+ PD004 **Base frequency as listed on spindle (typically 400)**
+ PD005 **Maximum frequency Hz (typical value for spindles is 400)**
+ PD011 **Min speed (Recommended Air-cooled=120 Water=100)**
+ PD014 **Acceleration time** (Test to optimize)
+ PD015 **Deceleration time** (Test to optimize)
+ PD023 **Reverse run enabled (set to 1)**
+ 
+ PD141 Spindle max rated voltage (Typically 220)
+ PD142 **Max rated motor current (0.8kw=3.7, 1.5kw=7.0, 2.2kw=??)**
+ PD143 Motor Poles **This parameter is set for the number of the motor’s pole according to the nameplate of the motor - I believe this is only used for the conversion of Hz to RPM (typically 2 or 4)**
+ PD144 **Rated Motor Revolution at 50Hz (Typically 3000 @ 50Hz and 24000 @ 400Hz)**
+
 For debugging, the best route is to use CNCjs and check the start-up/initialization messaging that comes out over USB.
 1) Power on your VFD, power on xPRO
 2) Open CNCjs, connect to the Silicon Labs port
