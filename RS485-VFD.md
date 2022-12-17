@@ -1,4 +1,9 @@
-The second example is not using a twisted pair or resistors. You are accurate, the twist does improve the signal quality, but not nearly the amount the isolator does (difference is illustrated between image 2 and image 3 above). Also note, even with the degraded signal quality (image 2),  I was still able to communicate with the spindle. 
+The second example is not using a twisted pair or resistors. You are accurate, the twist does improve the signal quality, but not nearly the amount the is1. Placing an Oscilloscope on the RS485 output signal on the xPro ```DISCONNECTED from VFD```:
+    ![DS1Z_QuickPrint35](https://user-images.githubusercontent.com/8650709/186558090-bc81d4fa-69fa-41a4-9bac-8a6d5aec7481.png)
+
+
+2. Measuring RS485 signal at the 220V VFD while connected to the xPro ```WITHOUT RS485 isolation```:
+    ![DS1Z_QuickPrint32](https://user-images.githubusercontent.com/8650709/186558074-25fe2e6d-260e-485d-8505-7d62c3331abb.png)olator does (difference is illustrated between image 2 and image 3 above). Also note, even with the degraded signal quality (image 2),  I was still able to communicate with the spindle. 
 
 ***NOTE: The resistors were minimally effective  in reducing noise with cable lengths less than 1-meter long. (resistors help eliminate transmission line reflections that may degrade the signal; typically prominent with longer cable lengths***
 
