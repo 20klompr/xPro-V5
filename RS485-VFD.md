@@ -7,3 +7,15 @@ Ultimately, the Huanyang VFD's due to the nature of how they are constructed, sh
 Ultimately to mitigate this scenario I reccomend implementing an RS485 isolator as shown above.
 
 I will post a much more extensive write-up this weekend illustrating the effects of each wiring scheme along with actual pictures showing the configuration of each.
+
+### Spindle Types
+
+Spindle classes are defined in the firmware (the default firmware on the xProV5 is **PWM**). The Spindle Type is dynamically selected by entering ```$Spindle/Type=XXXXX```' in the command line. There are two classes of Spindles with two separate Spindle Types.
+
+**For the PWM and Laser Spindle classes:**
+```
+$Spindle/Type=PWM
+$Spindle/Type=LASER 
+```
+**For the RS485 VFD classes:**
+```
