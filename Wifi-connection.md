@@ -41,7 +41,7 @@ Note: Some senders like GrblCandle and UGS may force your SSID and Password to u
 
 ### Determining Current Settings
 
-Here are some methods to determine your current [settings](https://github.com/bdring/Grbl_Esp32/wiki/Settings) via the [USB/Serial port](https://github.com/bdring/Grbl_Esp32/wiki/Serial-Port-Setup-and-Usage). It will not tell you any passwords. If you loose the password, you will need to reset the settings with **$RST=$** or reload the firmware. 
+Here are some methods to determine your current [settings](https://github.com/Spark-Concepts/xPro-V5/wiki/Changing-settings) via the [USB/Serial port](https://github.com/bdring/Grbl_Esp32/wiki/Serial-Port-Setup-and-Usage). It will not tell you any passwords. If you loose the password, you will need to reset the settings with **$RST=$** or reload the firmware. 
 
 - **$I** This will list the basic connection information
 - **$System/Stats** This list Wifi stuff as well as a lot of system information 
