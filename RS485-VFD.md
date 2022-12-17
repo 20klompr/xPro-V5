@@ -1,3 +1,20 @@
+1. Placing an Oscilloscope on the RS485 output signal on the xPro ```DISCONNECTED from VFD```:
+    ![DS1Z_QuickPrint35](https://user-images.githubusercontent.com/8650709/186558090-bc81d4fa-69fa-41a4-9bac-8a6d5aec7481.png)
+
+
+2. Measuring RS485 signal at the 220V VFD while connected to the xPro ```WITHOUT RS485 isolation```:
+    ![DS1Z_QuickPrint32](https://user-images.githubusercontent.com/8650709/186558074-25fe2e6d-260e-485d-8505-7d62c3331abb.png)
+
+
+3. Measuring RS485 signal at the VFD while connected to the xPro ```WITH RS485 isolation and twisted pair```:
+   ![rs485_Isolated](https://user-images.githubusercontent.com/8650709/186558328-6ece075d-9681-4c47-aa0b-d36685725601.jpg)
+   ![DS1Z_QuickPrint38](https://user-images.githubusercontent.com/8650709/186562114-360e11cc-b2a7-4074-a77f-240a7bd9e2d5.png)
+   - Lets take a closer look:
+      ![DS1Z_QuickPrint37](https://user-images.githubusercontent.com/8650709/186562863-d1b2cc88-67ff-4a4f-b7b5-d21853f56cbd.png)
+
+
+
+**
 onnect the Huanyang VFD to the xProV5:
  ![485_VFD](https://user-images.githubusercontent.com/8650709/113372069-cf930280-9335-11eb-99e4-477faf29d620.jpg)
  Using the procedure in the Huanyang manual, set the following register values:
