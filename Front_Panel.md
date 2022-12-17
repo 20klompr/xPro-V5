@@ -50,6 +50,20 @@ You can switch 24v Solenoids using the Coolant output. Typically you'd use this 
 
 <img src="https://github.com/Spark-Concepts/xPro-V5/blob/main/images/coolant-solenoid.jpg" width="600"> --->
 
+### Spindle Types
+
+Spindle classes are defined in the firmware (the default firmware on the xProV5 is **PWM**). The Spindle Type is dynamically selected by entering ```$Spindle/Type=XXXXX```' in the command line. There are two classes of Spindles with two separate Spindle Types.
+
+**For the PWM and Laser Spindle classes:**
+```
+$Spindle/Type=PWM
+$Spindle/Type=LASER 
+```
+**For the RS485 class:**
+```
+$Spindle/Type:=HUANYANG
+$Spindle/Type:=H2A
+```
 
 ### $Spindle/Type=NONE 
 If your machine does not require a spindle, like a pen plotter, choose this type. It will not use any I/O. It will default to this type if no I/O is defined.
