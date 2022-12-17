@@ -54,6 +54,11 @@ You can switch 24v Solenoids using the Coolant output. Typically you'd use this 
 
 Spindle classes are defined in the firmware (the default firmware on the xProV5 is **PWM**). The Spindle Type is dynamically selected by entering ```$Spindle/Type=XXXXX```' in the command line. There are two classes of Spindles with two separate Spindle Types.
 
+**Default Spindle Setting:**
+```
+$Spindle/Type=NONE
+```
+
 **For the PWM and Laser Spindle classes:**
 ```
 $Spindle/Type=PWM
