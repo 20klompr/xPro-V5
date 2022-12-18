@@ -1,8 +1,8 @@
 # [Overview](https://github.com/Spark-Concepts/xPro-V5/wiki)
 
-### [Hardware description](Hardware_Description)
+### [Hardware description](https://github.com/Spark-Concepts/xPro-V5/wiki/Hardware_Description)
 
-# [Quick start](Quick-start)
+# [Quick start](https://github.com/Spark-Concepts/xPro-V5/wiki/Quick-start)
 
 ### [Basic hookup](Basic-hookup)
 <!--- - [Motors](Motors) 
