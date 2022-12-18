@@ -6,11 +6,11 @@
 
 ### [Basic hookup](Basic-hookup)
 <!--- - [Motors](Motors) 
- - [Limit switches](Limit_switches) --->
+ - [Limit switches](https://github.com/Spark-Concepts/xPro-V5/wiki/Limit_switches) --->
 
-### [Wifi connection](Wifi-connection)
+### [Wifi connection](https://github.com/Spark-Concepts/xPro-V5/wiki/Wifi-connection)
  
-### [Changing settings](Changing-settings)
+### [Changing settings](https://github.com/Spark-Concepts/xPro-V5/wiki/Changing-settings)
 
 <!--- ### [Suggested settings](Suggested-settings)
  - [Workbee screw](Workbee_screw)
