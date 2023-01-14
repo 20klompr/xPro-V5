@@ -4,7 +4,7 @@
 
 # [Quick start](https://github.com/Spark-Concepts/xPro-V5/wiki/Quick-start)
 
-### [Basic hookup](Basic-hookup)
+### [Basic hookup](https://github.com/Spark-Concepts/xPro-V5/wiki/Basic-hookup)
 <!--- - [Motors](Motors) 
  - [Limit switches](https://github.com/Spark-Concepts/xPro-V5/wiki/Limit_switches) --->
 
@@ -29,7 +29,7 @@
    - [Linux Drivers](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide#linux-drivers)
 
 ### Hooking up your CNC xPRO V5	
-[Front Panel](Front_Panel)
+[Front Panel](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel)
  - [Power](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#power) 
  - [Cool](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#cool)
  - [Toolhead](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#toolheadrs485)
@@ -39,7 +39,7 @@
  - [Program button](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#program-button)
  - [USB](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#usb-connection)
 
-[Side Panel](Side_Panel)
+[Side Panel](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel)
  - [Power Switch](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#power-switch) 
  - [Reset](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#reset-switch)
  - [SD Card](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#sd-card)
@@ -49,11 +49,11 @@
  - [Macro1 & Macro2](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#macro1--macro2)
  - [TMC diag_0 output](https://github.com/Spark-Concepts/xPro-V5/wiki/Side_Panel#tmc-diag_0)
 
-[Rear Panel](Rear_Panel)
+[Rear Panel](https://github.com/Spark-Concepts/xPro-V5/wiki/Rear_Panel)
  - [Motor connectors](https://github.com/Spark-Concepts/xPro-V5/wiki/Rear_Panel#motor-connectors) 
  - [Limit connectors](https://github.com/Spark-Concepts/xPro-V5/wiki/Rear_Panel#limit-connectors)
 
-[Inside jumpers](Inside_jumpers)
+Inside jumpers
  - [Mist output voltage](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#cool)
  - [Relay signal](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#relay-terminal) 
  - [GPIO Logic](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#doorestop)
