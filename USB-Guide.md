@@ -1,12 +1,8 @@
-# USB Cable
+## USB Cable
 
 **The CNC xPRO V5 requires a USB-A to USB-C cable, it is recommended to use a cable with shielding and a ferrite.  USB-C to USB-C cables will not work.**  
 
-# GCode Senders
-
-**We recommend using CNCjs Desktop to control the CNC xPro V5, however, the other Gcode Senders listed below will work as well**    
-***
-## USB Driver Install
+# USB Drivers
 ### Windows Driver Installation
 If you are unable to connect to the xPRO via USB to a gcode sender, please download the CP210x USB to UART Bridge VCP Drivers here:
 - [https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip](https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip)
@@ -37,6 +33,11 @@ _for all legacy OS software and driver packages see:_
 
 _for the most current drivers see:_ 
    - _[SiLabs VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers#software)_
+
+# GCode Senders
+
+**We recommend using CNCjs Desktop to control the CNC xPro V5, however, the other Gcode Senders listed below will work as well**    
+***
 
 ## CNCJS
 
