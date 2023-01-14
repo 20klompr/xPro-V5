@@ -26,9 +26,7 @@
    - [USB Cable Type](https://github.com/Spark-Concepts/xPro-V5/wiki/USB-Guide#usb-cable)
    - [USB Sender Software]()
    - [Serial Port Setup and Usage](https://github.com/Spark-Concepts/xPro-V5/wiki/Serial-setup)
-   - [Windows Drivers](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide#usb-driver-install)
-   - [Mac Drivers](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide#mac-osx-driver-installation)
-   - [Linux Drivers](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide#linux-drivers)
+   - [Windows, MAC, and Linux Drivers](https://github.com/Spark-Concepts/xPro-V5/wiki/USB-Guide#usb-drivers)
 
 ### Hooking up your CNC xPRO V5	
 [Front Panel](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel)
