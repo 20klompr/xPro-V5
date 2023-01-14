@@ -61,7 +61,7 @@
 
 ## [Checking firmware and upgrading](https://github.com/Spark-Concepts/xPro-V5/wiki/Checking_firmware_and_upgrading)
 
-### [Laser Mode](Laser_Mode)
+### [Laser Mode](https://github.com/Spark-Concepts/xPro-V5/wiki/Checking_firmware_and_upgrading)
 
 ### [Troubleshooting](Troubleshooting)
  - [Console Startup Message](https://github.com/Spark-Concepts/xPro-V5/wiki/Troubleshooting#console-startup-message)	
