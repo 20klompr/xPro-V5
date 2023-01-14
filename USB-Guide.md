@@ -1,4 +1,4 @@
-## USB Cable
+# USB Cable
 
 **The CNC xPRO V5 requires a USB-A to USB-C cable, it is recommended to use a cable with shielding and a ferrite.  USB-C to USB-C cables will not work.**  
 
