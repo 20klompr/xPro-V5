@@ -59,7 +59,7 @@
  - [GPIO Logic](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#doorestop)
  - [Limit Switch Logic](https://github.com/Spark-Concepts/xPro-V5/wiki/Rear_Panel#switch-types)
 
-## [Checking firmware and upgrading](Checking_firmware_and_upgrading)
+## [Checking firmware and upgrading](https://github.com/Spark-Concepts/xPro-V5/wiki/Checking_firmware_and_upgrading)
 
 ### [Laser Mode](Laser_Mode)
 
