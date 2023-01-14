@@ -22,7 +22,9 @@
 	
 ### Connecting to your CNC xPRO V5
  - [Wifi WebUI guide](https://github.com/Spark-Concepts/xPro-V5/wiki/Wifi_guide)
- - [USB Sender guide](https://github.com/Spark-Concepts/xPro-V5/wiki/USB-Guide)
+ - [USB guide](https://github.com/Spark-Concepts/xPro-V5/wiki/USB-Guide)
+   - [USB Cable Type]()
+   - [USB Sender Software]()
    - [Serial Port Setup and Usage](https://github.com/Spark-Concepts/xPro-V5/wiki/Serial-setup)
    - [Windows Drivers](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide#usb-driver-install)
    - [Mac Drivers](https://github.com/Spark-Concepts/xPro-V5/wiki/USB_guide#mac-osx-driver-installation)
