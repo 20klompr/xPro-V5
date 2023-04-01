@@ -61,6 +61,7 @@ Inside jumpers
 
 Firmware
  - [Firmware Installation & Updates](http://wiki.fluidnc.com/en/installation)
+  - [config.yaml](https://github.com/Spark-Concepts/xPro-V5/tree/main/FluidNC)
  - [Legacy GRBL_ESP32 firmware information](https://github.com/Spark-Concepts/xPro-V5/wiki/Checking_firmware_and_upgrading)
 
 ### [**NEW** Upgade to FluidNC](http://wiki.fluidnc.com/en/installation)
