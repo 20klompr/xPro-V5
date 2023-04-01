@@ -1,4 +1,6 @@
-![image](https://user-images.githubusercontent.com/8650709/229248634-7d93e315-83c4-4e07-af00-9a046ce83506.png)
+# **For firmware update/upgrade we recommend upgrading to Fluid NC**
+
+**PLEASE NOTE: The information below is only being maintained as a reference. All future firmware updates are targeted at FluidNC.**
 
 ## Uncompiled Firmware
 
