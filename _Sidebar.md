@@ -59,9 +59,11 @@ Inside jumpers
  - [GPIO Logic](https://github.com/Spark-Concepts/xPro-V5/wiki/Front_Panel#doorestop)
  - [Limit Switch Logic](https://github.com/Spark-Concepts/xPro-V5/wiki/Rear_Panel#switch-types)
 
-## [Checking firmware and upgrading](https://github.com/Spark-Concepts/xPro-V5/wiki/Checking_firmware_and_upgrading_no)
+Firmware
+ - [**NEW** Upgade to FluidNC]()
+ - [Legacy GRBL_ESP32 firmware information](https://github.com/Spark-Concepts/xPro-V5/wiki/Checking_firmware_and_upgrading)
 
-### [Laser Mode](https://github.com/Spark-Concepts/xPro-V5/wiki/Checking_firmware_and_upgrading)
+### [FluidNC]()
 
 ### [Troubleshooting](https://github.com/Spark-Concepts/xPro-V5/wiki/Troubleshooting)
  - [Console Startup Message](https://github.com/Spark-Concepts/xPro-V5/wiki/Troubleshooting#console-startup-message)	
