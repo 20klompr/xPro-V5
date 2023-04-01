@@ -60,10 +60,10 @@ Inside jumpers
  - [Limit Switch Logic](https://github.com/Spark-Concepts/xPro-V5/wiki/Rear_Panel#switch-types)
 
 Firmware
- - [Firmware Installation & Updating]()
+ - [Firmware Installation & Updates](http://wiki.fluidnc.com/en/installation)
  - [Legacy GRBL_ESP32 firmware information](https://github.com/Spark-Concepts/xPro-V5/wiki/Checking_firmware_and_upgrading)
 
-### [**NEW** Upgade to FluidNC]()
+### [**NEW** Upgade to FluidNC](http://wiki.fluidnc.com/en/installation)
 
 ### [Troubleshooting](https://github.com/Spark-Concepts/xPro-V5/wiki/Troubleshooting)
  - [Console Startup Message](https://github.com/Spark-Concepts/xPro-V5/wiki/Troubleshooting#console-startup-message)	
