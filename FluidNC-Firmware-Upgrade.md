@@ -10,7 +10,20 @@ To update firmware, but do not install the file system.
 - Connect the ESP32 via USB. It is best to remove all other USB/Serial devices while installing it because it might try the wrong one.
 - Run either install-wifi.bat or install-bt.bat (.sh on other OS's). Make sure you are running the script while in that that folder.
 
-- **If you are doing a first time install, run install-fs.bat (or .sh) to install the file system, including the WebUI**
+## First time install
+1. Open FluidNC folder and Run `erase.bat`
+
+![image](https://user-images.githubusercontent.com/8650709/229307587-6d09410c-db2f-40c3-a707-1bdfdf2550b0.png)
+
+- For subsequent steps each and every time you see `Connecting......._____...`, press and hold the **programming button** until the load or action begins
+
+![image](https://user-images.githubusercontent.com/8650709/229308320-3ac23f0e-a09c-4ab0-b499-8a5d21a7fc1d.png)
+
+2. Run either `install-wifi.bat` or `install-bt.bat` (.sh on other OS's). NOTE: *Make sure you are running the script while in that that folder*
+
+![image](https://user-images.githubusercontent.com/8650709/229308383-badb247b-0e7b-46e8-aef9-67397c15eae1.png)
+
+3. Finally, run `install-fs.bat` (or .sh) to install the file system, including the **WebUI**
   - If you already have a config file or other files on an ESP32, they will be deleted, so this is not recommended for upgrading firmware.
-  - *You may notice a message like this* E (38) SPIFFS: mount failed, -10025 *on the first run of the firmware. This is normal. It only happens on the first boot and is formatting the flash file system.* Note: *this may take a few minutes*
-- You now need to load a config file. The instructions on how to do this
+  - *You may notice a message like this* `E (38) SPIFFS: mount failed, -10025` *on the first run of the firmware. This is normal. It only happens on the first boot and is formatting the flash file system.* Note: *this operation may take a few minutes*
+- Load a [`config.yaml`]() file. NOTE: *spindle type default is viod and will need to be set depending on your configuration*
