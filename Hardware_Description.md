@@ -22,7 +22,7 @@ The xPRO V5 uses [Trinamic stepper drivers](https://www.trinamic.com/products/in
 * Trinamic (SPI controlled) stepper motors are supported including StealthChop, CoolStep and StallGuard modes. 
 * Sensorless homing can be used.
 
-## Peripherals
+## [Peripherals](https://github.com/Spark-Concepts/xPro-V5/wiki/XPro-V5-Hardware)
 
 * Limit/Homing Switches with debouncing
 * Up to 24v 5A switched output for coolant devices such as 24v DC pumps, solenoids, contactors, or Solid State Relays
