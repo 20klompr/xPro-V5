@@ -57,3 +57,5 @@ If you have Wifi and the WebUI running, you can update via the FluidNC tab. This
 ![image](https://user-images.githubusercontent.com/8650709/229311918-b35b2e27-bbce-4ddb-97a1-f0cf52dcba06.png)
 
 If the upgrade affects the WebUI, you will need to upload index.html.gz from the [FluidNC/data](https://github.com/bdring/FluidNC/tree/main/FluidNC/data) folder of the repo by clicking on the green folder icon in the image above.
+
+### For more detailed information please refer to [fluidnc.com](http://wiki.fluidnc.com/en/installation)
