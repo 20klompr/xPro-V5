@@ -23,7 +23,37 @@ To update firmware, but do not install the file system.
 
 ![image](https://user-images.githubusercontent.com/8650709/229308383-badb247b-0e7b-46e8-aef9-67397c15eae1.png)
 
-3. Finally, run `install-fs.bat` (or .sh) to install the file system, including the **WebUI**
+3. Run `install-fs.bat` (or .sh) to install the file system, including the **WebUI**
   - If you already have a config file or other files on an ESP32, they will be deleted, so this is not recommended for upgrading firmware.
   - *You may notice a message like this* `E (38) SPIFFS: mount failed, -10025` *on the first run of the firmware. This is normal. It only happens on the first boot and is formatting the flash file system.* Note: *this operation may take a few minutes*
-- Load a [`config.yaml`]() file. NOTE: *spindle type default is viod and will need to be set depending on your configuration*
+  - Load a [`config.yaml`](https://github.com/Spark-Concepts/xPro-V5/blob/main/FluidNC/config.yaml) file. NOTE: *spindle type default is viod and will need to be set depending on your configuration*
+
+## Upload a new configuration `config.yaml` file
+1. Plug in xPRO V5 to computer using a USB to USB-C cable
+2. Open `FluidTerm.bat`
+3. Select the COM port named `(\Devie\Silabser0)`
+
+![image](https://user-images.githubusercontent.com/8650709/229311544-4698cc86-ae9e-47fc-8375-dc87b41e720b.png)
+
+4. Press `CTRL+U` to start and upload [`config.yaml`](https://github.com/Spark-Concepts/xPro-V5/blob/main/FluidNC/config.yaml) NOTE:*by default FluidNC looks for the config.yaml file name, if you name the file something else you will need to update the configuration field in fluidNC WebUI*
+
+![image](https://user-images.githubusercontent.com/8650709/229311578-345a206a-f175-41fb-a4f2-6c75846967a9.png)
+![image](https://user-images.githubusercontent.com/8650709/229311634-28ce746b-4c79-41ba-88d8-b00cf3944637.png)
+
+5. Press `Enter` to begin upload - if successful it should look like this:
+
+![image](https://user-images.githubusercontent.com/8650709/229311668-4c3100ec-7b1e-4e0c-9f27-e07e99b3be33.png)
+
+## Updating WebUI Fimware (must currently be running FluidNC)
+- If the [releases notes](https://github.com/bdring/FluidNC/releases) say that the WebUI has been updated, you will need to upload `index.html.gz` from the wifi folder. Do this using the local file system panel.
+
+![image](https://user-images.githubusercontent.com/8650709/229311874-ca4edd97-13d9-4a0d-a137-417aede4588b.png)
+
+![image](https://user-images.githubusercontent.com/8650709/229311881-47b86a28-4dc3-4951-81fe-9a3c84464812.png)
+
+## Over the air (OTA) Updates
+If you have Wifi and the WebUI running, you can update via the FluidNC tab. This will not overwrite your config yaml file. Click the yellow cloud icon to upload your compiled binary (.bin) file. The compiled binaries are in the bt or wifi folders of downloaded releases.
+
+![image](https://user-images.githubusercontent.com/8650709/229311918-b35b2e27-bbce-4ddb-97a1-f0cf52dcba06.png)
+
+If the upgrade affects the WebUI, you will need to upload index.html.gz from the [FluidNC/data](https://github.com/bdring/FluidNC/tree/main/FluidNC/data) folder of the repo by clicking on the green folder icon in the image above.
