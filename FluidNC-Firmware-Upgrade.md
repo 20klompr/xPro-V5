@@ -1,6 +1,6 @@
 ## Upgrading Firmware
 
-To update firmware, but do not install the file system.
+FluidNC installation instructions:
 
 - Go to the [FluidNC project page](https://github.com/bdring/FluidNC) on Github
   - Click on the [releases link](https://github.com/bdring/FluidNC/releases) on the right side of the page.
@@ -8,6 +8,9 @@ To update firmware, but do not install the file system.
   - Download the zip file for your operating system (win64 for Windows and posix for Linux and Mac) from the Assets section of the release. You do not need to download the source code to use pre-compiled files.
   - Unzip it in a folder on your computer. Do not try to run from inside the zip file. Make sure it is fully extracted before you start. On some operating systems, like Windows, the folder should be on local drives, not a networked folder.
 - Connect the ESP32 via USB. It is best to remove all other USB/Serial devices while installing it because it might try the wrong one.
+
+*For first time FluidNC, jump to [First time install]()
+
 - Run either install-wifi.bat or install-bt.bat (.sh on other OS's). Make sure you are running the script while in that that folder.
 
 ## First time install
