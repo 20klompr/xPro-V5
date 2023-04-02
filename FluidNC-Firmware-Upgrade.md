@@ -9,7 +9,9 @@ FluidNC installation instructions:
   - Unzip it in a folder on your computer. Do not try to run from inside the zip file. Make sure it is fully extracted before you start. On some operating systems, like Windows, the folder should be on local drives, not a networked folder.
 - Connect the ESP32 via USB. It is best to remove all other USB/Serial devices while installing it because it might try the wrong one.
 
-*For first time FluidNC, skip to [First time install](https://github.com/Spark-Concepts/xPro-V5/wiki/FluidNC-Firmware-Upgrade#first-time-install)
+*For first time installation of FluidNC, skip to [First time install](https://github.com/Spark-Concepts/xPro-V5/wiki/FluidNC-Firmware-Upgrade#first-time-install)
+
+## Update FluidNC (currently running FluidNC) 
 
 - Run either install-wifi.bat or install-bt.bat (.sh on other OS's). Make sure you are running the script while in that that folder.
 
