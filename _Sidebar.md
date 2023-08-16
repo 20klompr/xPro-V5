@@ -67,6 +67,8 @@ Firmware
 ### [**NEW** Upgrade to FluidNC](https://github.com/Spark-Concepts/xPro-V5/wiki/FluidNC-Firmware-Upgrade)
 
 ### [Troubleshooting](https://github.com/Spark-Concepts/xPro-V5/wiki/Troubleshooting)
- - [Console Startup Message](https://github.com/Spark-Concepts/xPro-V5/wiki/Troubleshooting#console-startup-message)	
+ - [Console Startup Message](https://github.com/Spark-Concepts/xPro-V5/wiki/Troubleshooting#console-startup-message)
+
+### Dedicated xPro issues and hardware ticketing system **COMING SOON**	###
 
 ### [Supported G-Code](https://github.com/Spark-Concepts/xPro-V5/wiki/Supported_G-Code)
