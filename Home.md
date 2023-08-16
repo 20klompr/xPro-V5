@@ -2,9 +2,9 @@
 
 ![CNC xPRO V5](https://github.com/Spark-Concepts/xPro-V5/blob/main/images/xproV5_iso.jpg?raw=true)
 
-This wiki is the CNC xPro-V5 user manual and hook-up guide. We (Spark Concepts) maintain it, but it's an open wiki. If you want to post wiki-type stuff, feel free to do it here. Please [contact us](https://www.spark-concepts.com/contact-us-1/) 
+This wiki is the CNC xPro-V5 user manual and hook-up guide. We (Spark Concepts) maintain it, but it's an open wiki. If you want to post wiki-type stuff, feel free to do it here. 
 
-**COMING SOON (Sept 2023): Dedicated xPro hardware guide, issues, and ticketing system** *Please bear with us as we work hard during this transition period to iron out our ticketing and support system...* *Please know that we stand by the xPro and value your trust and confidence in us; we look forward to provide this much anticipated service to you very soon!*
+**COMING SOON (Sept 2023): Dedicated xPro hardware guide, issues, and ticketing system** *Please bear with us as we work hard during this transition period to iron out our ticketing and support system...* *Please know that we stand by the xPro and value your trust and confidence in us; we look forward to provide this much anticipated service to you very soon!* In the meantime if you need to contact us, please do so via the "Contact Us" link found on our website at [Spark-concepts.com](https://www.spark-concepts.com) 
 
 <!-- ### Getting Started and Basic Setup
 * [Hardware Description](https://github.com/Spark-Concepts/xPro-V5/wiki/Hardware-Description)
